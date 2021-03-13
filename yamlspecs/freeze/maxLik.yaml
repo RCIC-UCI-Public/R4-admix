@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module maxLik
+  name: maxLik
+  rpkgname: maxLik
+  version: "{{versions.maxLik}}"
+  release: "{{versions.maxLik_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-miscTools
+    - R_{{Rversion}}-sandwich
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-zoo

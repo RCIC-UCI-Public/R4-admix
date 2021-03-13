@@ -1,0 +1,3 @@
+  addfile:
+    - filter-requires-RPostgreSQL.sh 
+  rpm: !include rpm.extras.filter.yaml

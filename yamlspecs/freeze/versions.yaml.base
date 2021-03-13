@@ -1,0 +1,11 @@
+R: "4.0.4"
+Rmajor: "4"
+rstudio: "1.4.1106"
+gcc: "8.4.0"
+OpenBLAS: "0.3.6"
+java:
+  version: "1.8.0"
+  name: java8
+GenomeInfoDbData: "1.2.4"
+tmvnsim: "1.0"
+tmvnsim_release: "2"

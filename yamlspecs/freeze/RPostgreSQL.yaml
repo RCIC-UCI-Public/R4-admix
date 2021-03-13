@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module RPostgreSQL
+  name: RPostgreSQL
+  rpkgname: RPostgreSQL
+  version: "{{versions.RPostgreSQL}}"
+  release: "{{versions.RPostgreSQL_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-DBI
+  addfile:
+    - filter-requires-RPostgreSQL.sh 
+  rpm: !include rpm.extras.filter.yaml

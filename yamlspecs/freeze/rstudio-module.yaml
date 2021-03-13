@@ -1,0 +1,6 @@
+# Builds the module for R-studio 
+!include rstudio.yaml
+!include rcic-module.yaml
+---
+- package: Rstudio Module
+  category: LANGUAGES

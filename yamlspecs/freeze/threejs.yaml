@@ -1,0 +1,25 @@
+
+!include common.yaml
+---
+- package: R module threejs
+  name: threejs
+  rpkgname: threejs
+  version: "{{versions.threejs}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-igraph
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-crosstalk
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-rlang

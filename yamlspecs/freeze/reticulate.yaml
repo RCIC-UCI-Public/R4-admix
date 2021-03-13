@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module reticulate
+  name: reticulate
+  rpkgname: reticulate
+  version: "{{versions.reticulate}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-Rcpp

@@ -1,0 +1,27 @@
+
+!include common.yaml
+---
+- package: R module pkgload
+  name: pkgload
+  rpkgname: pkgload
+  version: "{{versions.pkgload}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-assertthat
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps

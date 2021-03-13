@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module fields
+  name: fields
+  rpkgname: fields
+  version: "{{versions.fields}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-spam
+    - R_{{Rversion}}-maps
+    - R_{{Rversion}}-dotCall64

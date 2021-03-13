@@ -1,0 +1,25 @@
+!include rcic-package.yaml
+!include rpm.yaml
+---
+- package: R Studio 
+  name: rstudio
+  versions: !include versions.yaml
+  version: "{{versions.rstudio}}"
+  tarname: "{{name}}-{{version}}-x86_64-fedora.{{extension}}"
+  src_tarball: "{{tarname}}"
+  vendor_source: https://download1.rstudio.org/desktop/centos7/x86_64/{{tarname}}
+  addfile: filter-requires-{{name}}.sh
+  no_src_dir: True
+  src_dir: rstudio-{{version}}
+  description: |
+    R Studio Desktop{{version}}.
+    Binary distribution from: {{vendor_source}}.
+  build:
+    configure: echo No build. Binary distribution 
+    modules:  ""
+    pkgmake: echo no build 
+    target: 
+  install:
+     makeinstall: >
+       zcat {{tarname}} | (cd $(ROOT)/{{root}}; tar xvf - --strip-components=1)
+  rpmFilters: *filterRequires

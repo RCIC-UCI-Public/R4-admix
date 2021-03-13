@@ -1,0 +1,63 @@
+
+!include common.yaml
+---
+- package: R module plotly
+  name: plotly
+  rpkgname: plotly
+  version: "{{versions.plotly}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-tidyr
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-crosstalk
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-promises
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-later
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-BH
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-sys
+    - R_{{Rversion}}-assertthat

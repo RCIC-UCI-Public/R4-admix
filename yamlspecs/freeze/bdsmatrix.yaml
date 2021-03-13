@@ -1,0 +1,13 @@
+
+!include common.yaml
+---
+- package: R module bdsmatrix
+  name: bdsmatrix
+  rpkgname: bdsmatrix
+  version: "{{versions.bdsmatrix}}"
+  release: "{{versions.bdsmatrix_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

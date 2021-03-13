@@ -1,0 +1,64 @@
+
+!include common.yaml
+---
+- package: R module Hmisc
+  name: Hmisc
+  rpkgname: Hmisc
+  version: "{{versions.Hmisc}}"
+  release: "{{versions.Hmisc_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Formula
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-latticeExtra
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-gridExtra
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-htmlTable
+    - R_{{Rversion}}-viridis
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-checkmate
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-jpeg
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-markdown
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-assertthat

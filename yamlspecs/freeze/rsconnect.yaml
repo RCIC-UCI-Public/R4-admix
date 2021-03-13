@@ -1,0 +1,21 @@
+
+!include common.yaml
+---
+- package: R module rsconnect
+  name: rsconnect
+  rpkgname: rsconnect
+  version: "{{versions.rsconnect}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-packrat
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys

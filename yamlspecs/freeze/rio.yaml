@@ -1,0 +1,48 @@
+
+!include common.yaml
+---
+- package: R module rio
+  name: rio
+  rpkgname: rio
+  version: "{{versions.rio}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-haven
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-readxl
+    - R_{{Rversion}}-openxlsx
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-forcats
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-readr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-zip
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-cellranger
+    - R_{{Rversion}}-progress
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rematch
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-clipr
+    - R_{{Rversion}}-BH
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-assertthat

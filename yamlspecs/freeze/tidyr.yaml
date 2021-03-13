@@ -1,0 +1,33 @@
+
+!include common.yaml
+---
+- package: R module tidyr
+  name: tidyr
+  rpkgname: tidyr
+  version: "{{versions.tidyr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-assertthat

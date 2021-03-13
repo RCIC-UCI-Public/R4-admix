@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module quantreg
+  name: quantreg
+  rpkgname: quantreg
+  version: "{{versions.quantreg}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-SparseM
+    - R_{{Rversion}}-MatrixModels
+    - R_{{Rversion}}-conquer
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-RcppArmadillo

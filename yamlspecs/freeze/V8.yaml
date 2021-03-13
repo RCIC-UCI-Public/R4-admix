@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module V8
+  name: V8
+  rpkgname: V8
+  version: "{{versions.V8}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-curl

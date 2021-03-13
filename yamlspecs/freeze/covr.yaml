@@ -1,0 +1,26 @@
+
+!include common.yaml
+---
+- package: R module covr
+  name: covr
+  rpkgname: covr
+  version: "{{versions.covr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-rex
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys

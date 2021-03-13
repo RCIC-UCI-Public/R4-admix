@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module conquer
+  name: conquer
+  rpkgname: conquer
+  version: "{{versions.conquer}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-RcppArmadillo

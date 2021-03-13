@@ -1,0 +1,56 @@
+
+!include common.yaml
+---
+- package: R module leaflet
+  name: leaflet
+  rpkgname: leaflet
+  version: "{{versions.leaflet}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-crosstalk
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-markdown
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-raster
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-sp
+    - R_{{Rversion}}-viridis
+    - R_{{Rversion}}-leaflet_providers
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-gridExtra
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-assertthat

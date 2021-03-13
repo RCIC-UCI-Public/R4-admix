@@ -1,0 +1,20 @@
+
+!include common.yaml
+---
+- package: R module spatstat
+  name: spatstat
+  rpkgname: spatstat
+  version: "{{versions.spatstat}}"
+  release: "{{versions.spatstat_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-spatstat_data
+    - R_{{Rversion}}-spatstat_utils
+    - R_{{Rversion}}-deldir
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-tensor
+    - R_{{Rversion}}-polyclip
+    - R_{{Rversion}}-goftest

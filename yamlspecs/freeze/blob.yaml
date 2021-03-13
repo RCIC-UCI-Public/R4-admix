@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module blob
+  name: blob
+  rpkgname: blob
+  version: "{{versions.blob}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-glue

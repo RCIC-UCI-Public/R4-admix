@@ -1,0 +1,19 @@
+
+!include common.yaml
+---
+- package: R module gamm4
+  name: gamm4
+  rpkgname: gamm4
+  version: "{{versions.gamm4}}"
+  release: "{{versions.gamm4_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-lme4
+    - R_{{Rversion}}-minqa
+    - R_{{Rversion}}-nloptr
+    - R_{{Rversion}}-statmod
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppEigen

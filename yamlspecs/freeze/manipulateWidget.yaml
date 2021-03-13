@@ -1,0 +1,55 @@
+
+!include common.yaml
+---
+- package: R module manipulateWidget
+  name: manipulateWidget
+  rpkgname: manipulateWidget
+  version: "{{versions.manipulateWidget}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-shiny
+    - R_{{Rversion}}-miniUI
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-webshot
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-markdown
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-httpuv
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-xtable
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-sourcetools
+    - R_{{Rversion}}-later
+    - R_{{Rversion}}-promises
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-commonmark
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-bslib
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-BH
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-rappdirs

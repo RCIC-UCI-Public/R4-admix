@@ -1,0 +1,54 @@
+
+!include common.yaml
+---
+- package: R module SeuratObject
+  name: SeuratObject
+  rpkgname: SeuratObject
+  version: "{{versions.SeuratObject}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-sctransform
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-future_apply
+    - R_{{Rversion}}-future
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-reshape2
+    - R_{{Rversion}}-gridExtra
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-RcppArmadillo
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-globals
+    - R_{{Rversion}}-listenv
+    - R_{{Rversion}}-parallelly
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-plyr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-assertthat
