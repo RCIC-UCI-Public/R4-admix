@@ -20,11 +20,11 @@
     - R_{{Rversion}}-projpred
     - R_{{Rversion}}-bridgesampling
     - R_{{Rversion}}-glue
+    - R_{{Rversion}}-future
     - R_{{Rversion}}-matrixStats
     - R_{{Rversion}}-nleqslv
     - R_{{Rversion}}-coda
     - R_{{Rversion}}-abind
-    - R_{{Rversion}}-future
     - R_{{Rversion}}-backports
     - R_{{Rversion}}-dplyr
     - R_{{Rversion}}-ggridges

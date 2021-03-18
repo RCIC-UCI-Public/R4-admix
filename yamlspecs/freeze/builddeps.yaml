@@ -1,4 +1,4 @@
-## 110 desired --> 400 required
+## 110 desired --> 405 required
 ---
 BayesCombo : 
   baseurl : "https://cran.r-project.org/src/contrib"
@@ -40,7 +40,7 @@ BiocManager :
   archive: False 
 brms : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "2.14.4"
+  version : "2.15.0"
   requires : 
     - Rcpp
     - rstan
@@ -54,12 +54,12 @@ brms :
     - projpred
     - bridgesampling
     - glue
+    - future
     - matrixStats
     - nleqslv
     - nlme
     - coda
     - abind
-    - future
     - backports
     - dplyr
     - ggridges
@@ -1501,7 +1501,7 @@ maps :
   archive: False 
 maptools : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.0-2"
+  version : "1.1-1"
   requires : 
     - sp
     - foreign
@@ -1868,6 +1868,7 @@ questionr :
     - assertthat
     - generics
     - tidyselect
+    - proxy
     - forcats
     - hms
     - Rcpp
@@ -1989,7 +1990,7 @@ RPostgreSQL :
   archive: False 
 RSQLite : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "2.2.3"
+  version : "2.2.4"
   requires : 
     - bit64
     - blob
@@ -2183,14 +2184,10 @@ Seurat :
     - cachem
     - ellipsis
     - spatstat.data
-    - nlme
-    - rpart
+    - spatstat.geom
+    - spatstat.core
+    - spatstat.linnet
     - spatstat.utils
-    - deldir
-    - abind
-    - tensor
-    - polyclip
-    - goftest
     - fansi
     - pillar
     - FNN
@@ -2206,11 +2203,19 @@ Seurat :
     - gtools
     - caTools
     - yaml
+    - nlme
     - colorspace
     - askpass
     - cli
     - utf8
     - stringr
+    - rpart
+    - spatstat.sparse
+    - abind
+    - tensor
+    - goftest
+    - deldir
+    - polyclip
     - cpp11
     - sys
     - bitops
@@ -2915,6 +2920,16 @@ bridgesampling :
     - rlang
     - colorspace
   archive: False 
+future : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.21.0"
+  requires : 
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
 matrixStats : 
   baseurl : "https://cran.r-project.org/src/contrib"
   version : "0.58.0"
@@ -2935,16 +2950,6 @@ abind :
   baseurl : "https://cran.r-project.org/src/contrib"
   version : "1.4-5"
   requires : 
-  archive: False 
-future : 
-  baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.21.0"
-  requires : 
-    - digest
-    - globals
-    - listenv
-    - parallelly
-    - codetools
   archive: False 
 backports : 
   baseurl : "https://cran.r-project.org/src/contrib"
@@ -3020,7 +3025,7 @@ listenv :
   archive: False 
 parallelly : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.23.0"
+  version : "1.24.0"
   requires : 
   archive: False 
 isoband : 
@@ -3845,7 +3850,7 @@ askpass :
   archive: False 
 utf8 : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.1.4"
+  version : "1.2.1"
   requires : 
   archive: False 
 clipr : 
@@ -4199,7 +4204,7 @@ gower :
   archive: False 
 ipred : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "0.9-10"
+  version : "0.9-11"
   requires : 
     - rpart
     - MASS
@@ -4227,7 +4232,7 @@ rpart :
   archive: False 
 survival : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "3.2-7"
+  version : "3.2-9"
   requires : 
     - Matrix
     - lattice
@@ -4561,7 +4566,7 @@ zlibbioc :
   archive: False 
 formatR : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.7"
+  version : "1.8"
   requires : 
   archive: False 
 bitops : 
@@ -5820,6 +5825,7 @@ classInt :
     - class
     - KernSmooth
     - MASS
+    - proxy
   archive: False 
 labelled : 
   baseurl : "https://cran.r-project.org/src/contrib"
@@ -5859,9 +5865,10 @@ labelled :
   archive: False 
 e1071 : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.7-4"
+  version : "1.7-5"
   requires : 
     - class
+    - proxy
     - MASS
   archive: False 
 R.cache : 
@@ -5872,6 +5879,11 @@ R.cache :
     - R.oo
     - R.utils
     - digest
+  archive: False 
+proxy : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4-25"
+  requires : 
   archive: False 
 R.methodsS3 : 
   baseurl : "https://cran.r-project.org/src/contrib"
@@ -6264,19 +6276,23 @@ SeuratObject :
   archive: False 
 spatstat : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.64-1"
+  version : "2.0-1"
   requires : 
     - spatstat.data
+    - spatstat.geom
+    - spatstat.core
+    - spatstat.linnet
+    - spatstat.utils
     - nlme
     - rpart
-    - spatstat.utils
+    - spatstat.sparse
     - mgcv
     - Matrix
-    - deldir
     - abind
     - tensor
-    - polyclip
     - goftest
+    - deldir
+    - polyclip
     - lattice
   archive: False 
 uwot : 
@@ -6309,29 +6325,62 @@ spatstat.data :
     - Matrix
     - lattice
   archive: False 
+spatstat.geom : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.65-5"
+  requires : 
+    - spatstat.data
+    - spatstat.utils
+    - spatstat.sparse
+    - deldir
+    - polyclip
+    - Matrix
+    - abind
+    - tensor
+    - lattice
+  archive: False 
+spatstat.core : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.65-5"
+  requires : 
+    - spatstat.data
+    - spatstat.geom
+    - nlme
+    - rpart
+    - spatstat.utils
+    - spatstat.sparse
+    - mgcv
+    - Matrix
+    - abind
+    - tensor
+    - goftest
+    - lattice
+    - deldir
+    - polyclip
+  archive: False 
+spatstat.linnet : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.65-3"
+  requires : 
+    - spatstat.data
+    - spatstat.geom
+    - spatstat.core
+    - spatstat.utils
+    - Matrix
+    - lattice
+    - nlme
+    - rpart
+    - spatstat.sparse
+    - mgcv
+    - abind
+    - tensor
+    - goftest
+    - deldir
+    - polyclip
+  archive: False 
 spatstat.utils : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "2.0-0"
-  requires : 
-  archive: False 
-deldir : 
-  baseurl : "https://cran.r-project.org/src/contrib"
-  version : "0.2-10"
-  requires : 
-  archive: False 
-tensor : 
-  baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.5"
-  requires : 
-  archive: False 
-polyclip : 
-  baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.10-0"
-  requires : 
-  archive: False 
-goftest : 
-  baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.2-2"
+  version : "2.1-0"
   requires : 
   archive: False 
 FNN : 
@@ -6361,6 +6410,36 @@ sitmo :
   version : "2.0.1"
   requires : 
     - Rcpp
+  archive: False 
+spatstat.sparse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-1"
+  requires : 
+    - Matrix
+    - abind
+    - tensor
+    - spatstat.utils
+    - lattice
+  archive: False 
+tensor : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5"
+  requires : 
+  archive: False 
+goftest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-2"
+  requires : 
+  archive: False 
+deldir : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2-10"
+  requires : 
+  archive: False 
+polyclip : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.10-0"
+  requires : 
   archive: False 
 rJava : 
   baseurl : "https://cran.r-project.org/src/contrib"

@@ -1,15 +1,13 @@
 
 !include common.yaml
 ---
-- package: R module classInt
-  name: classInt
-  rpkgname: classInt
-  version: "{{versions.classInt}}"
-  release: "{{versions.classInt_release}}"
+- package: R module proxy
+  name: proxy
+  rpkgname: proxy
+  version: "{{versions.proxy}}"
+  release: "{{versions.proxy_release}}"
   baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-e1071
-    - R_{{Rversion}}-proxy

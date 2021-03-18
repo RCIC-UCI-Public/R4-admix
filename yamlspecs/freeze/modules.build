@@ -49,6 +49,7 @@ gridExtra
 viridis
 purrr
 tidyselect
+proxy
 e1071
 mime
 httr
@@ -297,6 +298,7 @@ gamm4
 rngtools
 projpred
 brms
+spatstat_sparse
 pROC
 gower
 prodlim
@@ -317,6 +319,8 @@ xlsxjars
 xlsx
 rbibutils
 nycflights13
+polyclip
+spatstat_geom
 gam
 labelled
 BayesCombo
@@ -328,7 +332,8 @@ R_cache
 styler
 sctransform
 goftest
-polyclip
+spatstat_core
+spatstat_linnet
 spatstat
 proto
 limma

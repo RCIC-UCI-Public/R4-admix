@@ -58,6 +58,7 @@
     - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-proxy
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
     - R_{{Rversion}}-Rcpp
