@@ -3,6 +3,7 @@
 ---
 - package: R module shinystan
   name: shinystan
+  release: 2
   rpkgname: shinystan
   version: "{{versions.shinystan}}"
   baseurl: https://cran.r-project.org/src/contrib

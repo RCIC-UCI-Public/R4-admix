@@ -3,6 +3,7 @@
 ---
 - package: R module brms
   name: brms
+  release: 2
   rpkgname: brms
   version: "{{versions.brms}}"
   baseurl: https://cran.r-project.org/src/contrib
