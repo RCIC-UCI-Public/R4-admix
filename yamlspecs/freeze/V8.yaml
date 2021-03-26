@@ -13,3 +13,8 @@
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-jsonlite
     - R_{{Rversion}}-curl
+  install:
+     makeinstall: >
+       export DOWNLOAD_STATIC_LIBV8=1;
+       mkdir -p $(ROOT)/{{libpath}};
+       R CMD INSTALL -l $(ROOT)/{{libpath}} {{src_tarball}}
