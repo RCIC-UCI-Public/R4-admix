@@ -5,7 +5,7 @@
   name: rstan
   rpkgname: rstan
   version: "{{versions.rstan}}"
-  baseurl: https://mc-stan.org/r-packages/src/contrib
+  baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:

@@ -7,7 +7,7 @@ from os import path
 BUILDDEPS = "builddeps.yaml"
 RTEMPLATE = """
 module load %s;
-echo 'download.packages("%s",destdir="../sources", repos=c("https://cran.r-project.org","http://bioconductor.org/packages/release/bioc","https://mc-stan.org/r-packages/"))' | R --slave
+echo 'download.packages("%s",destdir="../sources", repos=c("https://cran.r-project.org","http://bioconductor.org/packages/release/bioc"))' | R --slave
 """
 
 MAKEFILE_SUFFIX = ''

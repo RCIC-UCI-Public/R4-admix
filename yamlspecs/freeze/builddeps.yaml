@@ -2010,8 +2010,8 @@ RSQLite :
     - glue
   archive: False 
 rstan : 
-  baseurl : "https://mc-stan.org/r-packages/src/contrib"
-  version : "2.26.1"
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.21.2"
   requires : 
     - StanHeaders
     - inline
@@ -2279,8 +2279,8 @@ spam :
     - dotCall64
   archive: False 
 StanHeaders : 
-  baseurl : "https://mc-stan.org/r-packages/src/contrib"
-  version : "2.26.1"
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.21.0"
   requires : 
     - RcppParallel
     - RcppEigen

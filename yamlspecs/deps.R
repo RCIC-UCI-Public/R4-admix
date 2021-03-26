@@ -126,7 +126,7 @@ print.pkgDep <- function(x, ...) {
 
 ## <== END FROM miniCRAN
 
-allPkgs <- available.packages(repos=c("https://cran.r-project.org","http://bioconductor.org/packages/release/bioc","https://mc-stan.org/r-packages"))
+allPkgs <- available.packages(repos=c("https://cran.r-project.org","http://bioconductor.org/packages/release/bioc"))
 pkgList <- readLines("modules.desired") 
 
 ############## SPECIAL PACKAGE HANDLING ##############

@@ -5,9 +5,10 @@
   name: StanHeaders
   rpkgname: StanHeaders
   version: "{{versions.StanHeaders}}"
-  baseurl: https://mc-stan.org/r-packages/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  release: "{{versions.StanHeaders_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-RcppParallel
