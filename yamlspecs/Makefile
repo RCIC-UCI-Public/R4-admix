@@ -23,6 +23,11 @@ FREEZE_DIR=freeze
 all: versions.yaml modules.build bootstrap allversions prep 
 	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
 	make modules.manifest
+restore:
+	if [ ! -f buildorder ]; then cp $(FREEZE_DIR)/buildorder .; fi
+	if [ ! -f outversions.yaml ]; then cp $(FREEZE_DIR)/outversions.yaml .; fi
+	if [ ! -f builddeps.yaml ]; then cp $(FREEZE_DIR)/builddeps.yaml .; fi
+	if [ ! -f modules.build ]; then cp $(FREEZE_DIR)/modules.build .; fi
 
 prep: modules.build 
 	./downloadpkg.py
@@ -59,4 +64,4 @@ deletemod:
 	-/bin/rm allversions
 	-/bin/rm modules.build
 	-/bin/rm $(TMPYAMLS)
-	-/bin/rm buildorder builddeps.yaml 
+	-/bin/rm buildorder 
