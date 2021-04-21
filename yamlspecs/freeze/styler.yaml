@@ -8,6 +8,11 @@
   baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  install:
+     makeinstall: >
+       mkdir -p $(ROOT)/{{libpath}};
+       R CMD INSTALL -l $(ROOT)/{{libpath}} {{src_tarball}};
+       sed -i 's%/usr/local/bin/Rscript%/usr/bin/env Rscript%' $(ROOT)/{{libpath}}/styler/hooks/require-news-update.R
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-backports
@@ -21,7 +26,6 @@
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-xfun
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-R_methodsS3
     - R_{{Rversion}}-R_oo

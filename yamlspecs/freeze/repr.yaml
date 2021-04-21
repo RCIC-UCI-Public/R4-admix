@@ -23,5 +23,4 @@
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-vctrs
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue

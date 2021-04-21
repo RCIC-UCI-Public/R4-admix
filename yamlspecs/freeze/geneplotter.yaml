@@ -32,7 +32,6 @@
     - R_{{Rversion}}-memoise
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-Rcpp
-    - R_{{Rversion}}-BH
     - R_{{Rversion}}-plogr
     - R_{{Rversion}}-bit
     - R_{{Rversion}}-rlang
@@ -42,5 +41,4 @@
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-fastmap
     - R_{{Rversion}}-ellipsis
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-glue

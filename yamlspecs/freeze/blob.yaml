@@ -13,5 +13,4 @@
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-ellipsis
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-glue

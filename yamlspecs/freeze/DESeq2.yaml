@@ -79,7 +79,6 @@
     - R_{{Rversion}}-memoise
     - R_{{Rversion}}-plogr
     - R_{{Rversion}}-bit
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-cachem
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-sys

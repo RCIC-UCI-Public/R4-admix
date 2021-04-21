@@ -10,5 +10,4 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue

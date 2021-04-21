@@ -15,7 +15,6 @@
     - R_{{Rversion}}-httr
     - R_{{Rversion}}-ini
     - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-curl
     - R_{{Rversion}}-mime

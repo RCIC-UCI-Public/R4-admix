@@ -24,8 +24,6 @@
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-purrr
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
-    - R_{{Rversion}}-assertthat

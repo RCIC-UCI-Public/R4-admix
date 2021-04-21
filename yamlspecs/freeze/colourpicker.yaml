@@ -60,4 +60,3 @@
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-fs
     - R_{{Rversion}}-rappdirs
-    - R_{{Rversion}}-assertthat

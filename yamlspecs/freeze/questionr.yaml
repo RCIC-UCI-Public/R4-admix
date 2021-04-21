@@ -19,6 +19,7 @@
     - R_{{Rversion}}-htmltools
     - R_{{Rversion}}-labelled
     - R_{{Rversion}}-e1071
+    - R_{{Rversion}}-xfun
     - R_{{Rversion}}-digest
     - R_{{Rversion}}-base64enc
     - R_{{Rversion}}-rlang
@@ -52,17 +53,16 @@
     - R_{{Rversion}}-rematch2
     - R_{{Rversion}}-rprojroot
     - R_{{Rversion}}-tibble
-    - R_{{Rversion}}-xfun
     - R_{{Rversion}}-sass
     - R_{{Rversion}}-jquerylib
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-proxy
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
-    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-readr
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-BH
     - R_{{Rversion}}-R_methodsS3
     - R_{{Rversion}}-R_oo
@@ -71,7 +71,6 @@
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-pkgconfig
-    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-clipr
     - R_{{Rversion}}-fs

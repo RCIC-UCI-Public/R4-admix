@@ -23,6 +23,5 @@
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-xopen
     - R_{{Rversion}}-processx
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-ps

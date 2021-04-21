@@ -12,5 +12,4 @@
     - R_{{Rversion}}
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-withr
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue

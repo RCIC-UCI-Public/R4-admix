@@ -3,7 +3,6 @@
 ---
 - package: R module shinystan
   name: shinystan
-  release: 2
   rpkgname: shinystan
   version: "{{versions.shinystan}}"
   baseurl: https://cran.r-project.org/src/contrib
@@ -104,7 +103,6 @@
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-processx
     - R_{{Rversion}}-backports
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-colorspace
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-fs

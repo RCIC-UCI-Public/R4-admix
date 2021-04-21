@@ -55,6 +55,7 @@
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
     - R_{{Rversion}}-readr
+    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-evaluate
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-markdown
@@ -75,6 +76,3 @@
     - R_{{Rversion}}-prettyunits
     - R_{{Rversion}}-clipr
     - R_{{Rversion}}-BH
-    - R_{{Rversion}}-cpp11
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-assertthat

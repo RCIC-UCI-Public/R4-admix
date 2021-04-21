@@ -43,7 +43,8 @@
     - R_{{Rversion}}-sctransform
     - R_{{Rversion}}-SeuratObject
     - R_{{Rversion}}-shiny
-    - R_{{Rversion}}-spatstat
+    - R_{{Rversion}}-spatstat_core
+    - R_{{Rversion}}-spatstat_geom
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-uwot
     - R_{{Rversion}}-RcppEigen
@@ -96,10 +97,13 @@
     - R_{{Rversion}}-cachem
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-spatstat_data
-    - R_{{Rversion}}-spatstat_geom
-    - R_{{Rversion}}-spatstat_core
-    - R_{{Rversion}}-spatstat_linnet
     - R_{{Rversion}}-spatstat_utils
+    - R_{{Rversion}}-spatstat_sparse
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-tensor
+    - R_{{Rversion}}-goftest
+    - R_{{Rversion}}-deldir
+    - R_{{Rversion}}-polyclip
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-FNN
@@ -119,15 +123,8 @@
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-stringr
-    - R_{{Rversion}}-spatstat_sparse
-    - R_{{Rversion}}-abind
-    - R_{{Rversion}}-tensor
-    - R_{{Rversion}}-goftest
-    - R_{{Rversion}}-deldir
-    - R_{{Rversion}}-polyclip
     - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-bitops
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-fs
     - R_{{Rversion}}-stringi

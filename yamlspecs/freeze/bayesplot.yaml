@@ -45,5 +45,4 @@
     - R_{{Rversion}}-RColorBrewer
     - R_{{Rversion}}-viridisLite
     - R_{{Rversion}}-stringi
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-colorspace

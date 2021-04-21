@@ -13,8 +13,5 @@
     - R_{{Rversion}}
     - R_{{Rversion}}-spatstat_data
     - R_{{Rversion}}-spatstat_utils
-    - R_{{Rversion}}-spatstat_sparse
     - R_{{Rversion}}-deldir
     - R_{{Rversion}}-polyclip
-    - R_{{Rversion}}-abind
-    - R_{{Rversion}}-tensor

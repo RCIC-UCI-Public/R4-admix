@@ -59,8 +59,6 @@
     - R_{{Rversion}}-readxl
     - R_{{Rversion}}-openxlsx
     - R_{{Rversion}}-stringi
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-matrixStats
     - R_{{Rversion}}-RcppArmadillo
     - R_{{Rversion}}-forcats

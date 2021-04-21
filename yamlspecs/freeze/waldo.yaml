@@ -17,7 +17,6 @@
     - R_{{Rversion}}-rematch2
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-tibble
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-lifecycle
@@ -26,4 +25,3 @@
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-utf8
-    - R_{{Rversion}}-digest

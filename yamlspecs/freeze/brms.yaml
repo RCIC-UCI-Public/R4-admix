@@ -3,7 +3,6 @@
 ---
 - package: R module brms
   name: brms
-  release: 2
   rpkgname: brms
   version: "{{versions.brms}}"
   baseurl: https://cran.r-project.org/src/contrib
@@ -123,7 +122,10 @@
     - R_{{Rversion}}-purrr
     - R_{{Rversion}}-broom
     - R_{{Rversion}}-dbplyr
+    - R_{{Rversion}}-dtplyr
     - R_{{Rversion}}-forcats
+    - R_{{Rversion}}-googledrive
+    - R_{{Rversion}}-googlesheets4
     - R_{{Rversion}}-haven
     - R_{{Rversion}}-hms
     - R_{{Rversion}}-httr
@@ -138,16 +140,21 @@
     - R_{{Rversion}}-sass
     - R_{{Rversion}}-jquerylib
     - R_{{Rversion}}-processx
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-blob
     - R_{{Rversion}}-DBI
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-gargle
+    - R_{{Rversion}}-uuid
+    - R_{{Rversion}}-cellranger
+    - R_{{Rversion}}-ids
+    - R_{{Rversion}}-rematch2
+    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-colorspace
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-clipr
-    - R_{{Rversion}}-cpp11
-    - R_{{Rversion}}-cellranger
     - R_{{Rversion}}-progress
     - R_{{Rversion}}-fs
     - R_{{Rversion}}-knitr
@@ -155,8 +162,8 @@
     - R_{{Rversion}}-selectr
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-rematch
+    - R_{{Rversion}}-rappdirs
     - R_{{Rversion}}-evaluate
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-ps
     - R_{{Rversion}}-tinytex
-    - R_{{Rversion}}-rappdirs

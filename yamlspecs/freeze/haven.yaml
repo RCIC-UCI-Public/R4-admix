@@ -12,12 +12,12 @@
     - R_{{Rversion}}
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
-    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-readr
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-lifecycle
@@ -27,11 +27,8 @@
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-BH
-    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-purrr
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-utf8

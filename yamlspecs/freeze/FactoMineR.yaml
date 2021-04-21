@@ -84,6 +84,7 @@
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
     - R_{{Rversion}}-readr
+    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-evaluate
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-markdown
@@ -98,8 +99,6 @@
     - R_{{Rversion}}-cellranger
     - R_{{Rversion}}-progress
     - R_{{Rversion}}-rematch
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-mime
     - R_{{Rversion}}-prettyunits
     - R_{{Rversion}}-clipr
-    - R_{{Rversion}}-cpp11
