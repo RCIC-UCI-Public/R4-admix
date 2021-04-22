@@ -2,7 +2,7 @@
 # All rights reserved.	
 # This includes the Generic yaml2rpm Makefile - most packaging should
 # be able to use this.
-ALL_TARGETS = all
+ALL_TARGETS = rebuild
 include $(YAML2RPM_HOME)/sys/Makefile
 SHELL = /bin/bash
 
@@ -21,21 +21,21 @@ RVERSION = $(shell grep ^R: versions.yaml.base | awk -F \" '{print $$2}')
 FREEZE_DIR=freeze
 BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml)
 
-# run this if need to automatically build a whole admix
+# run this if need to automatically rebuild the whole admix
 # from already existing and saved yamls in 'freeze/' and using
 # pickled sources. 
-all: versions.yaml bootstrap thaw 
+rebuild: versions.yaml bootstrap thaw 
 	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
 	make modules.manifest
 
-# run tis target if building all packages anew from scratch 
-# and downloading new verisons, bilding dependency, etc.
+# run this target if building all packages anew from scratch 
+# and downloading new verisons, building dependency, etc.
 # must have desired list of modules to start with.
-initial: versions.yaml modules.build bootstrap allversions prep 
+all: versions.yaml bootstrap modules.build allversions prep 
 	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
 	make modules.manifest
 
-# build using yamks in freeze/
+# build using yamls in freeze/
 thaw:
 	/bin/cp $(FREEZE_DIR)/buildorder .
 	/bin/cp $(FREEZE_DIR)/modules.build .
