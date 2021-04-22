@@ -19,15 +19,29 @@ TMPYAMLS = $(filter-out $(KEEPYAMLS),$(TMPYAMLS0))
 
 RVERSION = $(shell grep ^R: versions.yaml.base | awk -F \" '{print $$2}')
 FREEZE_DIR=freeze
+BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml)
 
-all: versions.yaml modules.build bootstrap allversions prep 
+# run this if need to automatically build a whole admix
+# from already existing and saved yamls in 'freeze/' and using
+# pickled sources. 
+all: versions.yaml bootstrap thaw 
 	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
 	make modules.manifest
-restore:
-	if [ ! -f buildorder ]; then cp $(FREEZE_DIR)/buildorder .; fi
-	if [ ! -f outversions.yaml ]; then cp $(FREEZE_DIR)/outversions.yaml .; fi
-	if [ ! -f builddeps.yaml ]; then cp $(FREEZE_DIR)/builddeps.yaml .; fi
-	if [ ! -f modules.build ]; then cp $(FREEZE_DIR)/modules.build .; fi
+
+# run tis target if building all packages anew from scratch 
+# and downloading new verisons, bilding dependency, etc.
+# must have desired list of modules to start with.
+initial: versions.yaml modules.build bootstrap allversions prep 
+	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
+	make modules.manifest
+
+# build using yamks in freeze/
+thaw:
+	/bin/cp $(FREEZE_DIR)/buildorder .
+	/bin/cp $(FREEZE_DIR)/modules.build .
+	/bin/cp $(FREEZE_DIR)/*.yaml .
+	cat outversions.yaml versions.yaml.base > versions.yaml
+	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
 
 prep: modules.build 
 	./downloadpkg.py
@@ -55,13 +69,16 @@ modules.manifest: force
 	
 manifest: modules.manifest
 
+# save initital build
 freeze: allversions force
 	echo "freezing all yaml files, bootstrap files, buildorder into freeze subdir $(FREEZE_DIR)"
 	if [ ! -d $(FREEZE_DIR) ]; then mkdir $(FREEZE_DIR); fi
 	/usr/bin/cp -p *base *yaml  modules.* buildorder $(FREEZE_DIR) 
 
+# clean after making all RPMs, do after 'freeze' target
 deletemod:
-	-/bin/rm allversions
-	-/bin/rm modules.build
-	-/bin/rm $(TMPYAMLS)
-	-/bin/rm buildorder 
+	/bin/rm -f allversions
+	/bin/rm -f modules.build
+	/bin/rm -f modules.manifest
+	if [ ! -z "$(TMPYAMLS)" ]; then /bin/rm -f $(TMPYAMLS); fi
+	/bin/rm -f buildorder 
