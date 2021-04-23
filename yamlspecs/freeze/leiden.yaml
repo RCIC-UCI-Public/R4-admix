@@ -14,6 +14,8 @@
     - R_{{Rversion}}-igraph
     - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-pkgconfig
-    - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-rappdirs
     - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-withr

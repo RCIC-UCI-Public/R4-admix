@@ -10,6 +10,8 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-rappdirs
     - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-withr

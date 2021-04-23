@@ -1957,7 +1957,7 @@ RPostgreSQL :
   archive: False 
 RSQLite : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "2.2.6"
+  version : "2.2.7"
   requires : 
     - bit64
     - blob
@@ -5987,9 +5987,11 @@ leiden :
     - magrittr
     - pkgconfig
     - lattice
-    - jsonlite
-    - rappdirs
     - Rcpp
+    - jsonlite
+    - png
+    - rappdirs
+    - withr
   archive: False 
 patchwork : 
   baseurl : "https://cran.r-project.org/src/contrib"
@@ -6100,12 +6102,14 @@ RcppAnnoy :
   archive: False 
 reticulate : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "1.18"
+  version : "1.19"
   requires : 
-    - jsonlite
     - Matrix
-    - rappdirs
     - Rcpp
+    - jsonlite
+    - png
+    - rappdirs
+    - withr
     - lattice
   archive: False 
 ROCR : 

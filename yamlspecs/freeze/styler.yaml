@@ -8,11 +8,6 @@
   baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
-  install:
-     makeinstall: >
-       mkdir -p $(ROOT)/{{libpath}};
-       R CMD INSTALL -l $(ROOT)/{{libpath}} {{src_tarball}};
-       sed -i 's%/usr/local/bin/Rscript%/usr/bin/env Rscript%' $(ROOT)/{{libpath}}/styler/hooks/require-news-update.R
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-backports
@@ -39,3 +34,6 @@
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
+  addfile:
+    - filter-requires-styler.sh 
+  rpm: !include rpm.extras.filter.yaml
