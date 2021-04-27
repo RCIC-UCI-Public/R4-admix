@@ -21,7 +21,6 @@
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-xfun
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-R_methodsS3
     - R_{{Rversion}}-R_oo
@@ -35,3 +34,6 @@
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
+  addfile:
+    - filter-requires-styler.sh 
+  rpm: !include rpm.extras.filter.yaml

@@ -60,4 +60,3 @@
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-sys
-    - R_{{Rversion}}-assertthat

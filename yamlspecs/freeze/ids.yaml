@@ -1,13 +1,16 @@
 
 !include common.yaml
 ---
-- package: R module rex
-  name: rex
-  rpkgname: rex
-  version: "{{versions.rex}}"
+- package: R module ids
+  name: ids
+  rpkgname: ids
+  version: "{{versions.ids}}"
   baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-lazyeval
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-uuid
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys

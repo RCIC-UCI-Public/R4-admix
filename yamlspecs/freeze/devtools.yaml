@@ -13,12 +13,12 @@
     - R_{{Rversion}}-usethis
     - R_{{Rversion}}-callr
     - R_{{Rversion}}-cli
-    - R_{{Rversion}}-covr
     - R_{{Rversion}}-desc
-    - R_{{Rversion}}-DT
     - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fs
     - R_{{Rversion}}-httr
     - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-memoise
     - R_{{Rversion}}-pkgbuild
     - R_{{Rversion}}-pkgload
@@ -33,23 +33,15 @@
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-processx
     - R_{{Rversion}}-R6
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-rex
     - R_{{Rversion}}-crayon
-    - R_{{Rversion}}-yaml
     - R_{{Rversion}}-rprojroot
-    - R_{{Rversion}}-htmltools
-    - R_{{Rversion}}-htmlwidgets
-    - R_{{Rversion}}-magrittr
-    - R_{{Rversion}}-crosstalk
-    - R_{{Rversion}}-promises
     - R_{{Rversion}}-curl
     - R_{{Rversion}}-mime
     - R_{{Rversion}}-openssl
     - R_{{Rversion}}-cachem
     - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-digest
     - R_{{Rversion}}-xopen
     - R_{{Rversion}}-brew
     - R_{{Rversion}}-commonmark
@@ -61,34 +53,30 @@
     - R_{{Rversion}}-xml2
     - R_{{Rversion}}-brio
     - R_{{Rversion}}-evaluate
-    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-praise
     - R_{{Rversion}}-ps
     - R_{{Rversion}}-waldo
     - R_{{Rversion}}-clipr
-    - R_{{Rversion}}-fs
     - R_{{Rversion}}-gert
     - R_{{Rversion}}-gh
     - R_{{Rversion}}-rappdirs
     - R_{{Rversion}}-whisker
+    - R_{{Rversion}}-yaml
     - R_{{Rversion}}-fastmap
-    - R_{{Rversion}}-lazyeval
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-credentials
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-zip
     - R_{{Rversion}}-gitcreds
     - R_{{Rversion}}-ini
-    - R_{{Rversion}}-base64enc
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-markdown
     - R_{{Rversion}}-xfun
-    - R_{{Rversion}}-later
     - R_{{Rversion}}-diffobj
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-rematch2
     - R_{{Rversion}}-tibble
-    - R_{{Rversion}}-BH
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-vctrs

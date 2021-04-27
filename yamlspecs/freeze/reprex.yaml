@@ -18,10 +18,10 @@
     - R_{{Rversion}}-knitr
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-rmarkdown
+    - R_{{Rversion}}-rstudioapi
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-processx
     - R_{{Rversion}}-R6
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-evaluate
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-markdown

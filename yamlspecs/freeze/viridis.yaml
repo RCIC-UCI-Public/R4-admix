@@ -37,4 +37,3 @@
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
-    - R_{{Rversion}}-assertthat

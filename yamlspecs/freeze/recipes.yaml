@@ -11,6 +11,7 @@
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-gower
@@ -25,7 +26,6 @@
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-timeDate
     - R_{{Rversion}}-withr
-    - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-prodlim
@@ -38,7 +38,5 @@
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-lava
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-numDeriv
     - R_{{Rversion}}-SQUAREM

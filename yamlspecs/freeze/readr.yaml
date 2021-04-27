@@ -20,7 +20,6 @@
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-BH
     - R_{{Rversion}}-cpp11
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-pkgconfig
@@ -29,4 +28,3 @@
     - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-utf8
-    - R_{{Rversion}}-digest

@@ -18,11 +18,12 @@
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
-    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-readr
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-zip
     - R_{{Rversion}}-stringi
     - R_{{Rversion}}-cellranger
@@ -42,7 +43,4 @@
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-clipr
     - R_{{Rversion}}-BH
-    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-purrr
-    - R_{{Rversion}}-digest
-    - R_{{Rversion}}-assertthat

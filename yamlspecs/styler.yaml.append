@@ -1,0 +1,3 @@
+  addfile:
+    - filter-requires-styler.sh 
+  rpm: !include rpm.extras.filter.yaml

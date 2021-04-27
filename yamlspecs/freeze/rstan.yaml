@@ -11,14 +11,15 @@
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-StanHeaders
+    - R_{{Rversion}}-ggplot2
     - R_{{Rversion}}-inline
     - R_{{Rversion}}-gridExtra
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-RcppParallel
     - R_{{Rversion}}-loo
     - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-withr
     - R_{{Rversion}}-V8
-    - R_{{Rversion}}-ggplot2
     - R_{{Rversion}}-RcppEigen
     - R_{{Rversion}}-BH
     - R_{{Rversion}}-digest
@@ -28,7 +29,6 @@
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-scales
     - R_{{Rversion}}-tibble
-    - R_{{Rversion}}-withr
     - R_{{Rversion}}-checkmate
     - R_{{Rversion}}-matrixStats
     - R_{{Rversion}}-callr
@@ -42,7 +42,6 @@
     - R_{{Rversion}}-curl
     - R_{{Rversion}}-processx
     - R_{{Rversion}}-backports
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-farver
     - R_{{Rversion}}-labeling
     - R_{{Rversion}}-lifecycle

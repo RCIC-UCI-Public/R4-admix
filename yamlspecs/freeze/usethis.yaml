@@ -29,7 +29,6 @@
     - R_{{Rversion}}-whisker
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-yaml
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-credentials

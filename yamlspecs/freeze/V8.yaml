@@ -3,7 +3,6 @@
 ---
 - package: R module V8
   name: V8
-  release: 2
   rpkgname: V8
   version: "{{versions.V8}}"
   baseurl: https://cran.r-project.org/src/contrib

@@ -62,4 +62,3 @@
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-ps
     - R_{{Rversion}}-sys
-    - R_{{Rversion}}-assertthat

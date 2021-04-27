@@ -11,6 +11,5 @@
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-ellipsis
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-rlang

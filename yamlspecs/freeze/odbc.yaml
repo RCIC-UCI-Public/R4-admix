@@ -22,4 +22,3 @@
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-glue
-    - R_{{Rversion}}-digest

@@ -16,4 +16,3 @@
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-glue
-    - R_{{Rversion}}-digest

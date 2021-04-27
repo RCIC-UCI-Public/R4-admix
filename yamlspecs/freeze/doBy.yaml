@@ -60,6 +60,5 @@
     - R_{{Rversion}}-viridisLite
     - R_{{Rversion}}-stringi
     - R_{{Rversion}}-cpp11
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-mime
     - R_{{Rversion}}-colorspace

@@ -26,12 +26,10 @@
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-forcats
     - R_{{Rversion}}-hms
-    - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-readr
+    - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-stringi
     - R_{{Rversion}}-purrr
-    - R_{{Rversion}}-cpp11
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-clipr
@@ -39,5 +37,4 @@
     - R_{{Rversion}}-BH
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-pillar
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-utf8

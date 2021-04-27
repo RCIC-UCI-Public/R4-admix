@@ -18,6 +18,4 @@
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-vctrs
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-glue
-    - R_{{Rversion}}-digest
