@@ -35,6 +35,7 @@ gplots
 gridExtra
 gtable
 haven
+hdf5r
 Hmisc
 htmlwidgets
 igraph

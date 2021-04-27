@@ -1,0 +1,125 @@
+*** hdf5r/configure.ac	2020-08-15 07:13:01.000000000 -0700
+--- hdf5r.new/configure.ac	2021-04-26 17:15:05.510000000 -0700
+***************
+*** 104,112 ****
+--- 104,117 ----
+      AC_MSG_RESULT([no])
+      AC_MSG_ERROR([${GREP} does not support option -o])
+    fi
++   PKG_CHECK_MODULES([hdf5_pc],[hdf5],[HDF5_PKG=Yes], [HDF5_PKG=] )
++   if test -z $HDF5_PKG; then 
+    [
+    LIBS=`${H5CC} -show | ${GREP} -o "\-L[^[:space:]]\+" | tr "\n" " "` 
+    ]
++   else
++     LIBS=$(eval pkg-config --libs-only-L hdf5)
++   fi
+    
+    dnl Fix for newer Debian versions
+    HDF5R_LIBS="${LIBS} -L. -lhdf5_hl -lhdf5 -lz -lm"
+***************
+*** 136,141 ****
+--- 141,149 ----
+    rm -f myconftest.c
+  fi
+  
++ HDF5R_CPPFLAGS=${HDF5_CPPFLAGS}
++ AC_MSG_NOTICE([HDF5R_FLAGS: $HDF5R_LIBS $HDF5R_CPPFLAGS])
++ 
+  dnl dummy substitute HDF5R_CFLAGS
+  HDF5R_CFLAGS=""
+  AC_SUBST(HDF5R_CFLAGS)
+*** hdf5r/inst/m4/ax_lib_hdf5.m4	2020-08-15 07:13:01.000000000 -0700
+--- hdf5r.new/inst/m4/ax_lib_hdf5.m4	2021-04-26 16:28:41.000000000 -0700
+***************
+*** 160,165 ****
+--- 160,168 ----
+          AC_MSG_CHECKING([Using provided HDF5 C wrapper])
+          AC_MSG_RESULT([$H5CC])
+      fi
++ 
++     PKG_CHECK_MODULES([hdf5_pc],[hdf5],[HDF5_PKG=Yes], [HDF5_PKG=] )
++ 
+      AC_MSG_CHECKING([for HDF5 libraries])
+      if test ! -f "$H5CC" || test ! -x "$H5CC"; then
+          AC_MSG_RESULT([no])
+***************
+*** 181,201 ****
+          with_hdf5_fortran="no"
+      else
+          dnl Get the h5cc output
+!         HDF5_SHOW=$(eval $H5CC -show)
+  
+          dnl Get the actual compiler used
+          HDF5_CC=$(eval $H5CC -show | $AWK '{print $[]1}')
+          if test "$HDF5_CC" = "ccache"; then
+              HDF5_CC=$(eval $H5CC -show | $AWK '{print $[]2}')
+          fi
+  
+          dnl h5cc provides both AM_ and non-AM_ options
+          dnl depending on how it was compiled either one of
+          dnl these are empty. Lets roll them both into one.
+  
+          dnl Look for "HDF5 Version: X.Y.Z"
+!         HDF5_VERSION=$(eval $H5CC -showconfig | $GREP 'HDF5 Version:' \
+              | $AWK '{print $[]3}')
+          HDF5_MAJOR_VERSION=$(echo $HDF5_VERSION | $AWK -F \. '{print $[]1}')
+          HDF5_MINOR_VERSION=$(echo $HDF5_VERSION | $AWK -F \. {'print $[]2'})
+          HDF5_REVISION_VERSION=$(echo $HDF5_VERSION | $AWK -F \. {'print $[]3'})
+--- 184,212 ----
+          with_hdf5_fortran="no"
+      else
+          dnl Get the h5cc output
+!         test -z "$HDF5_PKG" && HDF5_SHOW=$(eval $H5CC -show)
+  
++         if test -z "$HDF5_PKG" ; then
+          dnl Get the actual compiler used
+          HDF5_CC=$(eval $H5CC -show | $AWK '{print $[]1}')
+          if test "$HDF5_CC" = "ccache"; then
+              HDF5_CC=$(eval $H5CC -show | $AWK '{print $[]2}')
+          fi
++         else
++            HDF5_CC=$(eval $H5CC --version | $SED -n 3p | $AWK '{print $[]1}') 
++         fi
+  
+          dnl h5cc provides both AM_ and non-AM_ options
+          dnl depending on how it was compiled either one of
+          dnl these are empty. Lets roll them both into one.
+  
+          dnl Look for "HDF5 Version: X.Y.Z"
+!         if test -z "$HDF5_PKG" ; then HDF5_VERSION=$(eval $H5CC -showconfig | $GREP 'HDF5 Version:' \
+              | $AWK '{print $[]3}')
++         else
++           HDF5_VERSION=$(pkg-config --modversion hdf5)
++         fi 
++ 
+          HDF5_MAJOR_VERSION=$(echo $HDF5_VERSION | $AWK -F \. '{print $[]1}')
+          HDF5_MINOR_VERSION=$(echo $HDF5_VERSION | $AWK -F \. {'print $[]2'})
+          HDF5_REVISION_VERSION=$(echo $HDF5_VERSION | $AWK -F \. {'print $[]3'})
+***************
+*** 209,214 ****
+--- 220,226 ----
+          dnl (2) Look for "H5_NAME:" tags
+          dnl (3) Look for "AM_NAME:" tags
+          dnl
++         if test -z "$HDF5_PKG" ; then
+          HDF5_tmp_flags=$(eval $H5CC -showconfig \
+              | $GREP 'FLAGS\|Extra libraries:' \
+              | $AWK -F: '{printf("%s "), $[]2}' )
+***************
+*** 237,244 ****
+--- 249,262 ----
+          done
+  
+          HDF5_LIBS="$HDF5_LIBS -lhdf5"
++         else
++             HDF5_CPPFLAGS=$(eval pkg-config --cflags hdf5)
++             HDF5_LDFLAGS=$(eval pkg-config --libs-only-L hdf5)
++             HDF5_LIBS=$(eval pkg-config --libs-only-l hdf5)
++         fi
+          AC_MSG_RESULT([yes (version $[HDF5_VERSION])])
+  
++         AC_MSG_NOTICE([HDF5_CC is $HDF5_CC]) 
+          dnl See if we can compile
+          AC_LANG_PUSH([C])
+          ax_lib_hdf5_save_CC=$CC
