@@ -4,6 +4,7 @@
   name: R 
   versions: !include versions.yaml.base
   version: "{{versions.R}}"
+  tarsources: "{{versions.tarsources}}"
   vendor_source: https://mirrors.nics.utk.edu/cran/src/base/R-{{versions.Rmajor}}/R-{{version}}.{{extension}}
   description: |
     R {{version}} is 'GNU S', a freely available language and environment for
