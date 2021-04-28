@@ -130,6 +130,7 @@ blob
 bit
 DBI
 bit64
+hdf5r
 memoise
 plogr
 RSQLite
