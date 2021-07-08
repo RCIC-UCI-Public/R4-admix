@@ -1,5 +1,0 @@
-!include rstudio.yaml
-!include rcic-module.yaml
----
-- package: Rstudio module
-  category: LANGUAGES
