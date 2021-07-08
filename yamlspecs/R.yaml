@@ -22,7 +22,6 @@
     configure_args: >
       --enable-R-shlib
       --with-blas
-    target: 
   install:
      makeinstall: >
        make DESTDIR=$(ROOT) install;

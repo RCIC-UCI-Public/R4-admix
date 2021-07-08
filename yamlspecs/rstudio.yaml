@@ -14,11 +14,6 @@
   description: |
     R Studio Desktop{{version}}.
     Binary distribution from: {{vendor_source}}.
-  build:
-    configure: echo No build. Binary distribution 
-    modules:  ""
-    pkgmake: echo no build 
-    target: 
   install:
      makeinstall: >
        zcat {{tarname}} | (cd $(ROOT)/{{root}}; tar xvf - --strip-components=1)

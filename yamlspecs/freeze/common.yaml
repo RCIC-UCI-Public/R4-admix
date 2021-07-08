@@ -17,9 +17,7 @@
   build:
     modules:
       - R/{{Rversion}}
-    configure: echo no configure required
     pkgmake: echo installed with R CMD INSTALL
-    target: 
   install:
      makeinstall: >
        mkdir -p $(ROOT)/{{libpath}};

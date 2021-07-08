@@ -1,15 +1,7 @@
-# Builds the module for R. 
 !include R.yaml
 !include rcic-module.yaml
 ---
-- package: R Module
+- package: R module
   category: LANGUAGES
   module:
     lib: lib64
-    setenv:
-      - *Setenv
-    prereq:
-      - "{{build.modules}}"
-    requires:
-      - *Requires
-      - "{{module.prereq}}"
