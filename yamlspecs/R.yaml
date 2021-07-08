@@ -1,4 +1,5 @@
 !include rcic-package.yaml
+!include rpm.yaml
 ---
 - package: R statistics 
   name: R 
@@ -27,4 +28,3 @@
        make DESTDIR=$(ROOT) install;
        (cd src/nmath/standalone; make; make DESTDIR=$(ROOT) install)
      installextra: $(INSTALL) -m 644  README* COPYING AUTHORS $(ROOT){{root}} 
-  rpm: !include rpm.extras.yaml

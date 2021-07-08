@@ -14,4 +14,4 @@
     - R_{{Rversion}}-DBI
   addfile:
     - filter-requires-RPostgreSQL.sh 
-  rpm: !include rpm.extras.filter.yaml
+  rpmFilters: *filterRequires

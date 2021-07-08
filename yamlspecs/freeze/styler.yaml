@@ -36,4 +36,4 @@
     - R_{{Rversion}}-utf8
   addfile:
     - filter-requires-styler.sh 
-  rpm: !include rpm.extras.filter.yaml
+  rpmFilters: *filterRequires
