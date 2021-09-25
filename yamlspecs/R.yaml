@@ -20,6 +20,7 @@
       - OpenBLAS/{{versions.OpenBLAS}}
       - java/{{versions.java.version}}
       - gcc/{{versions.gcc}}
+    configure: ./configure
     configure_args: >
       --enable-R-shlib
       --with-blas
