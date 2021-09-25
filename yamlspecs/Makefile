@@ -67,7 +67,7 @@ modules.build: modules.bootstrap buildorder
 modules.manifest: force
 	cat modules.build >$@
 	
-manifest: modules.manifest
+manifest:: modules.manifest
 
 # save initital build
 freeze: allversions force
