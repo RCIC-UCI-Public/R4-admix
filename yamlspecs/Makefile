@@ -40,7 +40,7 @@ thaw:
 	/bin/cp $(FREEZE_DIR)/buildorder .
 	/bin/cp $(FREEZE_DIR)/modules.build .
 	/bin/cp $(FREEZE_DIR)/*.yaml .
-	cat outversions.yaml versions.yaml.base > versions.yaml
+	cat versions.yaml.base outversions.yaml > versions.yaml
 	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
 
 prep: modules.build 
@@ -52,8 +52,8 @@ builddeps.yaml: modules.desired deps.R
 
 allversions: outversions.yaml versions.yaml.base
 	rm -rf versions.yaml
-	cat outversions.yaml versions.yaml.base > $@
-	cat outversions.yaml versions.yaml.base > versions.yaml
+	cat versions.yaml.base outversions.yaml > $@
+	cat versions.yaml.base outversions.yaml > versions.yaml
 
 versions.yaml: 
 	cat versions.yaml.base > $@
@@ -67,7 +67,7 @@ modules.build: modules.bootstrap buildorder
 modules.manifest: force
 	cat modules.build >$@
 	
-manifest: modules.manifest
+manifest:: modules.manifest
 
 # save initital build
 freeze: allversions force

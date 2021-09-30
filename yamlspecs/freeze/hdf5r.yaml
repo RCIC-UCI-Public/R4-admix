@@ -17,7 +17,7 @@
   build:
      modules:
       - R/{{Rversion}}
-      - hdf5/{{versions.hdf5}}/gcc.{{versions.gcc}} 
+      - hdf5/{{versions.hdf5}}/{{compiler}}.{{compiler_version}}
   install:
      makeinstall: >
        tar xzvf {{src_tarball}};

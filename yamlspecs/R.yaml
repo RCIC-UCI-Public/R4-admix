@@ -6,6 +6,8 @@
   versions: !include versions.yaml.base
   version: "{{versions.R}}"
   tarsources: "{{versions.tarsources}}"
+  compiler: "{{versions.compiler.name}}"
+  compiler_version: "{{versions.compiler.version}}"
   vendor_source: https://mirrors.nics.utk.edu/cran/src/base/R-{{versions.Rmajor}}/R-{{version}}.{{extension}}
   description: |
     R {{version}} is 'GNU S', a freely available language and environment for
@@ -18,8 +20,8 @@
   build:
     modules:
       - OpenBLAS/{{versions.OpenBLAS}}
-      - java/{{versions.java.version}}
-      - gcc/{{versions.gcc}}
+      - java/{{versions.java}}
+      - "{{compiler}}/{{compiler_version}}"
     configure_args: >
       --enable-R-shlib
       --with-blas

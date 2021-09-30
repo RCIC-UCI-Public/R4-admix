@@ -4,6 +4,8 @@
 - package: R module template 
   name: r-module-template 
   versions: !include versions.yaml
+  compiler: "{{versions.compiler.name}}"
+  compiler_version: "{{versions.compiler.version}}"
   rpkgname: "{{name}}"
   Rversion: "{{versions.R}}"
   baserpm: "R_{{Rversion}}-{{name}}"
