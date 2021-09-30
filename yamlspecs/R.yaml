@@ -22,9 +22,11 @@
       - OpenBLAS/{{versions.OpenBLAS}}
       - java/{{versions.java}}
       - "{{compiler}}/{{compiler_version}}"
+    configure: ./configure
     configure_args: >
       --enable-R-shlib
       --with-blas
+      --prefix={{root}}
   install:
      makeinstall: >
        make DESTDIR=$(ROOT) install;
