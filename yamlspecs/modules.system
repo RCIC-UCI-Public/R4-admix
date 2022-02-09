@@ -25,3 +25,4 @@ pcre2-devel
 perl-Unicode-Map
 perl-Jcode
 perl-Spreadsheet-WriteExcel
+mariadb-devel
