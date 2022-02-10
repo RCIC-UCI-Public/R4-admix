@@ -19,7 +19,7 @@ TMPYAMLS = $(filter-out $(KEEPYAMLS),$(TMPYAMLS0))
 
 RVERSION = $(shell grep ^R: versions.yaml.base | awk -F \" '{print $$2}')
 FREEZE_DIR=freeze
-BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml)
+BASE_SRCVER = $(shell $(GENERATE) --query=tarsources versions.yaml.base)
 
 # run this if need to automatically rebuild the whole admix
 # from already existing and saved yamls in 'freeze/' and using
