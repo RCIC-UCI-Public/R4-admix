@@ -21,9 +21,11 @@
       - R/{{Rversion}}
     pkgmake: echo installed with R CMD INSTALL
   install:
+     environ: 
+     cmdargs:
      makeinstall: >
        mkdir -p $(ROOT)/{{libpath}};
-       R CMD INSTALL -l $(ROOT)/{{libpath}} {{src_tarball}}
+       {{install.environ}} R CMD INSTALL {{install.cmdargs}} -l $(ROOT)/{{libpath}} {{src_tarball}}
   files:
     -  "{{root}}"
   requires: R_{{Rversion}}
