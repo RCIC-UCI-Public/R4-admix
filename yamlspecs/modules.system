@@ -16,13 +16,15 @@ unixODBC-devel
 xorg-x11-server-devel
 xz-devel
 icu
-icu-devel
+#icu-devel
 gsl-devel
 tcl-devel
 tk-devel
-v8-devel
+#v8-devel
 pcre2-devel
 perl-Unicode-Map
 perl-Jcode
 perl-Spreadsheet-WriteExcel
 mariadb-devel
+unixODBC-devel
+libpq-devel
