@@ -1,0 +1,36 @@
+
+!include common.yaml
+---
+- package: R module vroom
+  name: vroom
+  rpkgname: vroom
+  version: "{{versions.vroom}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tzdb
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-progress
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-utf8

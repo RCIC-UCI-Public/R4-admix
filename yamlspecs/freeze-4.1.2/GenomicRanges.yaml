@@ -1,0 +1,21 @@
+
+!include common.yaml
+---
+- package: R module GenomicRanges
+  name: GenomicRanges
+  rpkgname: GenomicRanges
+  version: "{{versions.GenomicRanges}}"
+  baseurl: http://bioconductor.org/packages/release/bioc/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-BiocGenerics
+    - R_{{Rversion}}-S4Vectors
+    - R_{{Rversion}}-IRanges
+    - R_{{Rversion}}-GenomeInfoDb
+    - R_{{Rversion}}-XVector
+    - R_{{Rversion}}-RCurl
+    - R_{{Rversion}}-GenomeInfoDbData
+    - R_{{Rversion}}-zlibbioc
+    - R_{{Rversion}}-bitops

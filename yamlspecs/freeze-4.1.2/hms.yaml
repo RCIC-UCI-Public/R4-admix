@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module hms
+  name: hms
+  rpkgname: hms
+  version: "{{versions.hms}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-glue

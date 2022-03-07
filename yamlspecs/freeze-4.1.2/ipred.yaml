@@ -1,0 +1,25 @@
+
+!include common.yaml
+---
+- package: R module ipred
+  name: ipred
+  rpkgname: ipred
+  version: "{{versions.ipred}}"
+  release: "{{versions.ipred_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-prodlim
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-lava
+    - R_{{Rversion}}-future_apply
+    - R_{{Rversion}}-progressr
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-SQUAREM
+    - R_{{Rversion}}-future
+    - R_{{Rversion}}-globals
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-listenv
+    - R_{{Rversion}}-parallelly

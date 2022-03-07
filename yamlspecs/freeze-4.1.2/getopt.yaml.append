@@ -1,0 +1,3 @@
+  install:
+     installextra: >
+       /bin/rm $(ROOT)/{{libpath}}/{{name}}/exec/example.R

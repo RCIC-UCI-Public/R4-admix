@@ -1,0 +1,22 @@
+
+!include common.yaml
+---
+- package: R module progress
+  name: progress
+  rpkgname: progress
+  version: "{{versions.progress}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-glue

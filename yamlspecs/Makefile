@@ -18,13 +18,13 @@ TMPYAMLS0 = $(wildcard *.yaml)
 TMPYAMLS = $(filter-out $(KEEPYAMLS),$(TMPYAMLS0))
 
 RVERSION = $(shell grep ^R: versions.yaml.base | awk -F \" '{print $$2}')
-FREEZE_DIR=freeze
+FREEZE_DIR=freeze-$(RVERSION)
 BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml)
 
 # run this if need to automatically rebuild the whole admix
-# from already existing and saved yamls in 'freeze/' and using
+# from already existing and saved yamls in 'freeze-$(RVERSION)/' and using
 # pickled sources. 
-rebuild: versions.yaml bootstrap thaw 
+rebuild: thaw versions.yaml bootstrap 
 	make BOOTSTRAP_MODULES_FILE=buildorder bootstrap
 	make modules.manifest
 
@@ -40,6 +40,8 @@ thaw:
 	/bin/cp $(FREEZE_DIR)/buildorder .
 	/bin/cp $(FREEZE_DIR)/modules.build .
 	/bin/cp $(FREEZE_DIR)/*.yaml .
+	/bin/cp $(FREEZE_DIR)/*base .
+	/bin/cp $(FREEZE_DIR)/*.yaml.append .
 	cat outversions.yaml versions.yaml.base > versions.yaml
 	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
 
@@ -73,7 +75,7 @@ manifest:: modules.manifest
 freeze: allversions force
 	echo "freezing all yaml files, bootstrap files, buildorder into freeze subdir $(FREEZE_DIR)"
 	if [ ! -d $(FREEZE_DIR) ]; then mkdir $(FREEZE_DIR); fi
-	/usr/bin/cp -p *base *yaml  modules.* buildorder $(FREEZE_DIR) 
+	/usr/bin/cp -p *base *yaml *.yaml.append  modules.* buildorder $(FREEZE_DIR) 
 
 # clean after making all RPMs, do after 'freeze' target
 deletemod:

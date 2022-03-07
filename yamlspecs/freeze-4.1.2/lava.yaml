@@ -1,0 +1,21 @@
+
+!include common.yaml
+---
+- package: R module lava
+  name: lava
+  rpkgname: lava
+  version: "{{versions.lava}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-future_apply
+    - R_{{Rversion}}-progressr
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-SQUAREM
+    - R_{{Rversion}}-future
+    - R_{{Rversion}}-globals
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-listenv
+    - R_{{Rversion}}-parallelly

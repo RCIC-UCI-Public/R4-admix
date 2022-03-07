@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module rgl
+  name: rgl
+  rpkgname: rgl
+  version: "{{versions.rgl}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-stringi

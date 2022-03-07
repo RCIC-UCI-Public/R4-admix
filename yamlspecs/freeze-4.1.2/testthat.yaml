@@ -1,0 +1,42 @@
+
+!include common.yaml
+---
+- package: R module testthat
+  name: testthat
+  rpkgname: testthat
+  version: "{{versions.testthat}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgload
+    - R_{{Rversion}}-praise
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-waldo
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-diffobj
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-rematch2
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-utf8

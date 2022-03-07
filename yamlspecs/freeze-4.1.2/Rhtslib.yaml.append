@@ -1,0 +1,6 @@
+  install:
+     makeinstall: >
+       mkdir -p $(ROOT)/{{libpath}};
+       export RHTSLIB_RPATH={{libpath}};
+       R CMD INSTALL -l {{libpath}} {{src_tarball}};
+       mv {{libpath}}/{{name}} $(ROOT){{libpath}}

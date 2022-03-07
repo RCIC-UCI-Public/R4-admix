@@ -1,0 +1,3 @@
+  addfile:
+    - filter-requires-styler.sh 
+  rpmFilters: *filterRequires

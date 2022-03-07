@@ -1,0 +1,6 @@
+  build:
+    modules:
+      - R/{{Rversion}}
+      - proj/{{versions.proj}}
+      - gdal/{{versions.gdal}}
+      - geos/{{versions.geos}}

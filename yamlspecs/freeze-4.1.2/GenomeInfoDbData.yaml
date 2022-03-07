@@ -1,0 +1,10 @@
+!include common.yaml
+---
+- package: R module GenomeInfoDbData 
+  name: GenomeInfoDbData 
+  rpkgname: GenomeInfoDbData
+  version: "{{versions.GenomeInfoDbData}}"
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: http://bioconductor.org/packages/release/data/annotation/src/contrib/{{rpkgname}}_{{version}}.tar.gz 
+  requires:
+    - R_{{versions.R}}

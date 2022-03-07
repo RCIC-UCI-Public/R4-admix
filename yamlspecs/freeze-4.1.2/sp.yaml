@@ -1,0 +1,13 @@
+
+!include common.yaml
+---
+- package: R module sp
+  name: sp
+  rpkgname: sp
+  version: "{{versions.sp}}"
+  release: "{{versions.sp_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

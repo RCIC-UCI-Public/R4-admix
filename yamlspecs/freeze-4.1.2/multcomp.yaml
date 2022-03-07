@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module multcomp
+  name: multcomp
+  rpkgname: multcomp
+  version: "{{versions.multcomp}}"
+  release: "{{versions.multcomp_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-mvtnorm
+    - R_{{Rversion}}-TH_data
+    - R_{{Rversion}}-sandwich
+    - R_{{Rversion}}-zoo

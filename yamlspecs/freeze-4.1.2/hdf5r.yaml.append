@@ -1,0 +1,12 @@
+  addfile: hdf5r.patch
+  build:
+     modules:
+      - R/{{Rversion}}
+      - hdf5/{{versions.hdf5}}/gcc.{{versions.gcc}} 
+  install:
+     makeinstall: >
+       tar xzvf {{src_tarball}};
+       cd hdf5r; 
+       patch -p1 < ../{{addfile}};
+       autoreconf;
+       R CMD INSTALL -l $(ROOT)/{{libpath}} .

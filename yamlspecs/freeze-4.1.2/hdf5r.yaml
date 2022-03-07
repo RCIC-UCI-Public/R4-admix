@@ -1,0 +1,27 @@
+
+!include common.yaml
+---
+- package: R module hdf5r
+  name: hdf5r
+  rpkgname: hdf5r
+  version: "{{versions.hdf5r}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-bit
+  addfile: hdf5r.patch
+  build:
+     modules:
+      - R/{{Rversion}}
+      - hdf5/{{versions.hdf5}}/gcc.{{versions.gcc}} 
+  install:
+     makeinstall: >
+       tar xzvf {{src_tarball}};
+       cd hdf5r; 
+       patch -p1 < ../{{addfile}};
+       autoreconf;
+       R CMD INSTALL -l $(ROOT)/{{libpath}} .

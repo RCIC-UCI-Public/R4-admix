@@ -1,0 +1,53 @@
+
+!include common.yaml
+---
+- package: R module genefilter
+  name: genefilter
+  rpkgname: genefilter
+  version: "{{versions.genefilter}}"
+  baseurl: http://bioconductor.org/packages/release/bioc/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-BiocGenerics
+    - R_{{Rversion}}-AnnotationDbi
+    - R_{{Rversion}}-annotate
+    - R_{{Rversion}}-Biobase
+    - R_{{Rversion}}-XML
+    - R_{{Rversion}}-DBI
+    - R_{{Rversion}}-xtable
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-IRanges
+    - R_{{Rversion}}-RSQLite
+    - R_{{Rversion}}-S4Vectors
+    - R_{{Rversion}}-KEGGREST
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-Biostrings
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-blob
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-plogr
+    - R_{{Rversion}}-XVector
+    - R_{{Rversion}}-GenomeInfoDb
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-RCurl
+    - R_{{Rversion}}-GenomeInfoDbData
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-zlibbioc
+    - R_{{Rversion}}-bitops
