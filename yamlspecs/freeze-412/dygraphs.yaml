@@ -1,0 +1,23 @@
+
+!include common.yaml
+---
+- package: R module dygraphs
+  name: dygraphs
+  rpkgname: dygraphs
+  version: "{{versions.dygraphs}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-htmlwidgets
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-zoo
+    - R_{{Rversion}}-xts
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-yaml

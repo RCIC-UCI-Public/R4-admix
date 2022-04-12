@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module stringr
+  name: stringr
+  rpkgname: stringr
+  version: "{{versions.stringr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-stringi

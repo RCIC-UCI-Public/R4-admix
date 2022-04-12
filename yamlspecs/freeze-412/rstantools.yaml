@@ -1,0 +1,19 @@
+
+!include common.yaml
+---
+- package: R module rstantools
+  name: rstantools
+  rpkgname: rstantools
+  version: "{{versions.rstantools}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppParallel
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-glue

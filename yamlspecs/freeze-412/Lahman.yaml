@@ -1,0 +1,31 @@
+
+!include common.yaml
+---
+- package: R module Lahman
+  name: Lahman
+  rpkgname: Lahman
+  version: "{{versions.Lahman}}"
+  release: "{{versions.Lahman_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-purrr

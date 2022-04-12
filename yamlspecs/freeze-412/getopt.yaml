@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module getopt
+  name: getopt
+  rpkgname: getopt
+  version: "{{versions.getopt}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+  install:
+     installextra: >
+       /bin/rm $(ROOT)/{{libpath}}/{{name}}/exec/example.R
