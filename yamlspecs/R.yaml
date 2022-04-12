@@ -3,7 +3,7 @@
 ---
 - package: R statistics 
   name: R 
-  versions: !include versions.yaml.base
+  versions: !include versions.yaml
   version: "{{versions.R}}"
   tarsources: "{{versions.tarsources}}"
   compiler: "{{versions.compiler.name}}"
