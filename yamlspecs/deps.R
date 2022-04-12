@@ -132,7 +132,7 @@ pkgList <- readLines("modules.desired")
 ############## SPECIAL PACKAGE HANDLING ##############
 # This is as list of packages that we have precompiled/predownloaded and 
 # should not have yamls regenerated. 
-#     * Their versions should be in versions.yaml.base
+#     * Their versions should be in versions.yaml
 #     * They need to be in modules.bootstrap
 # These are usually packages that somehow aren't added correctly to CRAN/Bioconductor
 
@@ -141,7 +141,7 @@ excludePackages = c("GenomeInfoDbData","tmvnsim")
 # These are packages where we only archive the yaml and therefore don't overwrite the
 # yaml file. Otherwise, normally processed. These are usually cases where we need an
 # older version of a package to properly compile. 
-#    * They need to have versions in versions.yaml.base
+#    * They need to have versions in versions.yaml
 
 archivePackages = f <- readLines("modules.bootstrap")
 
