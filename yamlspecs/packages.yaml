@@ -1,0 +1,46 @@
+---
+site: !include site.yaml
+system:
+  - bzip2-devel
+  - curl-devel
+  - freetype-devel
+  - java-1.8.0-openjdk-devel
+  - libjpeg-turbo-devel
+  - libpng-devel
+  - libX11-devel
+  - libX11-devel
+  - libxml2-devel
+  - libXt-devel
+  - mariadb-devel
+  - mesa-libGLU-devel
+  - postgresql-devel
+  - readline-devel
+  - unixODBC-devel
+  - xorg-x11-server-devel
+  - xz-devel
+  - icu
+  - icu-devel
+  - gsl-devel
+  - tcl-devel
+  - tk-devel
+  - v8-devel
+  - pcre2-devel
+  - perl-Unicode-Map
+  - perl-Jcode
+  - perl-Spreadsheet-WriteExcel
+bootstrap:
+  - R
+  - R-module
+  - rstudio
+  - rstudio-module
+  - GenomeInfoDbData
+  - tmvnsim
+build:
+manifest:
+  - "{{bootstrap}}"
+  - "{{build}}"
+sets:
+  - latest
+rsets:
+  - "404"
+  - "412"

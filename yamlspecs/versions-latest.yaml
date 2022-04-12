@@ -1,0 +1,13 @@
+!include versions.yaml
+!include updates8.yaml
+---
+R: "4.1.2"
+Rmajor: "4"
+rstudio: "2022.02.1.461"
+studio_dist: "2022.02.1-461"
+rstudio_os: "rhel8"
+GenomeInfoDbData: "1.2.7"
+tarsources: "20220404"
+gdal: "3.4.1"
+geos: "3.10.2"
+proj: "9.0.0"
