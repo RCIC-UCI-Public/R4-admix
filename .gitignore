@@ -9,3 +9,5 @@ yamlspecs/tmpbuild/
 yum.*
 *.pkg
 .rpmmacros
+.cache/
+.wget-hsts
