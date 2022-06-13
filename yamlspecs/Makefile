@@ -38,6 +38,7 @@ rebuild:
 ifndef BASEONLY
 	if [ "$(SET)" == "" ] && [ "$(ALLSETS)" != "" ]; then \
 	    for set in $(ALLSETS); do \
+		make -e SET=$$set -f $(THISMAKE) clean; \
 		make -e -f $(THISMAKE) SET=$$set bootstrap; \
 	    done; \
 	fi
