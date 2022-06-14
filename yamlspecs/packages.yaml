@@ -19,11 +19,11 @@ system:
   - xorg-x11-server-devel
   - xz-devel
   - icu
-  - icu-devel
+  - !ifeq "{{site.os_release}},7,icu-devel,libicu-devel"
   - gsl-devel
   - tcl-devel
   - tk-devel
-  - v8-devel
+  - !ifeq "{{site.os_release}},7,v8-devel,"
   - pcre2-devel
   - perl-Unicode-Map
   - perl-Jcode
