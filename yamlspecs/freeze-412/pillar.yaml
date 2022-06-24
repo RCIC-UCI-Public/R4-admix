@@ -14,8 +14,8 @@
     - R_{{Rversion}}-crayon
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-fansi
-    - R_{{Rversion}}-glue
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-glue

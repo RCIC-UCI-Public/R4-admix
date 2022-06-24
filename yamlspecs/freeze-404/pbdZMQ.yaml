@@ -10,6 +10,6 @@
   src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   install:
-    environ: unset MAKEFLAGS; 
+    environ: unset MAKEFLAGS;
   requires:
     - R_{{Rversion}}
