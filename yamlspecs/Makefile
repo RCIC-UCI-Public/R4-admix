@@ -57,6 +57,7 @@ manifest::
 ifndef BASEONLY
 	if [ "$(SET)" == "" ] && [ "$(RSETS)" != "" ]; then \
 	    for set in $(RSETS); do \
+		make -s -e -f $(THISMAKE) SET=$$set thaw &> /dev/null; \
 	        make -s -e -f $(THISMAKE) SET=$$set $@; \
 	    done; \
 	fi
