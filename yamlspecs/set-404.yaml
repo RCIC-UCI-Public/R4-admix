@@ -395,3 +395,4 @@ bootstrap:
   - RcppGSL
   - leaflet
   - IRkernel
+  - terra
