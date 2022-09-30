@@ -28,6 +28,8 @@ system:
   - perl-Unicode-Map
   - perl-Jcode
   - perl-Spreadsheet-WriteExcel
+  - cairo-devel
+  - pango-devel
 bootstrap:
   - R
   - R-module
