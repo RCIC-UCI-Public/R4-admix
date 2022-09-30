@@ -6,6 +6,7 @@
   versions: !include versions.yaml
   version: "{{versions.rstudio}}"
   tarname: "{{name}}-{{versions.rstudio_dist}}-x86_64-fedora.{{extension}}"
+  release: 2
   src_tarball: "{{tarname}}"
   vendor_source: https://download1.rstudio.org/desktop/{{versions.rstudio_os}}/x86_64/{{tarname}}
   addfile: filter-requires-{{name}}.sh
@@ -19,3 +20,4 @@
        zcat {{tarname}} | (cd $(ROOT)/{{root}}; tar xvf - --strip-components=1)
   rpmFilters: *filterRequires
   rpmBuildIdLinks: none
+  rpmAutoRequires: "AutoReqProv: Yes\\n %define __strip /bin/true"
