@@ -1,0 +1,21 @@
+
+!include common.yaml
+---
+- package: R module terra
+  name: terra
+  rpkgname: terra
+  version: "{{versions.terra}}"
+  release: "{{versions.terra_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  install:
+    environ: unset MAKEFLAGS;
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+  build:
+    modules:
+      - R/{{Rversion}}
+      - gdal/{{versions.gdal}}
+      - geos/{{versions.geos}}
