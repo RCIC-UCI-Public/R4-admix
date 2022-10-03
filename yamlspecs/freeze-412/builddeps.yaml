@@ -6585,3 +6585,38 @@ xlsxjars :
   requires : 
     - rJava
   archive: False 
+sf : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-8"
+  requires : 
+    - classInt
+    - DBI
+    - magrittr
+    - Rcpp
+    - s2
+    - units
+    - e1071
+    - class
+    - KernSmooth
+    - wk
+    - MASS
+    - proxy
+  archive: False 
+s2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.0"
+  requires : 
+    - Rcpp
+    - wk
+  archive: False 
+units : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8-0"
+  requires : 
+    - Rcpp
+  archive: False 
+wk : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.0"
+  requires : 
+  archive: False 

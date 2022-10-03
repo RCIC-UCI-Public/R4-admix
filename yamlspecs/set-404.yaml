@@ -396,3 +396,7 @@ bootstrap:
   - leaflet
   - IRkernel
   - terra
+  - wk
+  - s2
+  - units
+  - sf

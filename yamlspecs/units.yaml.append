@@ -1,0 +1,9 @@
+  build:
+    modules:
+      - R/{{Rversion}}
+      - udunits/{{versions.udunits}}/{{compiler}}.{{compiler_version}} 
+  install:
+     cargs: --configure-args='--with-udunits2-include=$$UDUNITS_HOME/include --with-udunits2-lib=$$UDUNITS_HOME/lib'
+     makeinstall: >
+       mkdir -p $(ROOT)/{{libpath}};
+       {{install.environ}} R CMD INSTALL {{install.cmdargs}} -l $(ROOT)/{{libpath}} {{src_tarball}} {{install.cargs}}

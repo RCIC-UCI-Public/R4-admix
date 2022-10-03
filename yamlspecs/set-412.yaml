@@ -401,3 +401,7 @@ bootstrap:
   - XLConnect
   - xlsxjars
   - xlsx
+  - wk
+  - s2
+  - units
+  - sf
