@@ -12,6 +12,7 @@
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-Rcpp
+    - udunits_{{versions.udunits}}_{{compiler}}_{{compiler_version}} 
   build:
     modules:
       - R/{{Rversion}}
