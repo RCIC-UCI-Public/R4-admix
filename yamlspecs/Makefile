@@ -31,6 +31,7 @@ endif
 
 RVERSION = $(shell $(GENERATE) --query=version R.yaml -V $(VERSIONS))
 BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml -V $(VERSIONS))
+ADDON = $(shell $(BASEGENERATE) --query=addonsources versions-$(SET).yaml)
 FREEZE_DIR=freeze-$(SET)
 RSETS = $(shell $(BASEGENERATE) -Q --query=rsets $(PACKAGES_FILE))
 
@@ -68,6 +69,11 @@ thaw:
 	/bin/cp $(FREEZE_DIR)/*.yaml .
 	/bin/cp $(FREEZE_DIR)/buildorder .
 	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
+	if [ "$(ADDON)" != "" ]; then \
+	    for set in $(ADDON); do \
+	        (cd ../sources; tar xvf sources-addon-$$set.tar.gz); \
+	    done; \
+	fi
 
 prep: builddeps.yaml
 	./downloadpkg.py $(SET)

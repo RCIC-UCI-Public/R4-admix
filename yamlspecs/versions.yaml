@@ -9,6 +9,8 @@ GenomeInfoDbData: "1.2.4"
 tmvnsim: "1.0"
 tmvnsim_release: "2"
 tarsources: "20220210"
+addonsources:
+  - "sf"
 OpenBLAS: "0.3.6"
 proj: "6.3.2"
 gdal: "3.1.0"
