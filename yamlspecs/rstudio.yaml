@@ -21,4 +21,3 @@
   rpmFilters: *filterRequires
   rpmAutoRequires: "AutoReqProv: Yes\\n %define __strip /bin/true"
   rpmBuildIdLinks: none
-  rpmAutoRequires: "AutoReqProv: Yes\\n %define __strip /bin/true"
