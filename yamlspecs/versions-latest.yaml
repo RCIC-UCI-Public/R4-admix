@@ -4,7 +4,7 @@
 R: "4.1.2"
 Rmajor: "4"
 rstudio: "2022.02.1.461"
-studio_dist: "2022.02.1-461"
+rstudio_dist: "2022.02.1-461"
 rstudio_os: "rhel8"
 GenomeInfoDbData: "1.2.7"
 tarsources: "20220412"
