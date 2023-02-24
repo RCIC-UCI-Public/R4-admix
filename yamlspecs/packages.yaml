@@ -30,6 +30,7 @@ system:
   - perl-Spreadsheet-WriteExcel
   - cairo-devel
   - pango-devel
+  - libgit2-devel
 bootstrap:
   - R
   - R-module
