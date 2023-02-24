@@ -1,0 +1,14 @@
+
+!include common.yaml
+---
+- package: R module textshaping
+  name: textshaping
+  rpkgname: textshaping
+  version: "{{versions.textshaping}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-systemfonts
+    - R_{{Rversion}}-cpp11

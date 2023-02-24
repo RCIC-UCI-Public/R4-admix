@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module styler
+  name: styler
+  rpkgname: styler
+  version: "{{versions.styler}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-R_cache
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-R_methodsS3
+    - R_{{Rversion}}-R_oo
+    - R_{{Rversion}}-R_utils
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-glue
+  addfile:
+    - filter-requires-styler.sh 
+  rpmFilters: *filterRequires

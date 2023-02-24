@@ -1,0 +1,23 @@
+
+!include common.yaml
+---
+- package: R module gh
+  name: gh
+  rpkgname: gh
+  version: "{{versions.gh}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-gitcreds
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-ini
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys

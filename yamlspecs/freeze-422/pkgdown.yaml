@@ -1,0 +1,67 @@
+
+!include common.yaml
+---
+- package: R module pkgdown
+  name: pkgdown
+  rpkgname: pkgdown
+  version: "{{versions.pkgdown}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-bslib
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-downlit
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-ragg
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-rmarkdown
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-whisker
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-xml2
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-systemfonts
+    - R_{{Rversion}}-textshaping
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-tinytex
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-sys

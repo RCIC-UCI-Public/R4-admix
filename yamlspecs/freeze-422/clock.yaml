@@ -1,0 +1,19 @@
+
+!include common.yaml
+---
+- package: R module clock
+  name: clock
+  rpkgname: clock
+  version: "{{versions.clock}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tzdb
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle

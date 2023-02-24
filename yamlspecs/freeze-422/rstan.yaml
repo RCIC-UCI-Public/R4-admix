@@ -1,0 +1,54 @@
+
+!include common.yaml
+---
+- package: R module rstan
+  name: rstan
+  rpkgname: rstan
+  version: "{{versions.rstan}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-StanHeaders
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-inline
+    - R_{{Rversion}}-gridExtra
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppParallel
+    - R_{{Rversion}}-loo
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-BH
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-checkmate
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-utf8

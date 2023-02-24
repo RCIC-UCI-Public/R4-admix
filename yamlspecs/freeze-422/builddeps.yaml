@@ -1,0 +1,6950 @@
+## 113 desired --> 429 required
+---
+BayesCombo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0"
+  requires : 
+  archive: False 
+BayesFactor : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9.12-4.4"
+  requires : 
+    - coda
+    - Matrix
+    - pbapply
+    - mvtnorm
+    - stringr
+    - MatrixModels
+    - Rcpp
+    - hypergeo
+    - RcppEigen
+    - lattice
+    - elliptic
+    - contfrac
+    - deSolve
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+    - MASS
+  archive: False 
+BiocGenerics : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "0.44.0"
+  requires : 
+  archive: False 
+BiocManager : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.30.19"
+  requires : 
+  archive: False 
+brms : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.18.0"
+  requires : 
+    - Rcpp
+    - rstan
+    - ggplot2
+    - loo
+    - posterior
+    - Matrix
+    - mgcv
+    - rstantools
+    - bayesplot
+    - shinystan
+    - bridgesampling
+    - glue
+    - future
+    - matrixStats
+    - nleqslv
+    - nlme
+    - coda
+    - abind
+    - backports
+    - dplyr
+    - ggridges
+    - reshape2
+    - rlang
+    - tibble
+    - tidyselect
+    - mvtnorm
+    - Brobdingnag
+    - stringr
+    - scales
+    - lattice
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - cli
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - vctrs
+    - withr
+    - checkmate
+    - tensorA
+    - pillar
+    - distributional
+    - StanHeaders
+    - inline
+    - gridExtra
+    - RcppParallel
+    - pkgbuild
+    - RcppEigen
+    - BH
+    - desc
+    - shiny
+    - colourpicker
+    - DT
+    - dygraphs
+    - gtools
+    - markdown
+    - shinyjs
+    - shinythemes
+    - threejs
+    - xtable
+    - xts
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - miniUI
+    - R6
+    - rprojroot
+    - generics
+    - numDeriv
+    - farver
+    - magrittr
+    - crosstalk
+    - jquerylib
+    - promises
+    - zoo
+    - codetools
+    - commonmark
+    - xfun
+    - fansi
+    - utf8
+    - callr
+    - crayon
+    - prettyunits
+    - processx
+    - plyr
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - httpuv
+    - mime
+    - fontawesome
+    - sourcetools
+    - later
+    - fastmap
+    - bslib
+    - cachem
+    - ellipsis
+    - stringi
+    - igraph
+    - base64enc
+    - pkgconfig
+    - sass
+    - memoise
+    - lazyeval
+    - yaml
+    - knitr
+    - rmarkdown
+    - colorspace
+    - ps
+    - evaluate
+    - highr
+    - tinytex
+    - fs
+    - rappdirs
+  archive: False 
+car : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1-1"
+  requires : 
+    - carData
+    - abind
+    - MASS
+    - mgcv
+    - nnet
+    - pbkrtest
+    - quantreg
+    - lme4
+    - nlme
+    - scales
+    - Matrix
+    - lattice
+    - boot
+    - minqa
+    - nloptr
+    - Rcpp
+    - RcppEigen
+    - broom
+    - dplyr
+    - numDeriv
+    - SparseM
+    - MatrixModels
+    - survival
+    - farver
+    - labeling
+    - lifecycle
+    - munsell
+    - R6
+    - RColorBrewer
+    - rlang
+    - viridisLite
+    - backports
+    - ellipsis
+    - generics
+    - glue
+    - purrr
+    - stringr
+    - tibble
+    - tidyr
+    - cli
+    - magrittr
+    - pillar
+    - tidyselect
+    - vctrs
+    - colorspace
+    - testthat
+    - fansi
+    - utf8
+    - stringi
+    - brio
+    - callr
+    - desc
+    - digest
+    - evaluate
+    - jsonlite
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - withr
+    - pkgconfig
+    - cpp11
+    - rprojroot
+    - crayon
+    - fs
+    - diffobj
+    - rematch2
+  archive: False 
+caret : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "6.0-93"
+  requires : 
+    - ggplot2
+    - lattice
+    - e1071
+    - foreach
+    - ModelMetrics
+    - nlme
+    - plyr
+    - pROC
+    - recipes
+    - reshape2
+    - withr
+    - class
+    - proxy
+    - codetools
+    - iterators
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - Rcpp
+    - data.table
+    - dplyr
+    - clock
+    - ellipsis
+    - generics
+    - gower
+    - hardhat
+    - ipred
+    - lubridate
+    - magrittr
+    - Matrix
+    - purrr
+    - tidyr
+    - tidyselect
+    - timeDate
+    - stringr
+    - tzdb
+    - cpp11
+    - pillar
+    - R6
+    - rpart
+    - survival
+    - nnet
+    - prodlim
+    - timechange
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - fansi
+    - pkgconfig
+    - colorspace
+    - utf8
+    - KernSmooth
+    - lava
+    - future.apply
+    - numDeriv
+    - progressr
+    - SQUAREM
+    - future
+    - globals
+    - digest
+    - listenv
+    - parallelly
+  archive: False 
+cli : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.6.0"
+  requires : 
+  archive: False 
+DESeq2 : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.38.3"
+  requires : 
+    - S4Vectors
+    - IRanges
+    - GenomicRanges
+    - SummarizedExperiment
+    - BiocGenerics
+    - Biobase
+    - BiocParallel
+    - matrixStats
+    - locfit
+    - geneplotter
+    - ggplot2
+    - Rcpp
+    - RcppArmadillo
+    - futile.logger
+    - snow
+    - codetools
+    - BH
+    - cpp11
+    - lattice
+    - annotate
+    - AnnotationDbi
+    - RColorBrewer
+    - GenomeInfoDb
+    - XVector
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - MatrixGenerics
+    - Matrix
+    - DelayedArray
+    - XML
+    - DBI
+    - xtable
+    - httr
+    - RSQLite
+    - KEGGREST
+    - lambda.r
+    - futile.options
+    - RCurl
+    - GenomeInfoDbData
+    - nlme
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - viridisLite
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - zlibbioc
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - png
+    - Biostrings
+    - formatR
+    - colorspace
+    - utf8
+    - bitops
+    - bit64
+    - blob
+    - memoise
+    - plogr
+    - crayon
+    - bit
+    - cachem
+    - askpass
+    - sys
+    - fastmap
+  archive: False 
+DEXSeq : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.44.0"
+  requires : 
+    - BiocParallel
+    - Biobase
+    - SummarizedExperiment
+    - IRanges
+    - GenomicRanges
+    - DESeq2
+    - AnnotationDbi
+    - RColorBrewer
+    - S4Vectors
+    - BiocGenerics
+    - biomaRt
+    - hwriter
+    - stringr
+    - Rsamtools
+    - statmod
+    - geneplotter
+    - genefilter
+    - DBI
+    - RSQLite
+    - KEGGREST
+    - futile.logger
+    - snow
+    - codetools
+    - BH
+    - cpp11
+    - XML
+    - progress
+    - httr
+    - digest
+    - BiocFileCache
+    - rappdirs
+    - xml2
+    - matrixStats
+    - locfit
+    - ggplot2
+    - Rcpp
+    - RcppArmadillo
+    - annotate
+    - survival
+    - lattice
+    - GenomeInfoDb
+    - XVector
+    - Biostrings
+    - zlibbioc
+    - bitops
+    - Rhtslib
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+    - MatrixGenerics
+    - Matrix
+    - DelayedArray
+    - xtable
+    - dbplyr
+    - dplyr
+    - filelock
+    - curl
+    - crayon
+    - lambda.r
+    - futile.options
+    - RCurl
+    - GenomeInfoDbData
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - scales
+    - tibble
+    - withr
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - png
+    - hms
+    - prettyunits
+    - bit64
+    - blob
+    - memoise
+    - pkgconfig
+    - plogr
+    - bit
+    - assertthat
+    - pillar
+    - purrr
+    - tidyselect
+    - generics
+    - ellipsis
+    - formatR
+    - cachem
+    - nlme
+    - askpass
+    - farver
+    - labeling
+    - munsell
+    - viridisLite
+    - fansi
+    - sys
+    - fastmap
+    - colorspace
+    - utf8
+  archive: False 
+devtools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.4.5"
+  requires : 
+    - usethis
+    - cli
+    - desc
+    - ellipsis
+    - fs
+    - lifecycle
+    - memoise
+    - miniUI
+    - pkgbuild
+    - pkgdown
+    - pkgload
+    - profvis
+    - rcmdcheck
+    - remotes
+    - rlang
+    - roxygen2
+    - rversions
+    - sessioninfo
+    - testthat
+    - urlchecker
+    - withr
+    - R6
+    - rprojroot
+    - glue
+    - cachem
+    - shiny
+    - htmltools
+    - callr
+    - crayon
+    - prettyunits
+    - processx
+    - bslib
+    - digest
+    - downlit
+    - httr
+    - jsonlite
+    - magrittr
+    - purrr
+    - ragg
+    - rmarkdown
+    - tibble
+    - whisker
+    - xml2
+    - yaml
+    - htmlwidgets
+    - stringr
+    - curl
+    - xopen
+    - brew
+    - commonmark
+    - knitr
+    - stringi
+    - cpp11
+    - brio
+    - evaluate
+    - praise
+    - ps
+    - waldo
+    - clipr
+    - gert
+    - gh
+    - rappdirs
+    - rstudioapi
+    - sass
+    - jquerylib
+    - base64enc
+    - mime
+    - fastmap
+    - fansi
+    - vctrs
+    - askpass
+    - credentials
+    - openssl
+    - sys
+    - zip
+    - gitcreds
+    - ini
+    - highr
+    - xfun
+    - systemfonts
+    - textshaping
+    - tinytex
+    - httpuv
+    - xtable
+    - fontawesome
+    - sourcetools
+    - later
+    - promises
+    - pillar
+    - pkgconfig
+    - diffobj
+    - rematch2
+    - Rcpp
+    - utf8
+  archive: False 
+diagram : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.5"
+  requires : 
+    - shape
+  archive: False 
+dichromat : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0-0.1"
+  requires : 
+  archive: False 
+digest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.31"
+  requires : 
+  archive: False 
+doBy : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.6.16"
+  requires : 
+    - broom
+    - Deriv
+    - dplyr
+    - ggplot2
+    - MASS
+    - Matrix
+    - magrittr
+    - microbenchmark
+    - pbkrtest
+    - tibble
+    - backports
+    - ellipsis
+    - generics
+    - glue
+    - purrr
+    - rlang
+    - stringr
+    - tidyr
+    - cli
+    - lifecycle
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - gtable
+    - isoband
+    - mgcv
+    - scales
+    - withr
+    - lattice
+    - lme4
+    - numDeriv
+    - fansi
+    - pkgconfig
+    - boot
+    - nlme
+    - minqa
+    - nloptr
+    - Rcpp
+    - RcppEigen
+    - utf8
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - cpp11
+    - colorspace
+    - testthat
+    - brio
+    - callr
+    - desc
+    - digest
+    - evaluate
+    - jsonlite
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - rprojroot
+    - crayon
+    - fs
+    - diffobj
+    - rematch2
+  archive: False 
+dotCall64 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-2"
+  requires : 
+  archive: False 
+dplyr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.0"
+  requires : 
+    - cli
+    - generics
+    - glue
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - fansi
+    - utf8
+    - pkgconfig
+    - withr
+  archive: False 
+DT : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.27"
+  requires : 
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - magrittr
+    - crosstalk
+    - jquerylib
+    - promises
+    - lazyeval
+    - R6
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - yaml
+    - knitr
+    - rmarkdown
+    - Rcpp
+    - later
+    - evaluate
+    - highr
+    - xfun
+    - bslib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - fs
+    - rappdirs
+  archive: False 
+dygraphs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.1.6"
+  requires : 
+    - magrittr
+    - htmlwidgets
+    - htmltools
+    - zoo
+    - xts
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - jsonlite
+    - yaml
+    - knitr
+    - rmarkdown
+    - lattice
+    - evaluate
+    - highr
+    - xfun
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+edgeR : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "3.40.2"
+  requires : 
+    - limma
+    - locfit
+    - Rcpp
+    - lattice
+  archive: False 
+fansi : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.4"
+  requires : 
+  archive: False 
+fields : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "14.1"
+  requires : 
+    - spam
+    - viridis
+    - maps
+    - dotCall64
+    - viridisLite
+    - ggplot2
+    - gridExtra
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - nlme
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+  archive: False 
+gam : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.22-1"
+  requires : 
+    - foreach
+    - codetools
+    - iterators
+  archive: False 
+gapminder : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.0"
+  requires : 
+    - tibble
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - utf8
+  archive: False 
+geosphere : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5-18"
+  requires : 
+    - Rcpp
+    - sp
+    - lattice
+  archive: False 
+getopt : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.20.3"
+  requires : 
+  archive: False 
+ggmap : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0.1"
+  requires : 
+    - ggplot2
+    - RgoogleMaps
+    - png
+    - plyr
+    - jpeg
+    - digest
+    - scales
+    - dplyr
+    - bitops
+    - glue
+    - httr
+    - stringr
+    - purrr
+    - magrittr
+    - tibble
+    - tidyr
+    - rlang
+    - cli
+    - generics
+    - lifecycle
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - withr
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - Rcpp
+    - sp
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - fansi
+    - pkgconfig
+    - cpp11
+    - nlme
+    - Matrix
+    - colorspace
+    - askpass
+    - utf8
+    - lattice
+    - sys
+  archive: False 
+ggplot2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.4.1"
+  requires : 
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - nlme
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+  archive: False 
+ggpubr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.0"
+  requires : 
+    - ggplot2
+    - ggrepel
+    - ggsci
+    - tidyr
+    - purrr
+    - dplyr
+    - cowplot
+    - ggsignif
+    - scales
+    - gridExtra
+    - glue
+    - polynom
+    - rlang
+    - rstatix
+    - tibble
+    - magrittr
+    - gtable
+    - cli
+    - generics
+    - lifecycle
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - isoband
+    - MASS
+    - mgcv
+    - withr
+    - Rcpp
+    - broom
+    - corrplot
+    - car
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - pkgconfig
+    - stringr
+    - cpp11
+    - backports
+    - ellipsis
+    - carData
+    - abind
+    - nnet
+    - pbkrtest
+    - quantreg
+    - lme4
+    - nlme
+    - Matrix
+    - colorspace
+    - utf8
+    - stringi
+    - lattice
+    - boot
+    - minqa
+    - nloptr
+    - RcppEigen
+    - numDeriv
+    - SparseM
+    - MatrixModels
+    - survival
+    - testthat
+    - brio
+    - callr
+    - desc
+    - digest
+    - evaluate
+    - jsonlite
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - rprojroot
+    - crayon
+    - fs
+    - diffobj
+    - rematch2
+  archive: False 
+ggvis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.7"
+  requires : 
+    - assertthat
+    - jsonlite
+    - shiny
+    - magrittr
+    - dplyr
+    - rlang
+    - htmltools
+    - cli
+    - generics
+    - glue
+    - lifecycle
+    - pillar
+    - R6
+    - tibble
+    - tidyselect
+    - vctrs
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - httpuv
+    - mime
+    - xtable
+    - fontawesome
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - withr
+    - commonmark
+    - bslib
+    - cachem
+    - sass
+    - jquerylib
+    - memoise
+    - Rcpp
+    - fansi
+    - utf8
+    - pkgconfig
+    - fs
+    - rappdirs
+  archive: False 
+git2r : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.31.0"
+  requires : 
+  archive: False 
+glmnet : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.1-6"
+  requires : 
+    - Matrix
+    - foreach
+    - shape
+    - survival
+    - Rcpp
+    - RcppEigen
+    - codetools
+    - iterators
+    - lattice
+  archive: False 
+googleVis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.7.0"
+  requires : 
+    - jsonlite
+  archive: False 
+gplots : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1.3"
+  requires : 
+    - gtools
+    - caTools
+    - KernSmooth
+    - bitops
+  archive: False 
+gridExtra : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.3"
+  requires : 
+    - gtable
+  archive: False 
+gtable : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.1"
+  requires : 
+  archive: False 
+haven : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.5.1"
+  requires : 
+    - cli
+    - forcats
+    - hms
+    - lifecycle
+    - readr
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - cpp11
+    - glue
+    - magrittr
+    - ellipsis
+    - pkgconfig
+    - clipr
+    - crayon
+    - R6
+    - vroom
+    - tzdb
+    - fansi
+    - pillar
+    - withr
+    - utf8
+    - bit64
+    - progress
+    - bit
+    - prettyunits
+  archive: False 
+hdf5r : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.8"
+  requires : 
+    - R6
+    - bit64
+    - bit
+  archive: False 
+Hmisc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.8-0"
+  requires : 
+    - lattice
+    - survival
+    - Formula
+    - ggplot2
+    - latticeExtra
+    - cluster
+    - rpart
+    - nnet
+    - foreign
+    - gtable
+    - gridExtra
+    - data.table
+    - htmlTable
+    - viridis
+    - htmltools
+    - base64enc
+    - colorspace
+    - cli
+    - glue
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - stringr
+    - knitr
+    - magrittr
+    - checkmate
+    - htmlwidgets
+    - rstudioapi
+    - digest
+    - fastmap
+    - ellipsis
+    - png
+    - jpeg
+    - RColorBrewer
+    - interp
+    - Matrix
+    - viridisLite
+    - backports
+    - jsonlite
+    - yaml
+    - rmarkdown
+    - Rcpp
+    - deldir
+    - RcppEigen
+    - evaluate
+    - highr
+    - xfun
+    - nlme
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - stringi
+    - fansi
+    - pillar
+    - pkgconfig
+    - utf8
+    - bslib
+    - jquerylib
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - fs
+    - rappdirs
+  archive: False 
+htmlwidgets : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.1"
+  requires : 
+    - htmltools
+    - jsonlite
+    - yaml
+    - knitr
+    - rmarkdown
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - evaluate
+    - highr
+    - xfun
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - stringi
+    - vctrs
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+igraph : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.0"
+  requires : 
+    - magrittr
+    - Matrix
+    - pkgconfig
+    - rlang
+    - lattice
+  archive: False 
+IRkernel : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.2"
+  requires : 
+    - repr
+    - evaluate
+    - IRdisplay
+    - pbdZMQ
+    - crayon
+    - jsonlite
+    - uuid
+    - digest
+    - htmltools
+    - pillar
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - cli
+    - fansi
+    - glue
+    - lifecycle
+    - utf8
+    - vctrs
+  archive: False 
+kableExtra : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.4"
+  requires : 
+    - knitr
+    - magrittr
+    - stringr
+    - xml2
+    - rvest
+    - rmarkdown
+    - scales
+    - viridisLite
+    - htmltools
+    - rstudioapi
+    - glue
+    - webshot
+    - digest
+    - svglite
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - evaluate
+    - highr
+    - yaml
+    - xfun
+    - bslib
+    - jquerylib
+    - jsonlite
+    - tinytex
+    - cli
+    - httr
+    - lifecycle
+    - selectr
+    - tibble
+    - withr
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - stringi
+    - vctrs
+    - systemfonts
+    - cpp11
+    - callr
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - processx
+    - curl
+    - openssl
+    - colorspace
+    - fansi
+    - pillar
+    - pkgconfig
+    - askpass
+    - utf8
+    - ps
+    - fs
+    - rappdirs
+    - sys
+  archive: False 
+knitr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.42"
+  requires : 
+    - evaluate
+    - highr
+    - yaml
+    - xfun
+  archive: False 
+labeling : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.2"
+  requires : 
+  archive: False 
+Lahman : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "10.0-1"
+  requires : 
+    - dplyr
+    - cli
+    - generics
+    - glue
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - fansi
+    - utf8
+    - pkgconfig
+    - withr
+  archive: False 
+lavaan : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6-14"
+  requires : 
+    - MASS
+    - mnormt
+    - pbivnorm
+    - numDeriv
+    - quadprog
+  archive: False 
+lazyeval : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.2"
+  requires : 
+  archive: False 
+leaflet : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.1"
+  requires : 
+    - base64enc
+    - crosstalk
+    - htmlwidgets
+    - htmltools
+    - magrittr
+    - markdown
+    - png
+    - RColorBrewer
+    - raster
+    - scales
+    - sp
+    - viridis
+    - leaflet.providers
+    - jsonlite
+    - lazyeval
+    - R6
+    - digest
+    - rlang
+    - fastmap
+    - ellipsis
+    - yaml
+    - knitr
+    - rmarkdown
+    - commonmark
+    - xfun
+    - Rcpp
+    - terra
+    - farver
+    - labeling
+    - lifecycle
+    - munsell
+    - viridisLite
+    - lattice
+    - ggplot2
+    - gridExtra
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - tibble
+    - vctrs
+    - withr
+    - evaluate
+    - highr
+    - colorspace
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - nlme
+    - Matrix
+    - stringi
+    - fansi
+    - pillar
+    - pkgconfig
+    - utf8
+    - fs
+    - rappdirs
+  archive: False 
+lfe : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.9-0"
+  requires : 
+    - Matrix
+    - Formula
+    - xtable
+    - sandwich
+    - lattice
+    - zoo
+  archive: False 
+lme4 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-31"
+  requires : 
+    - Matrix
+    - MASS
+    - lattice
+    - boot
+    - nlme
+    - minqa
+    - nloptr
+    - Rcpp
+    - RcppEigen
+    - testthat
+    - brio
+    - callr
+    - cli
+    - desc
+    - digest
+    - ellipsis
+    - evaluate
+    - jsonlite
+    - lifecycle
+    - magrittr
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - R6
+    - rlang
+    - waldo
+    - withr
+    - rprojroot
+    - glue
+    - crayon
+    - fs
+    - diffobj
+    - fansi
+    - rematch2
+    - tibble
+    - pillar
+    - pkgconfig
+    - vctrs
+    - utf8
+  archive: False 
+ltm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-0"
+  requires : 
+    - MASS
+    - msm
+    - polycor
+    - survival
+    - mvtnorm
+    - expm
+    - Matrix
+    - admisc
+    - lattice
+  archive: False 
+lubridate : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.9.2"
+  requires : 
+    - generics
+    - timechange
+    - cpp11
+  archive: False 
+magrittr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.3"
+  requires : 
+  archive: False 
+mapproj : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.11"
+  requires : 
+    - maps
+  archive: False 
+maps : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.4.1"
+  requires : 
+  archive: False 
+maptools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-6"
+  requires : 
+    - sp
+    - foreign
+    - lattice
+  archive: False 
+MCMCpack : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6-3"
+  requires : 
+    - coda
+    - MASS
+    - lattice
+    - mcmc
+    - quantreg
+    - SparseM
+    - Matrix
+    - MatrixModels
+    - survival
+  archive: False 
+mime : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.12"
+  requires : 
+  archive: False 
+miniCRAN : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.16"
+  requires : 
+    - httr
+    - igraph
+    - assertthat
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - magrittr
+    - Matrix
+    - pkgconfig
+    - rlang
+    - lattice
+    - askpass
+    - sys
+  archive: False 
+missMDA : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.18"
+  requires : 
+    - FactoMineR
+    - ggplot2
+    - mice
+    - mvtnorm
+    - doParallel
+    - foreach
+    - iterators
+    - car
+    - cluster
+    - DT
+    - ellipse
+    - emmeans
+    - flashClust
+    - lattice
+    - leaps
+    - MASS
+    - multcompView
+    - scatterplot3d
+    - ggrepel
+    - codetools
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - broom
+    - dplyr
+    - generics
+    - Rcpp
+    - tidyr
+    - cpp11
+    - backports
+    - ellipsis
+    - purrr
+    - stringr
+    - carData
+    - abind
+    - nnet
+    - pbkrtest
+    - quantreg
+    - lme4
+    - nlme
+    - magrittr
+    - pillar
+    - R6
+    - tidyselect
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - crosstalk
+    - jquerylib
+    - promises
+    - estimability
+    - numDeriv
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - pkgconfig
+    - lazyeval
+    - digest
+    - base64enc
+    - fastmap
+    - yaml
+    - knitr
+    - rmarkdown
+    - boot
+    - minqa
+    - nloptr
+    - RcppEigen
+    - colorspace
+    - utf8
+    - later
+    - SparseM
+    - MatrixModels
+    - survival
+    - stringi
+    - evaluate
+    - highr
+    - xfun
+    - testthat
+    - bslib
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - brio
+    - callr
+    - desc
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - rprojroot
+    - crayon
+    - fs
+    - rappdirs
+    - diffobj
+    - rematch2
+  archive: False 
+mnormt : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.1"
+  requires : 
+  archive: False 
+multcomp : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4-22"
+  requires : 
+    - mvtnorm
+    - survival
+    - TH.data
+    - sandwich
+    - codetools
+    - zoo
+    - Matrix
+    - MASS
+    - lattice
+  archive: False 
+munsell : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.0"
+  requires : 
+    - colorspace
+  archive: False 
+networkD3 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4"
+  requires : 
+    - htmlwidgets
+    - igraph
+    - magrittr
+    - htmltools
+    - jsonlite
+    - yaml
+    - knitr
+    - rmarkdown
+    - Matrix
+    - pkgconfig
+    - rlang
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - evaluate
+    - highr
+    - xfun
+    - lattice
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+nycflights13 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.2"
+  requires : 
+    - tibble
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - utf8
+  archive: False 
+odbc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.4"
+  requires : 
+    - bit64
+    - blob
+    - DBI
+    - hms
+    - Rcpp
+    - rlang
+    - bit
+    - vctrs
+    - ellipsis
+    - lifecycle
+    - pkgconfig
+    - cli
+    - glue
+  archive: False 
+optparse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7.3"
+  requires : 
+    - getopt
+  archive: False 
+pillar : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.1"
+  requires : 
+    - cli
+    - fansi
+    - glue
+    - lifecycle
+    - rlang
+    - utf8
+    - vctrs
+  archive: False 
+plm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.6-2"
+  requires : 
+    - MASS
+    - bdsmatrix
+    - collapse
+    - zoo
+    - nlme
+    - sandwich
+    - lattice
+    - lmtest
+    - maxLik
+    - Rdpack
+    - Formula
+    - Rcpp
+    - miscTools
+    - generics
+    - rbibutils
+    - digest
+  archive: False 
+plyr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.8"
+  requires : 
+    - Rcpp
+  archive: False 
+proto : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.0"
+  requires : 
+  archive: False 
+psych : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.2.9"
+  requires : 
+    - mnormt
+    - lattice
+    - nlme
+  archive: False 
+quantmod : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.20"
+  requires : 
+    - xts
+    - zoo
+    - TTR
+    - curl
+    - lattice
+  archive: False 
+questionr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.7.8"
+  requires : 
+    - shiny
+    - miniUI
+    - rstudioapi
+    - highr
+    - styler
+    - classInt
+    - htmltools
+    - rlang
+    - labelled
+    - e1071
+    - class
+    - KernSmooth
+    - xfun
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - haven
+    - dplyr
+    - lifecycle
+    - vctrs
+    - stringr
+    - tidyr
+    - httpuv
+    - mime
+    - jsonlite
+    - xtable
+    - fontawesome
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - withr
+    - commonmark
+    - glue
+    - bslib
+    - cachem
+    - cli
+    - magrittr
+    - purrr
+    - R.cache
+    - rprojroot
+    - sass
+    - jquerylib
+    - memoise
+    - MASS
+    - generics
+    - pillar
+    - tibble
+    - tidyselect
+    - proxy
+    - forcats
+    - hms
+    - readr
+    - cpp11
+    - Rcpp
+    - R.methodsS3
+    - R.oo
+    - R.utils
+    - stringi
+    - pkgconfig
+    - fansi
+    - utf8
+    - clipr
+    - vroom
+    - tzdb
+    - fs
+    - rappdirs
+    - bit64
+    - progress
+    - bit
+    - prettyunits
+  archive: False 
+R6 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.5.1"
+  requires : 
+  archive: False 
+randomForest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.7-1.1"
+  requires : 
+  archive: False 
+Rcpp : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.10"
+  requires : 
+  archive: False 
+RcppGSL : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.13"
+  requires : 
+    - Rcpp
+  archive: False 
+reshape2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.4"
+  requires : 
+    - plyr
+    - Rcpp
+    - stringr
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+  archive: False 
+rgl : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - htmlwidgets
+    - htmltools
+    - knitr
+    - jsonlite
+    - magrittr
+    - R6
+    - base64enc
+    - mime
+    - digest
+    - rlang
+    - fastmap
+    - ellipsis
+    - yaml
+    - rmarkdown
+    - evaluate
+    - highr
+    - xfun
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - fs
+    - rappdirs
+  archive: False 
+rlang : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.6"
+  requires : 
+  archive: False 
+RMySQL : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.10.25"
+  requires : 
+    - DBI
+  archive: False 
+RPostgreSQL : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.7-5"
+  requires : 
+    - DBI
+  archive: False 
+RSQLite : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.3.0"
+  requires : 
+    - bit64
+    - blob
+    - DBI
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - bit
+    - rlang
+    - vctrs
+    - cachem
+    - fastmap
+    - cli
+    - glue
+    - lifecycle
+  archive: False 
+rstan : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.21.8"
+  requires : 
+    - StanHeaders
+    - ggplot2
+    - inline
+    - gridExtra
+    - Rcpp
+    - RcppParallel
+    - loo
+    - pkgbuild
+    - RcppEigen
+    - BH
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - checkmate
+    - matrixStats
+    - callr
+    - crayon
+    - desc
+    - prettyunits
+    - processx
+    - R6
+    - rprojroot
+    - Matrix
+    - backports
+    - lattice
+    - nlme
+    - ps
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - colorspace
+    - utf8
+  archive: False 
+rstudioapi : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.14"
+  requires : 
+  archive: False 
+scales : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.1"
+  requires : 
+    - farver
+    - labeling
+    - lifecycle
+    - munsell
+    - R6
+    - RColorBrewer
+    - rlang
+    - viridisLite
+    - cli
+    - glue
+    - colorspace
+  archive: False 
+Seurat : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.3.0"
+  requires : 
+    - cluster
+    - cowplot
+    - fitdistrplus
+    - future
+    - future.apply
+    - ggplot2
+    - ggrepel
+    - ggridges
+    - httr
+    - ica
+    - igraph
+    - irlba
+    - jsonlite
+    - KernSmooth
+    - leiden
+    - lmtest
+    - MASS
+    - Matrix
+    - matrixStats
+    - miniUI
+    - patchwork
+    - pbapply
+    - plotly
+    - png
+    - progressr
+    - RANN
+    - RColorBrewer
+    - Rcpp
+    - RcppAnnoy
+    - reticulate
+    - rlang
+    - ROCR
+    - Rtsne
+    - scales
+    - scattermore
+    - sctransform
+    - SeuratObject
+    - shiny
+    - spatstat.explore
+    - spatstat.geom
+    - tibble
+    - uwot
+    - RcppEigen
+    - RcppProgress
+    - gtable
+    - survival
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - cli
+    - glue
+    - isoband
+    - lifecycle
+    - mgcv
+    - vctrs
+    - withr
+    - curl
+    - mime
+    - openssl
+    - R6
+    - magrittr
+    - pkgconfig
+    - zoo
+    - lattice
+    - htmltools
+    - viridisLite
+    - base64enc
+    - htmlwidgets
+    - tidyr
+    - dplyr
+    - lazyeval
+    - crosstalk
+    - purrr
+    - data.table
+    - promises
+    - RcppTOML
+    - here
+    - rappdirs
+    - gplots
+    - farver
+    - labeling
+    - munsell
+    - reshape2
+    - gridExtra
+    - RcppArmadillo
+    - sp
+    - httpuv
+    - xtable
+    - fontawesome
+    - sourcetools
+    - later
+    - crayon
+    - fastmap
+    - commonmark
+    - bslib
+    - cachem
+    - ellipsis
+    - spatstat.data
+    - spatstat.random
+    - nlme
+    - spatstat.utils
+    - spatstat.sparse
+    - goftest
+    - abind
+    - deldir
+    - polyclip
+    - fansi
+    - pillar
+    - FNN
+    - dqrng
+    - sass
+    - jquerylib
+    - memoise
+    - generics
+    - tidyselect
+    - BH
+    - sitmo
+    - codetools
+    - gtools
+    - caTools
+    - rprojroot
+    - yaml
+    - knitr
+    - rmarkdown
+    - colorspace
+    - askpass
+    - utf8
+    - plyr
+    - stringr
+    - tensor
+    - cpp11
+    - sys
+    - bitops
+    - evaluate
+    - highr
+    - xfun
+    - tinytex
+    - fs
+    - stringi
+  archive: False 
+shape : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.6"
+  requires : 
+  archive: False 
+shiny : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7.4"
+  requires : 
+    - httpuv
+    - mime
+    - jsonlite
+    - xtable
+    - fontawesome
+    - htmltools
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - rlang
+    - fastmap
+    - withr
+    - commonmark
+    - glue
+    - bslib
+    - cachem
+    - ellipsis
+    - lifecycle
+    - sass
+    - jquerylib
+    - memoise
+    - base64enc
+    - digest
+    - Rcpp
+    - cli
+    - magrittr
+    - fs
+    - rappdirs
+  archive: False 
+sm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.2-5.7.1"
+  requires : 
+  archive: False 
+sp : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6-0"
+  requires : 
+    - lattice
+  archive: False 
+spam : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.9-1"
+  requires : 
+    - dotCall64
+  archive: False 
+StanHeaders : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.21.0-7"
+  requires : 
+    - RcppParallel
+    - RcppEigen
+    - Matrix
+    - Rcpp
+    - lattice
+  archive: False 
+stargazer : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "5.2.3"
+  requires : 
+  archive: False 
+stringr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5.0"
+  requires : 
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+  archive: False 
+threejs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.3"
+  requires : 
+    - igraph
+    - htmlwidgets
+    - base64enc
+    - crosstalk
+    - htmltools
+    - jsonlite
+    - lazyeval
+    - R6
+    - yaml
+    - knitr
+    - rmarkdown
+    - magrittr
+    - Matrix
+    - pkgconfig
+    - rlang
+    - digest
+    - fastmap
+    - ellipsis
+    - evaluate
+    - highr
+    - xfun
+    - lattice
+    - bslib
+    - jquerylib
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - fs
+    - rappdirs
+  archive: False 
+tibble : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1.8"
+  requires : 
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - utf8
+  archive: False 
+tidyverse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.2"
+  requires : 
+    - broom
+    - cli
+    - crayon
+    - dbplyr
+    - dplyr
+    - dtplyr
+    - forcats
+    - ggplot2
+    - googledrive
+    - googlesheets4
+    - haven
+    - hms
+    - httr
+    - jsonlite
+    - lubridate
+    - magrittr
+    - modelr
+    - pillar
+    - purrr
+    - readr
+    - readxl
+    - reprex
+    - rlang
+    - rstudioapi
+    - rvest
+    - stringr
+    - tibble
+    - tidyr
+    - xml2
+    - backports
+    - ellipsis
+    - generics
+    - glue
+    - assertthat
+    - blob
+    - DBI
+    - lifecycle
+    - R6
+    - tidyselect
+    - vctrs
+    - withr
+    - data.table
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - scales
+    - gargle
+    - uuid
+    - cellranger
+    - curl
+    - ids
+    - rematch2
+    - cpp11
+    - pkgconfig
+    - mime
+    - openssl
+    - timechange
+    - fansi
+    - utf8
+    - clipr
+    - vroom
+    - tzdb
+    - progress
+    - callr
+    - fs
+    - knitr
+    - rmarkdown
+    - selectr
+    - stringi
+    - processx
+    - rematch
+    - rappdirs
+    - evaluate
+    - highr
+    - yaml
+    - xfun
+    - nlme
+    - Matrix
+    - askpass
+    - prettyunits
+    - bslib
+    - htmltools
+    - jquerylib
+    - tinytex
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - bit64
+    - sys
+    - bit
+    - sass
+    - cachem
+    - memoise
+    - base64enc
+    - digest
+    - fastmap
+    - lattice
+    - colorspace
+    - ps
+  archive: False 
+tidyr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.0"
+  requires : 
+    - cli
+    - dplyr
+    - glue
+    - lifecycle
+    - magrittr
+    - purrr
+    - rlang
+    - stringr
+    - tibble
+    - tidyselect
+    - vctrs
+    - cpp11
+    - generics
+    - pillar
+    - R6
+    - stringi
+    - fansi
+    - pkgconfig
+    - withr
+    - utf8
+  archive: False 
+vcd : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4-11"
+  requires : 
+    - MASS
+    - colorspace
+    - lmtest
+    - zoo
+    - lattice
+  archive: False 
+viridisLite : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.1"
+  requires : 
+  archive: False 
+whisker : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.1"
+  requires : 
+  archive: False 
+withr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.5.0"
+  requires : 
+  archive: False 
+XLConnect : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.7"
+  requires : 
+    - rJava
+  archive: False 
+xlsx : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.5"
+  requires : 
+    - rJava
+    - xlsxjars
+  archive: False 
+XML : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.99-0.13"
+  requires : 
+  archive: False 
+xtable : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8-4"
+  requires : 
+  archive: False 
+xts : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.13.0"
+  requires : 
+    - zoo
+    - lattice
+  archive: False 
+zoo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8-11"
+  requires : 
+    - lattice
+  archive: False 
+sf : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-9"
+  requires : 
+    - classInt
+    - DBI
+    - magrittr
+    - Rcpp
+    - s2
+    - units
+    - e1071
+    - class
+    - KernSmooth
+    - wk
+    - MASS
+    - proxy
+  archive: False 
+coda : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.19-4"
+  requires : 
+    - lattice
+  archive: False 
+Matrix : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5-3"
+  requires : 
+    - lattice
+  archive: False 
+pbapply : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7-0"
+  requires : 
+  archive: False 
+mvtnorm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-3"
+  requires : 
+  archive: False 
+MatrixModels : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5-1"
+  requires : 
+    - Matrix
+    - lattice
+  archive: False 
+hypergeo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-13"
+  requires : 
+    - elliptic
+    - contfrac
+    - deSolve
+    - MASS
+  archive: False 
+RcppEigen : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.3.9.3"
+  requires : 
+    - Matrix
+    - Rcpp
+    - lattice
+  archive: False 
+lattice : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.20-45"
+  requires : 
+  archive: False 
+elliptic : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4-0"
+  requires : 
+    - MASS
+  archive: False 
+contfrac : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-12"
+  requires : 
+  archive: False 
+deSolve : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.34"
+  requires : 
+  archive: False 
+glue : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.2"
+  requires : 
+  archive: False 
+lifecycle : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.3"
+  requires : 
+    - cli
+    - glue
+    - rlang
+  archive: False 
+stringi : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7.12"
+  requires : 
+  archive: False 
+vctrs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.2"
+  requires : 
+    - cli
+    - glue
+    - lifecycle
+    - rlang
+  archive: False 
+MASS : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "7.3-58.2"
+  requires : 
+  archive: False 
+loo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.5.1"
+  requires : 
+    - checkmate
+    - matrixStats
+    - backports
+  archive: False 
+posterior : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.1"
+  requires : 
+    - abind
+    - checkmate
+    - rlang
+    - tibble
+    - vctrs
+    - tensorA
+    - pillar
+    - distributional
+    - matrixStats
+    - backports
+    - generics
+    - numDeriv
+    - ggplot2
+    - scales
+    - farver
+    - digest
+    - lifecycle
+    - cli
+    - fansi
+    - glue
+    - utf8
+    - magrittr
+    - pkgconfig
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - withr
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - lattice
+  archive: False 
+mgcv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8-41"
+  requires : 
+    - nlme
+    - Matrix
+    - lattice
+  archive: False 
+rstantools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.2.0"
+  requires : 
+    - desc
+    - Rcpp
+    - RcppParallel
+    - cli
+    - R6
+    - rprojroot
+  archive: False 
+bayesplot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.10.0"
+  requires : 
+    - dplyr
+    - ggplot2
+    - ggridges
+    - glue
+    - posterior
+    - reshape2
+    - rlang
+    - tibble
+    - tidyselect
+    - cli
+    - generics
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - vctrs
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - scales
+    - withr
+    - abind
+    - checkmate
+    - tensorA
+    - distributional
+    - matrixStats
+    - plyr
+    - Rcpp
+    - stringr
+    - fansi
+    - pkgconfig
+    - backports
+    - numDeriv
+    - farver
+    - digest
+    - nlme
+    - Matrix
+    - utf8
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - lattice
+    - colorspace
+  archive: False 
+shinystan : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.6.0"
+  requires : 
+    - shiny
+    - bayesplot
+    - colourpicker
+    - DT
+    - dygraphs
+    - ggplot2
+    - gridExtra
+    - gtools
+    - markdown
+    - reshape2
+    - rstan
+    - shinyjs
+    - shinythemes
+    - threejs
+    - xtable
+    - xts
+    - dplyr
+    - ggridges
+    - glue
+    - posterior
+    - rlang
+    - tibble
+    - tidyselect
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - miniUI
+    - magrittr
+    - crosstalk
+    - jquerylib
+    - promises
+    - zoo
+    - cli
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - scales
+    - vctrs
+    - withr
+    - commonmark
+    - xfun
+    - plyr
+    - Rcpp
+    - stringr
+    - StanHeaders
+    - inline
+    - RcppParallel
+    - loo
+    - pkgbuild
+    - RcppEigen
+    - BH
+    - httpuv
+    - mime
+    - fontawesome
+    - R6
+    - sourcetools
+    - later
+    - crayon
+    - fastmap
+    - bslib
+    - cachem
+    - ellipsis
+    - digest
+    - igraph
+    - base64enc
+    - sass
+    - memoise
+    - lazyeval
+    - generics
+    - pillar
+    - yaml
+    - knitr
+    - rmarkdown
+    - Matrix
+    - pkgconfig
+    - checkmate
+    - matrixStats
+    - nlme
+    - callr
+    - desc
+    - prettyunits
+    - processx
+    - rprojroot
+    - abind
+    - tensorA
+    - distributional
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - fansi
+    - lattice
+    - backports
+    - numDeriv
+    - evaluate
+    - highr
+    - colorspace
+    - utf8
+    - ps
+    - tinytex
+    - fs
+    - rappdirs
+  archive: False 
+bridgesampling : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-2"
+  requires : 
+    - mvtnorm
+    - Matrix
+    - Brobdingnag
+    - stringr
+    - coda
+    - scales
+    - lattice
+    - farver
+    - labeling
+    - lifecycle
+    - munsell
+    - R6
+    - RColorBrewer
+    - rlang
+    - viridisLite
+    - cli
+    - glue
+    - magrittr
+    - stringi
+    - vctrs
+    - colorspace
+  archive: False 
+future : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.31.0"
+  requires : 
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
+matrixStats : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.63.0"
+  requires : 
+  archive: False 
+nleqslv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.3.4"
+  requires : 
+  archive: False 
+nlme : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1-162"
+  requires : 
+    - lattice
+  archive: False 
+abind : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4-5"
+  requires : 
+  archive: False 
+backports : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.1"
+  requires : 
+  archive: False 
+ggridges : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.4"
+  requires : 
+    - ggplot2
+    - scales
+    - withr
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - tibble
+    - vctrs
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+tidyselect : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0"
+  requires : 
+    - cli
+    - glue
+    - lifecycle
+    - rlang
+    - vctrs
+    - withr
+  archive: False 
+Brobdingnag : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-9"
+  requires : 
+    - Matrix
+    - lattice
+  archive: False 
+globals : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.16.2"
+  requires : 
+    - codetools
+  archive: False 
+listenv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9.0"
+  requires : 
+  archive: False 
+parallelly : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.34.0"
+  requires : 
+  archive: False 
+isoband : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.7"
+  requires : 
+  archive: False 
+checkmate : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.0"
+  requires : 
+    - backports
+  archive: False 
+tensorA : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.36.2"
+  requires : 
+  archive: False 
+distributional : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.1"
+  requires : 
+    - vctrs
+    - rlang
+    - generics
+    - numDeriv
+    - ggplot2
+    - scales
+    - farver
+    - digest
+    - lifecycle
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - tibble
+    - withr
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+inline : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.19"
+  requires : 
+  archive: False 
+RcppParallel : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "5.1.6"
+  requires : 
+  archive: False 
+pkgbuild : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.0"
+  requires : 
+    - callr
+    - cli
+    - crayon
+    - desc
+    - prettyunits
+    - processx
+    - R6
+    - rprojroot
+    - withr
+    - ps
+  archive: False 
+BH : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.81.0-1"
+  requires : 
+  archive: False 
+desc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.2"
+  requires : 
+    - cli
+    - R6
+    - rprojroot
+  archive: False 
+colourpicker : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0"
+  requires : 
+    - ggplot2
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - miniUI
+    - shiny
+    - shinyjs
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - yaml
+    - knitr
+    - rmarkdown
+    - httpuv
+    - mime
+    - xtable
+    - fontawesome
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - commonmark
+    - bslib
+    - cachem
+    - sass
+    - jquerylib
+    - memoise
+    - Rcpp
+    - evaluate
+    - highr
+    - xfun
+    - nlme
+    - Matrix
+    - magrittr
+    - stringr
+    - tinytex
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+    - fs
+    - rappdirs
+    - stringi
+  archive: False 
+gtools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.9.4"
+  requires : 
+  archive: False 
+markdown : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5"
+  requires : 
+    - commonmark
+    - xfun
+  archive: False 
+shinyjs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.0"
+  requires : 
+    - digest
+    - jsonlite
+    - shiny
+    - httpuv
+    - mime
+    - xtable
+    - fontawesome
+    - htmltools
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - rlang
+    - fastmap
+    - withr
+    - commonmark
+    - glue
+    - bslib
+    - cachem
+    - ellipsis
+    - lifecycle
+    - sass
+    - jquerylib
+    - memoise
+    - base64enc
+    - Rcpp
+    - cli
+    - magrittr
+    - fs
+    - rappdirs
+  archive: False 
+shinythemes : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0"
+  requires : 
+    - shiny
+    - httpuv
+    - mime
+    - jsonlite
+    - xtable
+    - fontawesome
+    - htmltools
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - rlang
+    - fastmap
+    - withr
+    - commonmark
+    - glue
+    - bslib
+    - cachem
+    - ellipsis
+    - lifecycle
+    - sass
+    - jquerylib
+    - memoise
+    - base64enc
+    - digest
+    - Rcpp
+    - cli
+    - magrittr
+    - fs
+    - rappdirs
+  archive: False 
+htmltools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.4"
+  requires : 
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+  archive: False 
+jsonlite : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.4"
+  requires : 
+  archive: False 
+miniUI : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.1.1"
+  requires : 
+    - shiny
+    - htmltools
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - httpuv
+    - mime
+    - jsonlite
+    - xtable
+    - fontawesome
+    - R6
+    - sourcetools
+    - later
+    - promises
+    - crayon
+    - withr
+    - commonmark
+    - glue
+    - bslib
+    - cachem
+    - lifecycle
+    - sass
+    - jquerylib
+    - memoise
+    - Rcpp
+    - cli
+    - magrittr
+    - fs
+    - rappdirs
+  archive: False 
+rprojroot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.3"
+  requires : 
+  archive: False 
+generics : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.3"
+  requires : 
+  archive: False 
+numDeriv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2016.8-1.1"
+  requires : 
+  archive: False 
+farver : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.1"
+  requires : 
+  archive: False 
+crosstalk : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0"
+  requires : 
+    - htmltools
+    - jsonlite
+    - lazyeval
+    - R6
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+  archive: False 
+jquerylib : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.4"
+  requires : 
+    - htmltools
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+  archive: False 
+promises : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0.1"
+  requires : 
+    - R6
+    - Rcpp
+    - later
+    - rlang
+    - magrittr
+  archive: False 
+codetools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2-19"
+  requires : 
+  archive: False 
+commonmark : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.1"
+  requires : 
+  archive: False 
+xfun : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.37"
+  requires : 
+  archive: False 
+utf8 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.3"
+  requires : 
+  archive: False 
+callr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.7.3"
+  requires : 
+    - processx
+    - R6
+    - ps
+  archive: False 
+crayon : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5.2"
+  requires : 
+  archive: False 
+prettyunits : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.1"
+  requires : 
+  archive: False 
+processx : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.8.0"
+  requires : 
+    - ps
+    - R6
+  archive: False 
+RColorBrewer : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-3"
+  requires : 
+  archive: False 
+httpuv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.9"
+  requires : 
+    - Rcpp
+    - R6
+    - promises
+    - later
+    - rlang
+    - magrittr
+  archive: False 
+fontawesome : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.0"
+  requires : 
+    - rlang
+    - htmltools
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+  archive: False 
+sourcetools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.7-1"
+  requires : 
+  archive: False 
+later : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.0"
+  requires : 
+    - Rcpp
+    - rlang
+  archive: False 
+fastmap : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.0"
+  requires : 
+  archive: False 
+bslib : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.2"
+  requires : 
+    - htmltools
+    - jsonlite
+    - sass
+    - jquerylib
+    - rlang
+    - cachem
+    - memoise
+    - base64enc
+    - mime
+    - fastmap
+    - digest
+    - ellipsis
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+cachem : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.6"
+  requires : 
+    - rlang
+    - fastmap
+  archive: False 
+ellipsis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.2"
+  requires : 
+    - rlang
+  archive: False 
+base64enc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1-3"
+  requires : 
+  archive: False 
+pkgconfig : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.3"
+  requires : 
+  archive: False 
+sass : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.5"
+  requires : 
+    - fs
+    - rlang
+    - htmltools
+    - R6
+    - rappdirs
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+  archive: False 
+memoise : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.1"
+  requires : 
+    - rlang
+    - cachem
+    - fastmap
+  archive: False 
+yaml : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.3.7"
+  requires : 
+  archive: False 
+rmarkdown : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.20"
+  requires : 
+    - bslib
+    - evaluate
+    - htmltools
+    - jquerylib
+    - jsonlite
+    - knitr
+    - stringr
+    - tinytex
+    - xfun
+    - yaml
+    - sass
+    - rlang
+    - cachem
+    - memoise
+    - base64enc
+    - mime
+    - digest
+    - fastmap
+    - ellipsis
+    - highr
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - stringi
+    - vctrs
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+colorspace : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1-0"
+  requires : 
+  archive: False 
+ps : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7.2"
+  requires : 
+  archive: False 
+evaluate : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.20"
+  requires : 
+  archive: False 
+highr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.10"
+  requires : 
+    - xfun
+  archive: False 
+tinytex : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.44"
+  requires : 
+    - xfun
+  archive: False 
+fs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.1"
+  requires : 
+  archive: False 
+rappdirs : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.3"
+  requires : 
+  archive: False 
+carData : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-5"
+  requires : 
+  archive: False 
+nnet : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "7.3-18"
+  requires : 
+  archive: False 
+pbkrtest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.2"
+  requires : 
+    - lme4
+    - broom
+    - dplyr
+    - MASS
+    - Matrix
+    - numDeriv
+    - backports
+    - ellipsis
+    - generics
+    - glue
+    - purrr
+    - rlang
+    - stringr
+    - tibble
+    - tidyr
+    - cli
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - lattice
+    - boot
+    - nlme
+    - minqa
+    - nloptr
+    - Rcpp
+    - RcppEigen
+    - testthat
+    - fansi
+    - utf8
+    - stringi
+    - pkgconfig
+    - cpp11
+    - withr
+    - brio
+    - callr
+    - desc
+    - digest
+    - evaluate
+    - jsonlite
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - rprojroot
+    - crayon
+    - fs
+    - diffobj
+    - rematch2
+  archive: False 
+quantreg : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "5.94"
+  requires : 
+    - SparseM
+    - Matrix
+    - MatrixModels
+    - survival
+    - MASS
+    - lattice
+  archive: False 
+boot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3-28.1"
+  requires : 
+  archive: False 
+minqa : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.5"
+  requires : 
+    - Rcpp
+  archive: False 
+nloptr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.3"
+  requires : 
+    - testthat
+    - brio
+    - callr
+    - cli
+    - desc
+    - digest
+    - ellipsis
+    - evaluate
+    - jsonlite
+    - lifecycle
+    - magrittr
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - R6
+    - rlang
+    - waldo
+    - withr
+    - rprojroot
+    - glue
+    - crayon
+    - fs
+    - diffobj
+    - fansi
+    - rematch2
+    - tibble
+    - pillar
+    - pkgconfig
+    - vctrs
+    - utf8
+  archive: False 
+broom : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.3"
+  requires : 
+    - backports
+    - dplyr
+    - ellipsis
+    - generics
+    - glue
+    - purrr
+    - rlang
+    - stringr
+    - tibble
+    - tidyr
+    - cli
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - stringi
+    - fansi
+    - pkgconfig
+    - cpp11
+    - utf8
+    - withr
+  archive: False 
+SparseM : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.81"
+  requires : 
+  archive: False 
+survival : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.5-3"
+  requires : 
+    - Matrix
+    - lattice
+  archive: False 
+purrr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - cli
+    - lifecycle
+    - magrittr
+    - rlang
+    - vctrs
+    - glue
+  archive: False 
+testthat : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1.6"
+  requires : 
+    - brio
+    - callr
+    - cli
+    - desc
+    - digest
+    - ellipsis
+    - evaluate
+    - jsonlite
+    - lifecycle
+    - magrittr
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - R6
+    - rlang
+    - waldo
+    - withr
+    - rprojroot
+    - glue
+    - crayon
+    - fs
+    - diffobj
+    - fansi
+    - rematch2
+    - tibble
+    - pillar
+    - pkgconfig
+    - vctrs
+    - utf8
+  archive: False 
+brio : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.3"
+  requires : 
+  archive: False 
+pkgload : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.2"
+  requires : 
+    - cli
+    - crayon
+    - desc
+    - fs
+    - glue
+    - rlang
+    - rprojroot
+    - withr
+    - R6
+  archive: False 
+praise : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.0"
+  requires : 
+  archive: False 
+waldo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.0"
+  requires : 
+    - cli
+    - diffobj
+    - fansi
+    - glue
+    - rematch2
+    - rlang
+    - tibble
+    - crayon
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - vctrs
+    - utf8
+  archive: False 
+cpp11 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.3"
+  requires : 
+  archive: False 
+diffobj : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.5"
+  requires : 
+    - crayon
+  archive: False 
+rematch2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.2"
+  requires : 
+    - tibble
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - utf8
+  archive: False 
+e1071 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7-13"
+  requires : 
+    - class
+    - proxy
+    - MASS
+  archive: False 
+foreach : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5.2"
+  requires : 
+    - codetools
+    - iterators
+  archive: False 
+ModelMetrics : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.2.2"
+  requires : 
+    - Rcpp
+    - data.table
+  archive: False 
+pROC : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.18.0"
+  requires : 
+    - plyr
+    - Rcpp
+  archive: False 
+recipes : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.5"
+  requires : 
+    - dplyr
+    - cli
+    - clock
+    - ellipsis
+    - generics
+    - glue
+    - gower
+    - hardhat
+    - ipred
+    - lifecycle
+    - lubridate
+    - magrittr
+    - Matrix
+    - purrr
+    - rlang
+    - tibble
+    - tidyr
+    - tidyselect
+    - timeDate
+    - vctrs
+    - withr
+    - tzdb
+    - cpp11
+    - pillar
+    - R6
+    - rpart
+    - MASS
+    - survival
+    - nnet
+    - class
+    - prodlim
+    - timechange
+    - lattice
+    - fansi
+    - pkgconfig
+    - stringr
+    - utf8
+    - Rcpp
+    - KernSmooth
+    - lava
+    - stringi
+    - future.apply
+    - numDeriv
+    - progressr
+    - SQUAREM
+    - future
+    - globals
+    - digest
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
+class : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "7.3-21"
+  requires : 
+    - MASS
+  archive: False 
+proxy : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4-27"
+  requires : 
+  archive: False 
+iterators : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.14"
+  requires : 
+  archive: False 
+data.table : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.14.8"
+  requires : 
+  archive: False 
+clock : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.1"
+  requires : 
+    - rlang
+    - tzdb
+    - vctrs
+    - cpp11
+    - cli
+    - glue
+    - lifecycle
+  archive: False 
+gower : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+  archive: False 
+hardhat : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.0"
+  requires : 
+    - glue
+    - rlang
+    - tibble
+    - vctrs
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - cli
+    - utf8
+  archive: False 
+ipred : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9-13"
+  requires : 
+    - rpart
+    - MASS
+    - survival
+    - nnet
+    - class
+    - prodlim
+    - Rcpp
+    - KernSmooth
+    - lava
+    - Matrix
+    - future.apply
+    - numDeriv
+    - progressr
+    - SQUAREM
+    - lattice
+    - future
+    - globals
+    - digest
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
+timeDate : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4022.108"
+  requires : 
+  archive: False 
+tzdb : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.0"
+  requires : 
+    - cpp11
+  archive: False 
+rpart : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.1.19"
+  requires : 
+  archive: False 
+prodlim : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2019.11.13"
+  requires : 
+    - Rcpp
+    - survival
+    - KernSmooth
+    - lava
+    - future.apply
+    - numDeriv
+    - progressr
+    - SQUAREM
+    - Matrix
+    - future
+    - globals
+    - lattice
+    - digest
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
+timechange : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.0"
+  requires : 
+    - cpp11
+  archive: False 
+KernSmooth : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.23-20"
+  requires : 
+  archive: False 
+lava : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7.1"
+  requires : 
+    - future.apply
+    - numDeriv
+    - progressr
+    - survival
+    - SQUAREM
+    - future
+    - globals
+    - digest
+    - Matrix
+    - listenv
+    - parallelly
+    - codetools
+    - lattice
+  archive: False 
+future.apply : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.10.0"
+  requires : 
+    - future
+    - globals
+    - digest
+    - listenv
+    - parallelly
+    - codetools
+  archive: False 
+progressr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.13.0"
+  requires : 
+    - digest
+  archive: False 
+SQUAREM : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2021.1"
+  requires : 
+  archive: False 
+S4Vectors : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "0.36.1"
+  requires : 
+    - BiocGenerics
+  archive: False 
+IRanges : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.32.0"
+  requires : 
+    - BiocGenerics
+    - S4Vectors
+  archive: False 
+GenomicRanges : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.50.2"
+  requires : 
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - GenomeInfoDb
+    - XVector
+    - RCurl
+    - GenomeInfoDbData
+    - zlibbioc
+    - bitops
+  archive: False 
+SummarizedExperiment : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.28.0"
+  requires : 
+    - MatrixGenerics
+    - GenomicRanges
+    - Biobase
+    - Matrix
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - GenomeInfoDb
+    - DelayedArray
+    - RCurl
+    - GenomeInfoDbData
+    - XVector
+    - lattice
+    - matrixStats
+    - bitops
+    - zlibbioc
+  archive: False 
+Biobase : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.58.0"
+  requires : 
+    - BiocGenerics
+  archive: False 
+BiocParallel : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.32.5"
+  requires : 
+    - futile.logger
+    - snow
+    - codetools
+    - BH
+    - cpp11
+    - lambda.r
+    - futile.options
+    - formatR
+  archive: False 
+locfit : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5-9.7"
+  requires : 
+    - lattice
+  archive: False 
+geneplotter : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.76.0"
+  requires : 
+    - Biobase
+    - BiocGenerics
+    - lattice
+    - annotate
+    - AnnotationDbi
+    - RColorBrewer
+    - XML
+    - DBI
+    - xtable
+    - httr
+    - IRanges
+    - RSQLite
+    - S4Vectors
+    - KEGGREST
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - png
+    - Biostrings
+    - bit64
+    - blob
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - bit
+    - rlang
+    - vctrs
+    - cachem
+    - askpass
+    - sys
+    - fastmap
+    - RCurl
+    - GenomeInfoDbData
+    - cli
+    - glue
+    - lifecycle
+    - zlibbioc
+    - bitops
+  archive: False 
+RcppArmadillo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.11.4.4.0"
+  requires : 
+    - Rcpp
+  archive: False 
+futile.logger : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.3"
+  requires : 
+    - lambda.r
+    - futile.options
+    - formatR
+  archive: False 
+snow : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4-4"
+  requires : 
+  archive: False 
+annotate : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.76.0"
+  requires : 
+    - AnnotationDbi
+    - XML
+    - Biobase
+    - DBI
+    - xtable
+    - BiocGenerics
+    - httr
+    - IRanges
+    - RSQLite
+    - S4Vectors
+    - KEGGREST
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - png
+    - Biostrings
+    - askpass
+    - bit64
+    - blob
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - sys
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - bit
+    - rlang
+    - vctrs
+    - cachem
+    - fastmap
+    - RCurl
+    - GenomeInfoDbData
+    - cli
+    - glue
+    - lifecycle
+    - zlibbioc
+    - bitops
+  archive: False 
+AnnotationDbi : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.60.0"
+  requires : 
+    - BiocGenerics
+    - Biobase
+    - IRanges
+    - DBI
+    - RSQLite
+    - S4Vectors
+    - KEGGREST
+    - httr
+    - png
+    - Biostrings
+    - bit64
+    - blob
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - bit
+    - rlang
+    - vctrs
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - cachem
+    - fastmap
+    - RCurl
+    - GenomeInfoDbData
+    - askpass
+    - cli
+    - glue
+    - lifecycle
+    - zlibbioc
+    - sys
+    - bitops
+  archive: False 
+GenomeInfoDb : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.34.9"
+  requires : 
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - RCurl
+    - GenomeInfoDbData
+    - bitops
+  archive: False 
+XVector : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "0.38.0"
+  requires : 
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - zlibbioc
+  archive: False 
+MatrixGenerics : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.10.0"
+  requires : 
+    - matrixStats
+  archive: False 
+DelayedArray : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "0.24.0"
+  requires : 
+    - Matrix
+    - BiocGenerics
+    - MatrixGenerics
+    - S4Vectors
+    - IRanges
+    - lattice
+    - matrixStats
+  archive: False 
+DBI : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.3"
+  requires : 
+  archive: False 
+httr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.4"
+  requires : 
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - askpass
+    - sys
+  archive: False 
+KEGGREST : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.38.0"
+  requires : 
+    - httr
+    - png
+    - Biostrings
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - RCurl
+    - GenomeInfoDbData
+    - askpass
+    - zlibbioc
+    - sys
+    - bitops
+  archive: False 
+lambda.r : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.4"
+  requires : 
+    - formatR
+  archive: False 
+futile.options : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+  archive: False 
+RCurl : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.98-1.10"
+  requires : 
+    - bitops
+  archive: False 
+zlibbioc : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.44.0"
+  requires : 
+  archive: False 
+curl : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "5.0.0"
+  requires : 
+  archive: False 
+openssl : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.5"
+  requires : 
+    - askpass
+    - sys
+  archive: False 
+png : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1-8"
+  requires : 
+  archive: False 
+Biostrings : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.66.0"
+  requires : 
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - RCurl
+    - GenomeInfoDbData
+    - zlibbioc
+    - bitops
+  archive: False 
+formatR : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.14"
+  requires : 
+  archive: False 
+bitops : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-7"
+  requires : 
+  archive: False 
+bit64 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.0.5"
+  requires : 
+    - bit
+  archive: False 
+blob : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.3"
+  requires : 
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - lifecycle
+  archive: False 
+plogr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.0"
+  requires : 
+  archive: False 
+bit : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.0.5"
+  requires : 
+  archive: False 
+askpass : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1"
+  requires : 
+    - sys
+  archive: False 
+sys : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.4.1"
+  requires : 
+  archive: False 
+biomaRt : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.54.0"
+  requires : 
+    - XML
+    - AnnotationDbi
+    - progress
+    - stringr
+    - httr
+    - digest
+    - BiocFileCache
+    - rappdirs
+    - xml2
+    - BiocGenerics
+    - Biobase
+    - IRanges
+    - DBI
+    - RSQLite
+    - S4Vectors
+    - KEGGREST
+    - dbplyr
+    - dplyr
+    - filelock
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - hms
+    - prettyunits
+    - crayon
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+    - assertthat
+    - blob
+    - pillar
+    - purrr
+    - tibble
+    - tidyselect
+    - withr
+    - generics
+    - ellipsis
+    - pkgconfig
+    - png
+    - Biostrings
+    - askpass
+    - bit64
+    - memoise
+    - plogr
+    - cpp11
+    - sys
+    - XVector
+    - GenomeInfoDb
+    - bit
+    - cachem
+    - fansi
+    - utf8
+    - fastmap
+    - RCurl
+    - GenomeInfoDbData
+    - zlibbioc
+    - bitops
+  archive: False 
+hwriter : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.2.1"
+  requires : 
+  archive: False 
+Rsamtools : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.14.0"
+  requires : 
+    - GenomeInfoDb
+    - GenomicRanges
+    - Biostrings
+    - BiocGenerics
+    - S4Vectors
+    - IRanges
+    - XVector
+    - zlibbioc
+    - bitops
+    - BiocParallel
+    - Rhtslib
+    - futile.logger
+    - snow
+    - codetools
+    - BH
+    - cpp11
+    - crayon
+    - RCurl
+    - GenomeInfoDbData
+    - lambda.r
+    - futile.options
+    - formatR
+  archive: False 
+statmod : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5.0"
+  requires : 
+  archive: False 
+genefilter : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "1.80.3"
+  requires : 
+    - BiocGenerics
+    - AnnotationDbi
+    - annotate
+    - Biobase
+    - survival
+    - XML
+    - DBI
+    - xtable
+    - httr
+    - IRanges
+    - RSQLite
+    - S4Vectors
+    - KEGGREST
+    - Matrix
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - png
+    - Biostrings
+    - lattice
+    - bit64
+    - blob
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - XVector
+    - GenomeInfoDb
+    - crayon
+    - bit
+    - rlang
+    - vctrs
+    - cachem
+    - askpass
+    - sys
+    - fastmap
+    - RCurl
+    - GenomeInfoDbData
+    - cli
+    - glue
+    - lifecycle
+    - zlibbioc
+    - bitops
+  archive: False 
+progress : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.2"
+  requires : 
+    - hms
+    - prettyunits
+    - R6
+    - crayon
+    - ellipsis
+    - lifecycle
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+  archive: False 
+BiocFileCache : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.6.1"
+  requires : 
+    - dbplyr
+    - dplyr
+    - RSQLite
+    - DBI
+    - rappdirs
+    - filelock
+    - curl
+    - httr
+    - assertthat
+    - blob
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - pillar
+    - purrr
+    - R6
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - withr
+    - generics
+    - jsonlite
+    - mime
+    - openssl
+    - bit64
+    - memoise
+    - pkgconfig
+    - plogr
+    - cpp11
+    - bit
+    - cachem
+    - askpass
+    - fansi
+    - utf8
+    - sys
+    - fastmap
+  archive: False 
+xml2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.3"
+  requires : 
+  archive: False 
+Rhtslib : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "2.0.0"
+  requires : 
+    - zlibbioc
+  archive: False 
+dbplyr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.3.0"
+  requires : 
+    - assertthat
+    - blob
+    - cli
+    - DBI
+    - dplyr
+    - glue
+    - lifecycle
+    - magrittr
+    - pillar
+    - purrr
+    - R6
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - withr
+    - generics
+    - fansi
+    - utf8
+    - pkgconfig
+  archive: False 
+filelock : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.2"
+  requires : 
+  archive: False 
+hms : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.2"
+  requires : 
+    - ellipsis
+    - lifecycle
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+  archive: False 
+assertthat : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.1"
+  requires : 
+  archive: False 
+usethis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.6"
+  requires : 
+    - cli
+    - clipr
+    - crayon
+    - curl
+    - desc
+    - fs
+    - gert
+    - gh
+    - glue
+    - jsonlite
+    - lifecycle
+    - purrr
+    - rappdirs
+    - rlang
+    - rprojroot
+    - rstudioapi
+    - whisker
+    - withr
+    - yaml
+    - R6
+    - askpass
+    - credentials
+    - openssl
+    - sys
+    - zip
+    - gitcreds
+    - httr
+    - ini
+    - magrittr
+    - vctrs
+    - mime
+  archive: False 
+pkgdown : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.7"
+  requires : 
+    - bslib
+    - callr
+    - cli
+    - desc
+    - digest
+    - downlit
+    - fs
+    - httr
+    - jsonlite
+    - magrittr
+    - memoise
+    - purrr
+    - ragg
+    - rlang
+    - rmarkdown
+    - tibble
+    - whisker
+    - withr
+    - xml2
+    - yaml
+    - htmltools
+    - sass
+    - jquerylib
+    - cachem
+    - base64enc
+    - mime
+    - processx
+    - R6
+    - rprojroot
+    - brio
+    - evaluate
+    - fansi
+    - vctrs
+    - curl
+    - openssl
+    - lifecycle
+    - systemfonts
+    - textshaping
+    - knitr
+    - stringr
+    - tinytex
+    - xfun
+    - pillar
+    - pkgconfig
+    - fastmap
+    - ellipsis
+    - highr
+    - glue
+    - askpass
+    - utf8
+    - ps
+    - rappdirs
+    - stringi
+    - cpp11
+    - sys
+  archive: False 
+profvis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.7"
+  requires : 
+    - htmlwidgets
+    - stringr
+    - htmltools
+    - jsonlite
+    - yaml
+    - knitr
+    - rmarkdown
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - evaluate
+    - highr
+    - xfun
+    - bslib
+    - jquerylib
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+rcmdcheck : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.0"
+  requires : 
+    - callr
+    - cli
+    - curl
+    - desc
+    - digest
+    - pkgbuild
+    - prettyunits
+    - R6
+    - rprojroot
+    - sessioninfo
+    - withr
+    - xopen
+    - processx
+    - crayon
+    - ps
+  archive: False 
+remotes : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.4.2"
+  requires : 
+  archive: False 
+roxygen2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "7.2.3"
+  requires : 
+    - brew
+    - cli
+    - commonmark
+    - desc
+    - knitr
+    - pkgload
+    - purrr
+    - R6
+    - rlang
+    - stringi
+    - stringr
+    - withr
+    - xml2
+    - cpp11
+    - rprojroot
+    - evaluate
+    - highr
+    - yaml
+    - xfun
+    - crayon
+    - fs
+    - glue
+    - lifecycle
+    - magrittr
+    - vctrs
+  archive: False 
+rversions : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.2"
+  requires : 
+    - curl
+    - xml2
+  archive: False 
+sessioninfo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.2"
+  requires : 
+    - cli
+  archive: False 
+urlchecker : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - cli
+    - curl
+    - xml2
+  archive: False 
+downlit : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.2"
+  requires : 
+    - brio
+    - desc
+    - digest
+    - evaluate
+    - fansi
+    - memoise
+    - rlang
+    - vctrs
+    - withr
+    - yaml
+    - cli
+    - R6
+    - rprojroot
+    - cachem
+    - glue
+    - lifecycle
+    - fastmap
+  archive: False 
+ragg : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.5"
+  requires : 
+    - systemfonts
+    - textshaping
+    - cpp11
+  archive: False 
+xopen : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.0"
+  requires : 
+    - processx
+    - ps
+    - R6
+  archive: False 
+brew : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-8"
+  requires : 
+  archive: False 
+clipr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8.0"
+  requires : 
+  archive: False 
+gert : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.9.2"
+  requires : 
+    - askpass
+    - credentials
+    - openssl
+    - rstudioapi
+    - sys
+    - zip
+    - curl
+    - jsonlite
+  archive: False 
+gh : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.1"
+  requires : 
+    - cli
+    - gitcreds
+    - httr
+    - ini
+    - jsonlite
+    - curl
+    - mime
+    - openssl
+    - R6
+    - askpass
+    - sys
+  archive: False 
+credentials : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.2"
+  requires : 
+    - openssl
+    - sys
+    - curl
+    - jsonlite
+    - askpass
+  archive: False 
+zip : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.2.2"
+  requires : 
+  archive: False 
+gitcreds : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.2"
+  requires : 
+  archive: False 
+ini : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.1"
+  requires : 
+  archive: False 
+systemfonts : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.4"
+  requires : 
+    - cpp11
+  archive: False 
+textshaping : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.6"
+  requires : 
+    - systemfonts
+    - cpp11
+  archive: False 
+Deriv : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.1.3"
+  requires : 
+  archive: False 
+microbenchmark : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.9"
+  requires : 
+  archive: False 
+limma : 
+  baseurl : "http://bioconductor.org/packages/release/bioc/src/contrib"
+  version : "3.54.1"
+  requires : 
+  archive: False 
+viridis : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.2"
+  requires : 
+    - viridisLite
+    - ggplot2
+    - gridExtra
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - nlme
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+  archive: False 
+RgoogleMaps : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.5.3"
+  requires : 
+    - png
+    - sp
+    - lattice
+  archive: False 
+jpeg : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1-10"
+  requires : 
+  archive: False 
+ggrepel : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9.3"
+  requires : 
+    - ggplot2
+    - Rcpp
+    - rlang
+    - scales
+    - withr
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - tibble
+    - vctrs
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+ggsci : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.9"
+  requires : 
+    - scales
+    - ggplot2
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - tibble
+    - vctrs
+    - withr
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+cowplot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.1"
+  requires : 
+    - ggplot2
+    - gtable
+    - rlang
+    - scales
+    - cli
+    - glue
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - tibble
+    - vctrs
+    - withr
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+ggsignif : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.4"
+  requires : 
+    - ggplot2
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - nlme
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+  archive: False 
+polynom : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4-1"
+  requires : 
+  archive: False 
+rstatix : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.7.2"
+  requires : 
+    - tidyr
+    - purrr
+    - broom
+    - rlang
+    - tibble
+    - dplyr
+    - magrittr
+    - corrplot
+    - tidyselect
+    - car
+    - generics
+    - backports
+    - ellipsis
+    - glue
+    - stringr
+    - carData
+    - abind
+    - MASS
+    - mgcv
+    - nnet
+    - pbkrtest
+    - quantreg
+    - lme4
+    - nlme
+    - scales
+    - cli
+    - lifecycle
+    - pillar
+    - R6
+    - vctrs
+    - fansi
+    - pkgconfig
+    - cpp11
+    - withr
+    - Matrix
+    - lattice
+    - boot
+    - minqa
+    - nloptr
+    - Rcpp
+    - RcppEigen
+    - numDeriv
+    - utf8
+    - SparseM
+    - MatrixModels
+    - survival
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - colorspace
+    - testthat
+    - brio
+    - callr
+    - desc
+    - digest
+    - evaluate
+    - jsonlite
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - rprojroot
+    - crayon
+    - fs
+    - diffobj
+    - rematch2
+  archive: False 
+corrplot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.92"
+  requires : 
+  archive: False 
+caTools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.18.2"
+  requires : 
+    - bitops
+  archive: False 
+forcats : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.0"
+  requires : 
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - tibble
+    - fansi
+    - pillar
+    - pkgconfig
+    - vctrs
+    - utf8
+  archive: False 
+readr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.4"
+  requires : 
+    - cli
+    - clipr
+    - crayon
+    - hms
+    - lifecycle
+    - R6
+    - rlang
+    - tibble
+    - vroom
+    - cpp11
+    - tzdb
+    - ellipsis
+    - pkgconfig
+    - vctrs
+    - glue
+    - fansi
+    - magrittr
+    - pillar
+    - bit64
+    - tidyselect
+    - withr
+    - progress
+    - bit
+    - utf8
+    - prettyunits
+  archive: False 
+vroom : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.6.1"
+  requires : 
+    - bit64
+    - cli
+    - crayon
+    - glue
+    - hms
+    - lifecycle
+    - rlang
+    - tibble
+    - tidyselect
+    - tzdb
+    - vctrs
+    - withr
+    - cpp11
+    - progress
+    - bit
+    - ellipsis
+    - pkgconfig
+    - prettyunits
+    - R6
+    - fansi
+    - magrittr
+    - pillar
+    - utf8
+  archive: False 
+Formula : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-4"
+  requires : 
+  archive: False 
+latticeExtra : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6-30"
+  requires : 
+    - lattice
+    - png
+    - jpeg
+    - RColorBrewer
+    - interp
+    - MASS
+    - Rcpp
+    - deldir
+    - RcppEigen
+    - Matrix
+  archive: False 
+cluster : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.4"
+  requires : 
+  archive: False 
+foreign : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8-84"
+  requires : 
+  archive: False 
+htmlTable : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.4.1"
+  requires : 
+    - stringr
+    - knitr
+    - magrittr
+    - checkmate
+    - htmlwidgets
+    - htmltools
+    - rstudioapi
+    - backports
+    - digest
+    - base64enc
+    - rlang
+    - fastmap
+    - ellipsis
+    - jsonlite
+    - yaml
+    - rmarkdown
+    - evaluate
+    - highr
+    - xfun
+    - cli
+    - glue
+    - lifecycle
+    - stringi
+    - vctrs
+    - bslib
+    - jquerylib
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - fs
+    - R6
+    - rappdirs
+  archive: False 
+interp : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-3"
+  requires : 
+    - Rcpp
+    - deldir
+    - RcppEigen
+    - Matrix
+    - lattice
+  archive: False 
+deldir : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-6"
+  requires : 
+  archive: False 
+repr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.6"
+  requires : 
+    - htmltools
+    - jsonlite
+    - pillar
+    - base64enc
+    - digest
+    - rlang
+    - fastmap
+    - ellipsis
+    - cli
+    - fansi
+    - glue
+    - lifecycle
+    - utf8
+    - vctrs
+  archive: False 
+IRdisplay : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1"
+  requires : 
+    - repr
+    - htmltools
+    - jsonlite
+    - pillar
+    - base64enc
+    - digest
+    - rlang
+    - fastmap
+    - ellipsis
+    - cli
+    - fansi
+    - glue
+    - lifecycle
+    - utf8
+    - vctrs
+  archive: False 
+pbdZMQ : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3-9"
+  requires : 
+  archive: False 
+uuid : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-0"
+  requires : 
+  archive: False 
+rvest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.3"
+  requires : 
+    - glue
+    - cli
+    - httr
+    - lifecycle
+    - magrittr
+    - rlang
+    - selectr
+    - tibble
+    - xml2
+    - withr
+    - curl
+    - jsonlite
+    - mime
+    - openssl
+    - R6
+    - stringr
+    - fansi
+    - pillar
+    - pkgconfig
+    - vctrs
+    - askpass
+    - utf8
+    - stringi
+    - sys
+  archive: False 
+webshot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.5.4"
+  requires : 
+    - magrittr
+    - jsonlite
+    - callr
+    - processx
+    - R6
+    - ps
+  archive: False 
+svglite : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.1.1"
+  requires : 
+    - systemfonts
+    - cpp11
+  archive: False 
+selectr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4-2"
+  requires : 
+    - stringr
+    - R6
+    - cli
+    - glue
+    - lifecycle
+    - magrittr
+    - rlang
+    - stringi
+    - vctrs
+  archive: False 
+pbivnorm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.0"
+  requires : 
+  archive: False 
+quadprog : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5-8"
+  requires : 
+  archive: False 
+raster : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.6-14"
+  requires : 
+    - sp
+    - Rcpp
+    - terra
+    - lattice
+  archive: False 
+leaflet.providers : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.9.0"
+  requires : 
+  archive: False 
+terra : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7-3"
+  requires : 
+    - Rcpp
+  archive: False 
+sandwich : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-2"
+  requires : 
+    - zoo
+    - lattice
+  archive: False 
+msm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.7"
+  requires : 
+    - survival
+    - mvtnorm
+    - expm
+    - Matrix
+    - lattice
+  archive: False 
+polycor : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8-1"
+  requires : 
+    - mvtnorm
+    - Matrix
+    - admisc
+    - lattice
+  archive: False 
+expm : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.999-7"
+  requires : 
+    - Matrix
+    - lattice
+  archive: False 
+admisc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.30"
+  requires : 
+  archive: False 
+mcmc : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9-7"
+  requires : 
+  archive: False 
+FactoMineR : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.7"
+  requires : 
+    - car
+    - cluster
+    - DT
+    - ellipse
+    - emmeans
+    - flashClust
+    - lattice
+    - leaps
+    - MASS
+    - multcompView
+    - scatterplot3d
+    - ggplot2
+    - ggrepel
+    - carData
+    - abind
+    - mgcv
+    - nnet
+    - pbkrtest
+    - quantreg
+    - lme4
+    - nlme
+    - scales
+    - htmltools
+    - htmlwidgets
+    - jsonlite
+    - magrittr
+    - crosstalk
+    - jquerylib
+    - promises
+    - estimability
+    - numDeriv
+    - mvtnorm
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - rlang
+    - tibble
+    - vctrs
+    - withr
+    - Rcpp
+    - lazyeval
+    - R6
+    - digest
+    - base64enc
+    - fastmap
+    - ellipsis
+    - yaml
+    - knitr
+    - rmarkdown
+    - Matrix
+    - boot
+    - minqa
+    - nloptr
+    - RcppEigen
+    - broom
+    - dplyr
+    - later
+    - SparseM
+    - MatrixModels
+    - survival
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - pillar
+    - pkgconfig
+    - backports
+    - generics
+    - purrr
+    - stringr
+    - tidyr
+    - tidyselect
+    - evaluate
+    - highr
+    - xfun
+    - colorspace
+    - testthat
+    - utf8
+    - bslib
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - mime
+    - stringi
+    - brio
+    - callr
+    - desc
+    - pkgload
+    - praise
+    - processx
+    - ps
+    - waldo
+    - cpp11
+    - rprojroot
+    - crayon
+    - fs
+    - rappdirs
+    - diffobj
+    - rematch2
+  archive: False 
+mice : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.15.0"
+  requires : 
+    - broom
+    - dplyr
+    - generics
+    - lattice
+    - Rcpp
+    - rlang
+    - tidyr
+    - cpp11
+    - backports
+    - ellipsis
+    - glue
+    - purrr
+    - stringr
+    - tibble
+    - cli
+    - lifecycle
+    - magrittr
+    - pillar
+    - R6
+    - tidyselect
+    - vctrs
+    - fansi
+    - utf8
+    - stringi
+    - pkgconfig
+    - withr
+  archive: False 
+doParallel : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.17"
+  requires : 
+    - foreach
+    - iterators
+    - codetools
+  archive: False 
+ellipse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.3"
+  requires : 
+  archive: False 
+emmeans : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.4-1"
+  requires : 
+    - estimability
+    - numDeriv
+    - mvtnorm
+  archive: False 
+flashClust : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.01-2"
+  requires : 
+  archive: False 
+leaps : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1"
+  requires : 
+  archive: False 
+multcompView : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1-8"
+  requires : 
+  archive: False 
+scatterplot3d : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3-42"
+  requires : 
+  archive: False 
+estimability : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.1"
+  requires : 
+  archive: False 
+TH.data : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-1"
+  requires : 
+    - survival
+    - MASS
+    - Matrix
+    - lattice
+  archive: False 
+bdsmatrix : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3-6"
+  requires : 
+  archive: False 
+collapse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.9.2"
+  requires : 
+    - Rcpp
+  archive: False 
+lmtest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.9-40"
+  requires : 
+    - zoo
+    - lattice
+  archive: False 
+maxLik : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5-2"
+  requires : 
+    - miscTools
+    - sandwich
+    - generics
+    - digest
+    - zoo
+    - lattice
+  archive: False 
+Rdpack : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.4"
+  requires : 
+    - rbibutils
+  archive: False 
+miscTools : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6-26"
+  requires : 
+    - digest
+  archive: False 
+rbibutils : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.2.13"
+  requires : 
+  archive: False 
+TTR : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.24.3"
+  requires : 
+    - xts
+    - zoo
+    - curl
+    - lattice
+  archive: False 
+styler : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.9.0"
+  requires : 
+    - cli
+    - magrittr
+    - purrr
+    - R.cache
+    - rlang
+    - rprojroot
+    - vctrs
+    - withr
+    - lifecycle
+    - R.methodsS3
+    - R.oo
+    - R.utils
+    - digest
+    - glue
+  archive: False 
+classInt : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4-8"
+  requires : 
+    - e1071
+    - class
+    - KernSmooth
+    - MASS
+    - proxy
+  archive: False 
+labelled : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.10.0"
+  requires : 
+    - haven
+    - dplyr
+    - lifecycle
+    - rlang
+    - vctrs
+    - stringr
+    - tidyr
+    - cli
+    - generics
+    - glue
+    - magrittr
+    - pillar
+    - R6
+    - tibble
+    - tidyselect
+    - forcats
+    - hms
+    - readr
+    - cpp11
+    - stringi
+    - purrr
+    - ellipsis
+    - pkgconfig
+    - fansi
+    - utf8
+    - clipr
+    - crayon
+    - vroom
+    - tzdb
+    - withr
+    - bit64
+    - progress
+    - bit
+    - prettyunits
+  archive: False 
+R.cache : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.16.0"
+  requires : 
+    - R.methodsS3
+    - R.oo
+    - R.utils
+    - digest
+  archive: False 
+R.methodsS3 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.8.2"
+  requires : 
+  archive: False 
+R.oo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.25.0"
+  requires : 
+    - R.methodsS3
+  archive: False 
+R.utils : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.12.2"
+  requires : 
+    - R.oo
+    - R.methodsS3
+  archive: False 
+fitdistrplus : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1-8"
+  requires : 
+    - MASS
+    - survival
+    - Matrix
+    - lattice
+  archive: False 
+ica : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-3"
+  requires : 
+  archive: False 
+irlba : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.3.5.1"
+  requires : 
+    - Matrix
+    - lattice
+  archive: False 
+leiden : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.3"
+  requires : 
+    - reticulate
+    - Matrix
+    - igraph
+    - magrittr
+    - pkgconfig
+    - rlang
+    - lattice
+    - Rcpp
+    - RcppTOML
+    - here
+    - jsonlite
+    - png
+    - rappdirs
+    - withr
+    - rprojroot
+  archive: False 
+patchwork : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.2"
+  requires : 
+    - ggplot2
+    - gtable
+    - cli
+    - glue
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - scales
+    - tibble
+    - vctrs
+    - withr
+    - nlme
+    - Matrix
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - colorspace
+    - utf8
+  archive: False 
+plotly : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.10.1"
+  requires : 
+    - ggplot2
+    - scales
+    - httr
+    - jsonlite
+    - magrittr
+    - digest
+    - viridisLite
+    - base64enc
+    - htmltools
+    - htmlwidgets
+    - tidyr
+    - RColorBrewer
+    - dplyr
+    - vctrs
+    - tibble
+    - lazyeval
+    - rlang
+    - crosstalk
+    - purrr
+    - data.table
+    - promises
+    - R6
+    - cli
+    - generics
+    - glue
+    - lifecycle
+    - pillar
+    - tidyselect
+    - gtable
+    - isoband
+    - MASS
+    - mgcv
+    - withr
+    - fastmap
+    - ellipsis
+    - yaml
+    - knitr
+    - rmarkdown
+    - curl
+    - mime
+    - openssl
+    - Rcpp
+    - later
+    - farver
+    - labeling
+    - munsell
+    - fansi
+    - pkgconfig
+    - stringr
+    - cpp11
+    - evaluate
+    - highr
+    - xfun
+    - nlme
+    - Matrix
+    - colorspace
+    - askpass
+    - utf8
+    - bslib
+    - jquerylib
+    - tinytex
+    - stringi
+    - sys
+    - sass
+    - cachem
+    - memoise
+    - lattice
+    - fs
+    - rappdirs
+  archive: False 
+RANN : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.6.1"
+  requires : 
+  archive: False 
+RcppAnnoy : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.0.20"
+  requires : 
+    - Rcpp
+  archive: False 
+reticulate : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.28"
+  requires : 
+    - Matrix
+    - Rcpp
+    - RcppTOML
+    - here
+    - jsonlite
+    - png
+    - rappdirs
+    - withr
+    - rprojroot
+    - lattice
+  archive: False 
+ROCR : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-11"
+  requires : 
+    - gplots
+    - gtools
+    - caTools
+    - KernSmooth
+    - bitops
+  archive: False 
+Rtsne : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.16"
+  requires : 
+    - Rcpp
+  archive: False 
+scattermore : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8"
+  requires : 
+    - ggplot2
+    - scales
+    - cli
+    - glue
+    - gtable
+    - isoband
+    - lifecycle
+    - MASS
+    - mgcv
+    - rlang
+    - tibble
+    - vctrs
+    - withr
+    - farver
+    - labeling
+    - munsell
+    - R6
+    - RColorBrewer
+    - viridisLite
+    - nlme
+    - Matrix
+    - colorspace
+    - fansi
+    - magrittr
+    - pillar
+    - pkgconfig
+    - lattice
+    - utf8
+  archive: False 
+sctransform : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.5"
+  requires : 
+    - dplyr
+    - magrittr
+    - MASS
+    - Matrix
+    - future.apply
+    - future
+    - ggplot2
+    - reshape2
+    - rlang
+    - gridExtra
+    - matrixStats
+    - RcppArmadillo
+    - Rcpp
+    - cli
+    - generics
+    - glue
+    - lifecycle
+    - pillar
+    - R6
+    - tibble
+    - tidyselect
+    - vctrs
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - gtable
+    - isoband
+    - mgcv
+    - scales
+    - withr
+    - lattice
+    - plyr
+    - stringr
+    - codetools
+    - nlme
+    - fansi
+    - utf8
+    - farver
+    - labeling
+    - munsell
+    - RColorBrewer
+    - viridisLite
+    - stringi
+    - pkgconfig
+    - colorspace
+  archive: False 
+SeuratObject : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "4.1.3"
+  requires : 
+    - sp
+    - future
+    - future.apply
+    - Matrix
+    - progressr
+    - Rcpp
+    - rlang
+    - RcppEigen
+    - digest
+    - globals
+    - listenv
+    - parallelly
+    - lattice
+    - codetools
+  archive: False 
+spatstat.explore : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-6"
+  requires : 
+    - spatstat.data
+    - spatstat.geom
+    - spatstat.random
+    - nlme
+    - spatstat.utils
+    - spatstat.sparse
+    - goftest
+    - Matrix
+    - abind
+    - lattice
+    - deldir
+    - polyclip
+    - tensor
+  archive: False 
+spatstat.geom : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-6"
+  requires : 
+    - spatstat.data
+    - spatstat.utils
+    - deldir
+    - polyclip
+    - Matrix
+    - lattice
+  archive: False 
+uwot : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.14"
+  requires : 
+    - Matrix
+    - Rcpp
+    - FNN
+    - RcppAnnoy
+    - irlba
+    - RcppProgress
+    - dqrng
+    - BH
+    - sitmo
+    - lattice
+  archive: False 
+RcppProgress : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.4.2"
+  requires : 
+  archive: False 
+RcppTOML : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.2.2"
+  requires : 
+    - Rcpp
+  archive: False 
+here : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - rprojroot
+  archive: False 
+spatstat.data : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-0"
+  requires : 
+    - spatstat.utils
+    - Matrix
+    - lattice
+  archive: False 
+spatstat.random : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1-3"
+  requires : 
+    - spatstat.data
+    - spatstat.geom
+    - spatstat.utils
+    - Matrix
+    - deldir
+    - polyclip
+    - lattice
+  archive: False 
+spatstat.utils : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-1"
+  requires : 
+  archive: False 
+spatstat.sparse : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.0-0"
+  requires : 
+    - Matrix
+    - abind
+    - tensor
+    - spatstat.utils
+    - lattice
+  archive: False 
+goftest : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2-3"
+  requires : 
+  archive: False 
+polyclip : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.10-4"
+  requires : 
+  archive: False 
+FNN : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.3.1"
+  requires : 
+  archive: False 
+dqrng : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.3.0"
+  requires : 
+    - Rcpp
+    - BH
+    - sitmo
+  archive: False 
+sitmo : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.2"
+  requires : 
+    - Rcpp
+  archive: False 
+tensor : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.5"
+  requires : 
+  archive: False 
+dtplyr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.2.2"
+  requires : 
+    - crayon
+    - data.table
+    - dplyr
+    - ellipsis
+    - glue
+    - lifecycle
+    - rlang
+    - tibble
+    - tidyselect
+    - vctrs
+    - cli
+    - generics
+    - magrittr
+    - pillar
+    - R6
+    - fansi
+    - pkgconfig
+    - withr
+    - utf8
+  archive: False 
+googledrive : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.0"
+  requires : 
+    - cli
+    - gargle
+    - glue
+    - httr
+    - jsonlite
+    - lifecycle
+    - magrittr
+    - pillar
+    - purrr
+    - rlang
+    - tibble
+    - uuid
+    - vctrs
+    - withr
+    - fs
+    - openssl
+    - rappdirs
+    - rstudioapi
+    - curl
+    - mime
+    - R6
+    - fansi
+    - utf8
+    - pkgconfig
+    - askpass
+    - sys
+  archive: False 
+googlesheets4 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - cellranger
+    - cli
+    - curl
+    - gargle
+    - glue
+    - googledrive
+    - httr
+    - ids
+    - magrittr
+    - purrr
+    - rematch2
+    - rlang
+    - tibble
+    - vctrs
+    - rematch
+    - fs
+    - jsonlite
+    - lifecycle
+    - openssl
+    - rappdirs
+    - rstudioapi
+    - withr
+    - pillar
+    - uuid
+    - mime
+    - R6
+    - fansi
+    - pkgconfig
+    - askpass
+    - utf8
+    - sys
+  archive: False 
+modelr : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.1.10"
+  requires : 
+    - broom
+    - magrittr
+    - purrr
+    - rlang
+    - tibble
+    - tidyr
+    - tidyselect
+    - vctrs
+    - backports
+    - dplyr
+    - ellipsis
+    - generics
+    - glue
+    - stringr
+    - cli
+    - lifecycle
+    - fansi
+    - pillar
+    - pkgconfig
+    - cpp11
+    - withr
+    - R6
+    - utf8
+    - stringi
+  archive: False 
+readxl : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.4.2"
+  requires : 
+    - cellranger
+    - tibble
+    - cpp11
+    - progress
+    - rematch
+    - hms
+    - prettyunits
+    - R6
+    - crayon
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - ellipsis
+    - cli
+    - glue
+    - utf8
+  archive: False 
+reprex : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "2.0.2"
+  requires : 
+    - callr
+    - cli
+    - clipr
+    - fs
+    - glue
+    - knitr
+    - lifecycle
+    - rlang
+    - rmarkdown
+    - rstudioapi
+    - withr
+    - processx
+    - R6
+    - evaluate
+    - highr
+    - yaml
+    - xfun
+    - bslib
+    - htmltools
+    - jquerylib
+    - jsonlite
+    - stringr
+    - tinytex
+    - sass
+    - cachem
+    - memoise
+    - base64enc
+    - mime
+    - digest
+    - fastmap
+    - ellipsis
+    - ps
+    - magrittr
+    - stringi
+    - vctrs
+    - rappdirs
+  archive: False 
+gargle : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.3.0"
+  requires : 
+    - cli
+    - fs
+    - glue
+    - httr
+    - jsonlite
+    - lifecycle
+    - openssl
+    - rappdirs
+    - rlang
+    - rstudioapi
+    - withr
+    - curl
+    - mime
+    - R6
+    - askpass
+    - sys
+  archive: False 
+cellranger : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.0"
+  requires : 
+    - rematch
+    - tibble
+    - fansi
+    - lifecycle
+    - magrittr
+    - pillar
+    - pkgconfig
+    - rlang
+    - vctrs
+    - cli
+    - glue
+    - utf8
+  archive: False 
+ids : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+    - openssl
+    - uuid
+    - askpass
+    - sys
+  archive: False 
+rematch : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0.1"
+  requires : 
+  archive: False 
+rJava : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.0-6"
+  requires : 
+  archive: False 
+xlsxjars : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.6.1"
+  requires : 
+    - rJava
+  archive: False 
+s2 : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "1.1.2"
+  requires : 
+    - Rcpp
+    - wk
+  archive: False 
+units : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.8-1"
+  requires : 
+    - Rcpp
+  archive: False 
+wk : 
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "0.7.1"
+  requires : 
+  archive: False 

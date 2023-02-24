@@ -1,0 +1,13 @@
+
+!include common.yaml
+---
+- package: R module elliptic
+  name: elliptic
+  rpkgname: elliptic
+  version: "{{versions.elliptic}}"
+  release: "{{versions.elliptic_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

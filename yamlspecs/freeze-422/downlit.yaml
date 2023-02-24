@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module downlit
+  name: downlit
+  rpkgname: downlit
+  version: "{{versions.downlit}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-fastmap

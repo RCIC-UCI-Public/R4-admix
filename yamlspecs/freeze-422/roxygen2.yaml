@@ -1,0 +1,37 @@
+
+!include common.yaml
+---
+- package: R module roxygen2
+  name: roxygen2
+  rpkgname: roxygen2
+  version: "{{versions.roxygen2}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-brew
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-commonmark
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-pkgload
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-xml2
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-vctrs

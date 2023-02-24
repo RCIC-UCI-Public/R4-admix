@@ -1,0 +1,20 @@
+
+!include common.yaml
+---
+- package: R module latticeExtra
+  name: latticeExtra
+  rpkgname: latticeExtra
+  version: "{{versions.latticeExtra}}"
+  release: "{{versions.latticeExtra_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-png
+    - R_{{Rversion}}-jpeg
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-interp
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-deldir
+    - R_{{Rversion}}-RcppEigen

@@ -1,0 +1,20 @@
+
+!include common.yaml
+---
+- package: R module uwot
+  name: uwot
+  rpkgname: uwot
+  version: "{{versions.uwot}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-FNN
+    - R_{{Rversion}}-RcppAnnoy
+    - R_{{Rversion}}-irlba
+    - R_{{Rversion}}-RcppProgress
+    - R_{{Rversion}}-dqrng
+    - R_{{Rversion}}-BH
+    - R_{{Rversion}}-sitmo

@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module hypergeo
+  name: hypergeo
+  rpkgname: hypergeo
+  version: "{{versions.hypergeo}}"
+  release: "{{versions.hypergeo_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-elliptic
+    - R_{{Rversion}}-contfrac
+    - R_{{Rversion}}-deSolve

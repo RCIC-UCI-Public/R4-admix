@@ -1,0 +1,37 @@
+
+!include common.yaml
+---
+- package: R module mice
+  name: mice
+  rpkgname: mice
+  version: "{{versions.mice}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-broom
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tidyr
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-withr

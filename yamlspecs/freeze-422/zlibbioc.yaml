@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module zlibbioc
+  name: zlibbioc
+  rpkgname: zlibbioc
+  version: "{{versions.zlibbioc}}"
+  baseurl: http://bioconductor.org/packages/release/bioc/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

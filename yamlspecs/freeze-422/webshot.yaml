@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module webshot
+  name: webshot
+  rpkgname: webshot
+  version: "{{versions.webshot}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-ps

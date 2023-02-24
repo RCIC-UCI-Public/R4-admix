@@ -1,0 +1,37 @@
+
+!include common.yaml
+---
+- package: R module readr
+  name: readr
+  rpkgname: readr
+  version: "{{versions.readr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-clipr
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-vroom
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-tzdb
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-progress
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-prettyunits

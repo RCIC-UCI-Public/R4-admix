@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module desc
+  name: desc
+  rpkgname: desc
+  version: "{{versions.desc}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
