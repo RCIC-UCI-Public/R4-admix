@@ -1,17 +1,2 @@
 !include site.yaml
 ---
-R: "4.0.4"
-Rmajor: "4"
-rstudio: "1.4.1106"
-rstudio_dist: "1.4.1106"
-rstudio_os: "centos7"
-GenomeInfoDbData: "1.2.4"
-tmvnsim: "1.0"
-tmvnsim_release: "2"
-tarsources: "20220210"
-addonsources:
-  - "sf"
-OpenBLAS: "0.3.6"
-proj: "6.3.2"
-gdal: "3.1.0"
-geos: "3.8.1"

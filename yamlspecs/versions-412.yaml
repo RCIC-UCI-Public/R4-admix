@@ -1,5 +1,21 @@
-!include versions-latest.yaml
+!include versions.yaml
+!include updates8.yaml
 ---
+R: "4.1.2"
+Rmajor: "4"
+rstudio: "2022.02.1.461"
+rstudio_dist: "2022.02.1-461"
+rstudio_os: "rhel8"
+GenomeInfoDbData: "1.2.7"
+tmvnsim: "1.0"
+tmvnsim_release: "2"
+tarsources: "20220412"
+addonsources:
+  - "sf"
+gdal: "3.4.1"
+geos: "3.10.2"
+proj: "9.0.0"
+### from outversions.yaml
 BayesCombo: "1.0"
 magrittr: "2.0.3"
 Rcpp: "1.0.8.3"

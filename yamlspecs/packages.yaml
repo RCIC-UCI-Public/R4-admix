@@ -31,19 +31,23 @@ system:
   - cairo-devel
   - pango-devel
   - libgit2-devel
-bootstrap:
+basebuild:
   - R
   - R-module
   - rstudio
   - rstudio-module
   - GenomeInfoDbData
   - tmvnsim
+bootstrap0:
+bootstrap1:
+bootstrap:
+  - "{{bootstrap0}}"
+  - "{{bootstrap1}}"
 build:
 manifest:
   - "{{bootstrap}}"
   - "{{build}}"
 sets:
-  - latest
-rsets:
   - "404"
   - "412"
+  - "422"

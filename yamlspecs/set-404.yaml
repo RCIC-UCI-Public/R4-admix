@@ -1,7 +1,9 @@
 !include packages.yaml
 ---
 versions: versions-404.yaml
-bootstrap:
+bootstrap0:
+  - "{{basebuild}}"
+bootstrap1:
   - git2r
   - Rcpp
   - RcppAnnoy
