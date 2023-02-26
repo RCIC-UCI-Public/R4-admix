@@ -1,0 +1,10 @@
+!include common.yaml
+---
+- package: R module seurat-data 
+  name: seurat-data 
+  rpkgname: seurat-data
+  version: "{{versions.seurat_data}}"
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: https://github.com/satijalab/{{rpkgname}}/archive/refs/tags/v{{version}}.tar.gz
+  requires:
+    - R_{{versions.R}}

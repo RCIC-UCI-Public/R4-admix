@@ -5,7 +5,6 @@ bootstrap0:
   - R
   - R-module
   - GenomeInfoDbData
-  - seurat-data
 ###### contents from buildorder
 bootstrap1:
   - BayesCombo
@@ -434,3 +433,5 @@ bootstrap1:
   - robustbase
   - qqconf
   - metap
+build:
+  - seurat-data

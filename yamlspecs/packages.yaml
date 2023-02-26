@@ -38,6 +38,7 @@ basebuild:
   - rstudio-module
   - GenomeInfoDbData
   - tmvnsim
+  - seurat-data
 bootstrap0:
 bootstrap1:
 bootstrap:
