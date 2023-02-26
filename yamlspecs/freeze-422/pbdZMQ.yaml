@@ -9,7 +9,7 @@
   baseurl: https://cran.r-project.org/src/contrib
   src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  install:
-    environ: unset MAKEFLAGS;
   requires:
     - R_{{Rversion}}
+  install:
+    environ: unset MAKEFLAGS;
