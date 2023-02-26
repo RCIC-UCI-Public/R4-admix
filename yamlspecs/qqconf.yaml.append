@@ -1,0 +1,4 @@
+  build:
+    modules:
+      - R/{{Rversion}}
+      - fftw/{{versions.fftw}}/{{compiler}}.{{compiler_version}} 

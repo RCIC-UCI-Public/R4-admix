@@ -86,6 +86,7 @@
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-zip
     - R_{{Rversion}}-gitcreds
+    - R_{{Rversion}}-httr2
     - R_{{Rversion}}-ini
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-xfun

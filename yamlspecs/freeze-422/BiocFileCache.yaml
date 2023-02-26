@@ -18,7 +18,6 @@
     - R_{{Rversion}}-filelock
     - R_{{Rversion}}-curl
     - R_{{Rversion}}-httr
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-blob
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-glue
@@ -29,6 +28,7 @@
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyr
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-withr
@@ -46,5 +46,7 @@
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-stringr
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-stringi

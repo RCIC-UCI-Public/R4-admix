@@ -1,0 +1,36 @@
+
+!include common.yaml
+---
+- package: R module metap
+  name: metap
+  rpkgname: metap
+  version: "{{versions.metap}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rdpack
+    - R_{{Rversion}}-TFisher
+    - R_{{Rversion}}-mutoss
+    - R_{{Rversion}}-mathjaxr
+    - R_{{Rversion}}-qqconf
+    - R_{{Rversion}}-mvtnorm
+    - R_{{Rversion}}-plotrix
+    - R_{{Rversion}}-multtest
+    - R_{{Rversion}}-multcomp
+    - R_{{Rversion}}-robustbase
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rbibutils
+    - R_{{Rversion}}-sn
+    - R_{{Rversion}}-TH_data
+    - R_{{Rversion}}-sandwich
+    - R_{{Rversion}}-BiocGenerics
+    - R_{{Rversion}}-Biobase
+    - R_{{Rversion}}-DEoptimR
+    - R_{{Rversion}}-mnormt
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-quantreg
+    - R_{{Rversion}}-SparseM
+    - R_{{Rversion}}-MatrixModels
+    - R_{{Rversion}}-zoo

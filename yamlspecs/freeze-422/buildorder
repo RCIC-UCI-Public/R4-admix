@@ -203,7 +203,6 @@ RcppArmadillo
 DESeq2
 hms
 progress
-assertthat
 dbplyr
 filelock
 BiocFileCache
@@ -222,6 +221,7 @@ credentials
 zip
 gert
 gitcreds
+httr2
 ini
 gh
 usethis
@@ -269,6 +269,7 @@ polynom
 corrplot
 rstatix
 ggpubr
+assertthat
 ggvis
 git2r
 glmnet
@@ -392,6 +393,7 @@ uwot
 Seurat
 sm
 stargazer
+conflicted
 dtplyr
 gargle
 googledrive
@@ -412,3 +414,13 @@ wk
 s2
 units
 sf
+sn
+TFisher
+plotrix
+multtest
+mutoss
+mathjaxr
+DEoptimR
+robustbase
+qqconf
+metap

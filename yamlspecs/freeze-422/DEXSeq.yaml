@@ -90,9 +90,9 @@
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-plogr
     - R_{{Rversion}}-bit
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-tidyr
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-ellipsis

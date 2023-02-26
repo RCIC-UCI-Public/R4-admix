@@ -11,8 +11,8 @@
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-broom
+    - R_{{Rversion}}-conflicted
     - R_{{Rversion}}-cli
-    - R_{{Rversion}}-crayon
     - R_{{Rversion}}-dbplyr
     - R_{{Rversion}}-dplyr
     - R_{{Rversion}}-dtplyr
@@ -29,6 +29,7 @@
     - R_{{Rversion}}-modelr
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-ragg
     - R_{{Rversion}}-readr
     - R_{{Rversion}}-readxl
     - R_{{Rversion}}-reprex
@@ -43,7 +44,7 @@
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-glue
-    - R_{{Rversion}}-assertthat
+    - R_{{Rversion}}-memoise
     - R_{{Rversion}}-blob
     - R_{{Rversion}}-DBI
     - R_{{Rversion}}-lifecycle
@@ -51,6 +52,7 @@
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-withr
+    - R_{{Rversion}}-crayon
     - R_{{Rversion}}-data_table
     - R_{{Rversion}}-gtable
     - R_{{Rversion}}-isoband
@@ -68,6 +70,8 @@
     - R_{{Rversion}}-timechange
     - R_{{Rversion}}-fansi
     - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-systemfonts
+    - R_{{Rversion}}-textshaping
     - R_{{Rversion}}-clipr
     - R_{{Rversion}}-vroom
     - R_{{Rversion}}-tzdb
@@ -85,6 +89,7 @@
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-yaml
     - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-cachem
     - R_{{Rversion}}-askpass
     - R_{{Rversion}}-prettyunits
     - R_{{Rversion}}-bslib
@@ -100,10 +105,8 @@
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-bit
     - R_{{Rversion}}-sass
-    - R_{{Rversion}}-cachem
-    - R_{{Rversion}}-memoise
     - R_{{Rversion}}-base64enc
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-digest
     - R_{{Rversion}}-colorspace
     - R_{{Rversion}}-ps

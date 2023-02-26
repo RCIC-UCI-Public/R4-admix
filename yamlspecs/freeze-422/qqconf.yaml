@@ -1,0 +1,19 @@
+
+!include common.yaml
+---
+- package: R module qqconf
+  name: qqconf
+  rpkgname: qqconf
+  version: "{{versions.qqconf}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-robustbase
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-DEoptimR
+  build:
+    modules:
+      - R/{{Rversion}}
+      - fftw/{{versions.fftw}}/{{compiler}}.{{compiler_version}} 

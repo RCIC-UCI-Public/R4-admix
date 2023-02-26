@@ -36,8 +36,7 @@
     - R_{{Rversion}}-sys
     - R_{{Rversion}}-zip
     - R_{{Rversion}}-gitcreds
-    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-httr2
     - R_{{Rversion}}-ini
     - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-vctrs
-    - R_{{Rversion}}-mime

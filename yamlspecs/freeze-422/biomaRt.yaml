@@ -44,11 +44,11 @@
     - R_{{Rversion}}-rlang
     - R_{{Rversion}}-stringi
     - R_{{Rversion}}-vctrs
-    - R_{{Rversion}}-assertthat
     - R_{{Rversion}}-blob
     - R_{{Rversion}}-pillar
     - R_{{Rversion}}-purrr
     - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyr
     - R_{{Rversion}}-tidyselect
     - R_{{Rversion}}-withr
     - R_{{Rversion}}-generics
