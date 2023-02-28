@@ -11,6 +11,7 @@ include $(YAML2RPM_HOME)/sys/Makefile
 
 ## when cleaning temporary yaml files, figure out which ones to not remove
 KEEPYAMLS0 = $(shell $(BASEGENERATE) -Q --query=basebuild $(PACKAGES_FILE))
+KEEPYAMLS0 = $(shell cat modules.bootstrap)
 KEEPYAMLS = $(patsubst %,%.yaml,$(KEEPYAMLS0))
 KEEPYAMLS += $(wildcard set-*.yaml versions*.yaml common.yaml packages.yaml)
 TMPYAMLS0 = $(wildcard *.yaml)
