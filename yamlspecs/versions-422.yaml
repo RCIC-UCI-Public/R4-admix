@@ -3,9 +3,10 @@
 ---
 R: "4.2.2"
 Rmajor: "4"
-rstudio: "2022.02.1.461"
-rstudio_dist: "2022.02.1-461"
+rstudio: "2022.12.0.353"
+rstudio_dist: "2022.12.0-353"
 rstudio_os: "rhel8"
+rstudio_site: "electron"
 GenomeInfoDbData: "1.2.9"
 tarsources: "20230222"
 OpenBLAS: "0.3.21"

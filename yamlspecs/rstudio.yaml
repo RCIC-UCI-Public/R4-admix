@@ -8,7 +8,7 @@
   version: "{{versions.rstudio}}"
   tarname: "{{name}}-{{versions.rstudio_dist}}-x86_64-fedora.{{extension}}"
   src_tarball: "{{tarname}}"
-  vendor_source: https://download1.rstudio.org/desktop/{{versions.rstudio_os}}/x86_64/{{tarname}}
+  vendor_source: https://download1.rstudio.org/{{versions.rstudio_site}}/{{versions.rstudio_os}}/x86_64/{{tarname}}
   addfile: filter-requires-{{name}}.sh
   no_src_dir: True
   src_dir: rstudio-{{version}}
