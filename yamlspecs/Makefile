@@ -52,7 +52,6 @@ manifest module-requires module-provides modules-info::
 # copy yamls from freeze-$(SET)/
 copyset:
 ifneq ($(SET),)
-	echo "=== Copying yamls for set $(SET) ==="
 	/bin/cp $(FREEZE_DIR)/*.yaml .
 	/bin/cp $(FREEZE_DIR)/buildorder .
 endif
