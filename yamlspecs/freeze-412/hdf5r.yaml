@@ -17,11 +17,12 @@
   build:
      modules:
       - R/{{Rversion}}
-      - hdf5/{{versions.hdf5}}/{{compiler}}.{{compiler_version}}
+      - hdf5/{{versions.hdf5}}/{{compiler}}.{{compiler_version}} 
   install:
      makeinstall: >
        tar xzvf {{src_tarball}};
        cd hdf5r; 
        patch -p1 < ../{{addfile}};
        autoreconf;
+       mkdir -p $(ROOT)/{{libpath}};
        R CMD INSTALL -l $(ROOT)/{{libpath}} .
