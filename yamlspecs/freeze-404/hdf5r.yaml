@@ -24,4 +24,5 @@
        cd hdf5r; 
        patch -p1 < ../{{addfile}};
        autoreconf;
+       mkdir -p $(ROOT)/{{libpath}};
        R CMD INSTALL -l $(ROOT)/{{libpath}} .
