@@ -3,7 +3,7 @@
 # This includes the Generic yaml2rpm Makefile - most packaging should
 # be able to use this.
 
-ALL_TARGETS = bootstrap rebuild
+ALL_TARGETS = bootstrap
 include $(YAML2RPM_HOME)/sys/Makefile
 
 .DEFAULT_GOAL = default
@@ -32,7 +32,7 @@ endif
 
 RVERSION = $(shell $(GENERATE) --query=version R.yaml -V $(VERSIONS))
 BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml -V $(VERSIONS))
-ADDON = $(shell $(BASEGENERATE) --query=addonsources versions-$(SET).yaml)
+ADDON = $(shell $(BASEGENERATE) -Q --query=addonsources versions-$(SET).yaml)
 FREEZE_DIR=freeze-$(SET)
 
 rebuild:
@@ -49,6 +49,10 @@ endif
 manifest module-requires module-provides modules-info::
 	make -s -e -f $(THISMAKE) SET=$$set cleanset
 
+buildall-preset:
+	make -s -e -f $(THISMAKE) SET=$$set cleanset
+	make -s -e -f $(THISMAKE) SET=$$set thaw
+	
 # copy yamls from freeze-$(SET)/
 copyset:
 ifneq ($(SET),)
