@@ -4,7 +4,7 @@
 - package: R Studio 
   name: rstudio
   versions: !include versions.yaml
-  release: "2"
+  release: "3"
   version: "{{versions.rstudio}}"
   tarname: "{{name}}-{{versions.rstudio_dist}}-x86_64-fedora.{{extension}}"
   src_tarball: "{{tarname}}"
@@ -18,6 +18,6 @@
   install:
      makeinstall: >
        zcat {{tarname}} | (cd $(ROOT)/{{root}}; tar xvf - --strip-components=1)
-  rpmFilters: *filterRequires
-  rpmAutoRequires: "AutoReqProv: Yes\\n %define __strip /bin/true"
   rpmBuildIdLinks: none
+  rpm:
+    extras: *RpmNone
