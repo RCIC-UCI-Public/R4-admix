@@ -17,7 +17,7 @@ geos: "3.11.1"
 proj: "9.1.1"
 fftw: "3.3.10"
 seurat_data: "0.2.1"
-hdf5: "1.14.0"
+hdf5: "1.14.1"
 #### outversions.yaml
 BayesCombo: "1.0"
 cli: "3.6.0"
