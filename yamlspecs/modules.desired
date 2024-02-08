@@ -54,7 +54,6 @@ lubridate
 magrittr
 mapproj
 maps
-maptools
 MCMCpack
 mime
 miniCRAN
