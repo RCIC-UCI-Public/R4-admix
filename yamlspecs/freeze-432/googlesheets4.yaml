@@ -1,0 +1,42 @@
+
+!include common.yaml
+---
+- package: R module googlesheets4
+  name: googlesheets4
+  rpkgname: googlesheets4
+  version: "{{versions.googlesheets4}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cellranger
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-gargle
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-googledrive
+    - R_{{Rversion}}-httr
+    - R_{{Rversion}}-ids
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-rematch2
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-rematch
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-uuid
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-sys

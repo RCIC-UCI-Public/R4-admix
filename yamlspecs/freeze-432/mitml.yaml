@@ -1,0 +1,67 @@
+
+!include common.yaml
+---
+- package: R module mitml
+  name: mitml
+  rpkgname: mitml
+  version: "{{versions.mitml}}"
+  release: "{{versions.mitml_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-pan
+    - R_{{Rversion}}-jomo
+    - R_{{Rversion}}-haven
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-forcats
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-readr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-lme4
+    - R_{{Rversion}}-ordinal
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-minqa
+    - R_{{Rversion}}-nloptr
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-ucminf
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-clipr
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-vroom
+    - R_{{Rversion}}-tzdb
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-testthat
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-progress
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-pkgload
+    - R_{{Rversion}}-praise
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-waldo
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-diffobj
+    - R_{{Rversion}}-rematch2

@@ -1,0 +1,14 @@
+
+!include common.yaml
+---
+- package: R module sandwich
+  name: sandwich
+  rpkgname: sandwich
+  version: "{{versions.sandwich}}"
+  release: "{{versions.sandwich_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-zoo

@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module GenomeInfoDb
+  name: GenomeInfoDb
+  rpkgname: GenomeInfoDb
+  version: "{{versions.GenomeInfoDb}}"
+  baseurl: http://bioconductor.org/packages/release/bioc/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-BiocGenerics
+    - R_{{Rversion}}-S4Vectors
+    - R_{{Rversion}}-IRanges
+    - R_{{Rversion}}-RCurl
+    - R_{{Rversion}}-GenomeInfoDbData
+    - R_{{Rversion}}-bitops

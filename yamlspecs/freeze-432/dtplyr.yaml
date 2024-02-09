@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module dtplyr
+  name: dtplyr
+  rpkgname: dtplyr
+  version: "{{versions.dtplyr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-utf8

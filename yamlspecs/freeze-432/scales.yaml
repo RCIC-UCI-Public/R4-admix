@@ -1,0 +1,23 @@
+
+!include common.yaml
+---
+- package: R module scales
+  name: scales
+  rpkgname: scales
+  version: "{{versions.scales}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-colorspace

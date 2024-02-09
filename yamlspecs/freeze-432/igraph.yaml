@@ -1,0 +1,25 @@
+
+!include common.yaml
+---
+- package: R module igraph
+  name: igraph
+  rpkgname: igraph
+  version: "{{versions.igraph}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-glue
+  # this part is added manually. Was not needed in previous versions
+  # Now igraph depends on glpk
+  build:
+    modules:
+      - R/{{Rversion}}
+      - glpk/{{versions.glpk}}

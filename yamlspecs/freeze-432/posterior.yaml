@@ -1,0 +1,44 @@
+
+!include common.yaml
+---
+- package: R module posterior
+  name: posterior
+  rpkgname: posterior
+  version: "{{versions.posterior}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-checkmate
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-tensorA
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-distributional
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-colorspace

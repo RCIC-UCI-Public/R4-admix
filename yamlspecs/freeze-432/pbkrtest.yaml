@@ -1,0 +1,60 @@
+
+!include common.yaml
+---
+- package: R module pbkrtest
+  name: pbkrtest
+  rpkgname: pbkrtest
+  version: "{{versions.pbkrtest}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-lme4
+    - R_{{Rversion}}-broom
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-minqa
+    - R_{{Rversion}}-nloptr
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-testthat
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-pkgload
+    - R_{{Rversion}}-praise
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-waldo
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-diffobj
+    - R_{{Rversion}}-rematch2

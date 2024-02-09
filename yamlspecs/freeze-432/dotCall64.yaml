@@ -1,0 +1,13 @@
+
+!include common.yaml
+---
+- package: R module dotCall64
+  name: dotCall64
+  rpkgname: dotCall64
+  version: "{{versions.dotCall64}}"
+  release: "{{versions.dotCall64_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

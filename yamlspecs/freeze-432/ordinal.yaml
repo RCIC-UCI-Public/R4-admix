@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module ordinal
+  name: ordinal
+  rpkgname: ordinal
+  version: "{{versions.ordinal}}"
+  release: "{{versions.ordinal_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-ucminf
+    - R_{{Rversion}}-numDeriv

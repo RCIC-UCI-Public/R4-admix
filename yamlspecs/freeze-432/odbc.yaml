@@ -1,0 +1,26 @@
+
+!include common.yaml
+---
+- package: R module odbc
+  name: odbc
+  rpkgname: odbc
+  version: "{{versions.odbc}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-blob
+    - R_{{Rversion}}-DBI
+    - R_{{Rversion}}-hms
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+  install:
+    environ: unset MAKEFLAGS;

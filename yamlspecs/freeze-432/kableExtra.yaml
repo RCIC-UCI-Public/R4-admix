@@ -1,0 +1,55 @@
+
+!include common.yaml
+---
+- package: R module kableExtra
+  name: kableExtra
+  rpkgname: kableExtra
+  version: "{{versions.kableExtra}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-xml2
+    - R_{{Rversion}}-rmarkdown
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-svglite
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-bslib
+    - R_{{Rversion}}-fontawesome
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-tinytex
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-systemfonts
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-rappdirs

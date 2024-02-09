@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module jquerylib
+  name: jquerylib
+  rpkgname: jquerylib
+  version: "{{versions.jquerylib}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-rlang

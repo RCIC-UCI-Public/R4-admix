@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module QuickJSR
+  name: QuickJSR
+  rpkgname: QuickJSR
+  version: "{{versions.QuickJSR}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-Rcpp

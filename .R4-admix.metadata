@@ -9,7 +9,11 @@ a0a305a899286488a3392b581779acff58cae01a  sources/R-4.1.2.tar.gz 1ARg15VA8gUzh5-
 e98d876d309d2321df152bfd839381a136068c1b  sources/sources-20220412.tar.gz 1GnJKWGB0_IGEJVOjwaWXJakGnhe0fyss
 c7f1f4fa132d11c7f4c0c4e9aa8ad685046ab47f  sources/sources-addon-sf.tar.gz 14vuHIkEtl8F1ztg-5YvXaF_sf7dO7Mx2
 43154069a2c8e8c7d4aea9aa3ee55866326a47e1  sources/R-4.2.2.tar.gz 1Kv3N3i7gRyJP00g9XLSGflfpJDM-QWnx
-725b7323e096e658f0ead429353a6ea8c6a2bb6c  sources/GenomeInfoDbData_1.2.9.tar.gz 1i2O6Oc3njNNdpHa8Gc4vyD7r0GE0B3lQ
-7901d4e450b8cd51e413f8d15df40e271450be91  sources/seurat-data_0.2.1.tar.gz 13CWsX19laj6P00paD9JwgZjeSf8C1oA4
-97388a5ff4bca90abcdcb67b06c7df918523d968  sources/sources-20230222.tar.gz 1JRDemsumBlGl_NidX73UbJdIVqDS7zlk
 aa65becfff89f1fef0bd0aae23e03077f31df48d  sources/rstudio-2022.12.0-353-x86_64-fedora.tar.gz 1tTyo4YEqCTlGcNKoc_3s5OA4yjQtBl_w
+725b7323e096e658f0ead429353a6ea8c6a2bb6c  sources/GenomeInfoDbData_1.2.9.tar.gz 1i2O6Oc3njNNdpHa8Gc4vyD7r0GE0B3lQ
+97388a5ff4bca90abcdcb67b06c7df918523d968  sources/sources-20230222.tar.gz 1JRDemsumBlGl_NidX73UbJdIVqDS7zlk
+7901d4e450b8cd51e413f8d15df40e271450be91  sources/seurat-data_0.2.1.tar.gz 13CWsX19laj6P00paD9JwgZjeSf8C1oA4
+514bf2a90971c4739d27e6a4992e21cc950ee5a6  sources/R-4.3.2.tar.gz
+2c271631ba34af4e39e2d071e4e4860c42478163  sources/rstudio-2023.12.1-402-x86_64-fedora.tar.gz
+0ea035b8c1063a0da172183c76080ea6ba3ee33f  sources/GenomeInfoDbData_1.2.11.tar.gz
+787afe4933810b325436c43b00dd7f5cfd1fe3fc  sources/sources-20240208.tar.gz

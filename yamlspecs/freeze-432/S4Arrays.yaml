@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module S4Arrays
+  name: S4Arrays
+  rpkgname: S4Arrays
+  version: "{{versions.S4Arrays}}"
+  baseurl: http://bioconductor.org/packages/release/bioc/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-BiocGenerics
+    - R_{{Rversion}}-S4Vectors
+    - R_{{Rversion}}-IRanges
+    - R_{{Rversion}}-crayon

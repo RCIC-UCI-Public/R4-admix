@@ -1,0 +1,26 @@
+
+!include common.yaml
+---
+- package: R module repr
+  name: repr
+  rpkgname: repr
+  version: "{{versions.repr}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-vctrs

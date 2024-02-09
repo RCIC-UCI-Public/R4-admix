@@ -1,0 +1,53 @@
+
+!include common.yaml
+---
+- package: R module ggvis
+  name: ggvis
+  rpkgname: ggvis
+  version: "{{versions.ggvis}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-assertthat
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-shiny
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-httpuv
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-xtable
+    - R_{{Rversion}}-fontawesome
+    - R_{{Rversion}}-sourcetools
+    - R_{{Rversion}}-later
+    - R_{{Rversion}}-promises
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-commonmark
+    - R_{{Rversion}}-bslib
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-rappdirs

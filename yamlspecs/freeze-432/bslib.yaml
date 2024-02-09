@@ -1,0 +1,30 @@
+
+!include common.yaml
+---
+- package: R module bslib
+  name: bslib
+  rpkgname: bslib
+  version: "{{versions.bslib}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ellipsis
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rappdirs

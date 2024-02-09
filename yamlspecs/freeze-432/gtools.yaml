@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module gtools
+  name: gtools
+  rpkgname: gtools
+  version: "{{versions.gtools}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

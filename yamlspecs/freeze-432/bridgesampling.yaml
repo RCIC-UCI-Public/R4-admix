@@ -1,0 +1,32 @@
+
+!include common.yaml
+---
+- package: R module bridgesampling
+  name: bridgesampling
+  rpkgname: bridgesampling
+  version: "{{versions.bridgesampling}}"
+  release: "{{versions.bridgesampling_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-mvtnorm
+    - R_{{Rversion}}-Brobdingnag
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-coda
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-colorspace

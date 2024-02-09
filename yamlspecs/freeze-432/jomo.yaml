@@ -1,0 +1,52 @@
+
+!include common.yaml
+---
+- package: R module jomo
+  name: jomo
+  rpkgname: jomo
+  version: "{{versions.jomo}}"
+  release: "{{versions.jomo_release}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-lme4
+    - R_{{Rversion}}-ordinal
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-minqa
+    - R_{{Rversion}}-nloptr
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-ucminf
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-testthat
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-brio
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-pkgload
+    - R_{{Rversion}}-praise
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-waldo
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-crayon
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-diffobj
+    - R_{{Rversion}}-rematch2
