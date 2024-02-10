@@ -65,7 +65,7 @@ thaw:
 	/bin/cp $(FREEZE_DIR)/*.yaml .
 	/bin/cp $(FREEZE_DIR)/buildorder .
 	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
-	if [ "$(ADDON)" != "" ]; then \
+	if [ "$(ADDON)" != "" ] && [ "$(ADDON)" != "None" ]; then \
 	    for set in $(ADDON); do \
 	        (cd ../sources; tar xvf sources-addon-$$set.tar.gz); \
 	    done; \
