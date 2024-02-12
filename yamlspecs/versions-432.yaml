@@ -9,7 +9,7 @@ rstudio_os: "rhel8"
 rstudio_site: "electron"
 rstudio_layout: "new"
 GenomeInfoDbData: "1.2.11"
-tarsources: "20220412"
+tarsources: "20240208"
 OpenBLAS: "0.3.26"
 addonsources:
 gdal: "3.6.2"
