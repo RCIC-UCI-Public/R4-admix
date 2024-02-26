@@ -22,4 +22,4 @@
   build:
     modules:
       - R/{{Rversion}}
-      - glpk/{{versions.glpk}}
+      - glpk/{{versions.glpk}}/{{compiler}}.{{compiler_version}}
