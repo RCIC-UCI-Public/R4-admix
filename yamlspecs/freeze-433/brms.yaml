@@ -77,7 +77,6 @@
     - R_{{Rversion}}-R6
     - R_{{Rversion}}-generics
     - R_{{Rversion}}-numDeriv
-    - R_{{Rversion}}-farver
     - R_{{Rversion}}-magrittr
     - R_{{Rversion}}-httpuv
     - R_{{Rversion}}-crosstalk
@@ -91,6 +90,7 @@
     - R_{{Rversion}}-callr
     - R_{{Rversion}}-processx
     - R_{{Rversion}}-plyr
+    - R_{{Rversion}}-farver
     - R_{{Rversion}}-labeling
     - R_{{Rversion}}-munsell
     - R_{{Rversion}}-RColorBrewer

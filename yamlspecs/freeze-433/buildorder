@@ -80,8 +80,13 @@ reshape2
 RcppParallel
 StanHeaders
 matrixStats
+abind
 backports
 checkmate
+tensorA
+numDeriv
+distributional
+posterior
 loo
 inline
 desc
@@ -98,11 +103,6 @@ sourcetools
 crayon
 shiny
 threejs
-abind
-tensorA
-numDeriv
-distributional
-posterior
 rstantools
 ggridges
 bayesplot

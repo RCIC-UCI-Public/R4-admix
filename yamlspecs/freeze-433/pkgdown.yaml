@@ -49,7 +49,6 @@
     - R_{{Rversion}}-textshaping
     - R_{{Rversion}}-fontawesome
     - R_{{Rversion}}-knitr
-    - R_{{Rversion}}-stringr
     - R_{{Rversion}}-tinytex
     - R_{{Rversion}}-xfun
     - R_{{Rversion}}-pillar
@@ -62,6 +61,5 @@
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-ps
     - R_{{Rversion}}-rappdirs
-    - R_{{Rversion}}-stringi
     - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-sys

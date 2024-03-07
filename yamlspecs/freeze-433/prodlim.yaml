@@ -1,22 +1,21 @@
 
 !include common.yaml
 ---
-- package: R module ipred
-  name: ipred
-  rpkgname: ipred
-  version: "{{versions.ipred}}"
-  release: "{{versions.ipred_release}}"
+- package: R module prodlim
+  name: prodlim
+  rpkgname: prodlim
+  version: "{{versions.prodlim}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-prodlim
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-data_table
     - R_{{Rversion}}-diagram
     - R_{{Rversion}}-lava
     - R_{{Rversion}}-shape
+    - R_{{Rversion}}-cli
     - R_{{Rversion}}-future_apply
     - R_{{Rversion}}-numDeriv
     - R_{{Rversion}}-progressr

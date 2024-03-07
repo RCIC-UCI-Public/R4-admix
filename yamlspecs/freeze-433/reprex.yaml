@@ -32,7 +32,6 @@
     - R_{{Rversion}}-htmltools
     - R_{{Rversion}}-jquerylib
     - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-stringr
     - R_{{Rversion}}-tinytex
     - R_{{Rversion}}-base64enc
     - R_{{Rversion}}-cachem
@@ -43,7 +42,4 @@
     - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-fastmap
     - R_{{Rversion}}-ps
-    - R_{{Rversion}}-magrittr
-    - R_{{Rversion}}-stringi
-    - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-rappdirs

@@ -42,9 +42,8 @@
     - R_{{Rversion}}-pkgconfig
     - R_{{Rversion}}-backports
     - R_{{Rversion}}-numDeriv
-    - R_{{Rversion}}-farver
-    - R_{{Rversion}}-digest
     - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-farver
     - R_{{Rversion}}-labeling
     - R_{{Rversion}}-munsell
     - R_{{Rversion}}-RColorBrewer

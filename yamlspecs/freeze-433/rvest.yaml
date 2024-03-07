@@ -10,8 +10,8 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
-    - R_{{Rversion}}-glue
     - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
     - R_{{Rversion}}-httr
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-magrittr
@@ -19,7 +19,6 @@
     - R_{{Rversion}}-selectr
     - R_{{Rversion}}-tibble
     - R_{{Rversion}}-xml2
-    - R_{{Rversion}}-withr
     - R_{{Rversion}}-curl
     - R_{{Rversion}}-jsonlite
     - R_{{Rversion}}-mime

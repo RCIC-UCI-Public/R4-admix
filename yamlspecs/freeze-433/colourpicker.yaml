@@ -54,7 +54,6 @@
     - R_{{Rversion}}-highr
     - R_{{Rversion}}-xfun
     - R_{{Rversion}}-magrittr
-    - R_{{Rversion}}-stringr
     - R_{{Rversion}}-tinytex
     - R_{{Rversion}}-farver
     - R_{{Rversion}}-labeling
@@ -68,4 +67,3 @@
     - R_{{Rversion}}-utf8
     - R_{{Rversion}}-fs
     - R_{{Rversion}}-rappdirs
-    - R_{{Rversion}}-stringi
