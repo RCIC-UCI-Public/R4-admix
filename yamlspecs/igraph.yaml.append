@@ -1,0 +1,6 @@
+    - glpk_{{versions.glpk}}_{{compiler}}_{{compiler_version}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - glpk/{{versions.glpk}}/{{compiler}}.{{compiler_version}}
+  release: 2
