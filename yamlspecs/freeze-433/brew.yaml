@@ -4,10 +4,13 @@
 - package: R module brew
   name: brew
   rpkgname: brew
-  version: "{{versions.brew}}"
-  release: "{{versions.brew_release}}"
+  sversion: "{{versions.brew}}"
+  subversion: "{{versions.brew_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}

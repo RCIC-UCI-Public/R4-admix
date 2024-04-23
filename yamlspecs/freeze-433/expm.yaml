@@ -4,10 +4,13 @@
 - package: R module expm
   name: expm
   rpkgname: expm
-  version: "{{versions.expm}}"
-  release: "{{versions.expm_release}}"
+  sversion: "{{versions.expm}}"
+  subversion: "{{versions.expm_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}

@@ -13,7 +13,9 @@
     - R_{{Rversion}}-robustbase
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-DEoptimR
+    - fftw_{{versions.fftw}}_{{compiler}}_{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}
       - fftw/{{versions.fftw}}/{{compiler}}.{{compiler_version}} 
+  release: 2

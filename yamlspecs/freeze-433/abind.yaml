@@ -4,10 +4,13 @@
 - package: R module abind
   name: abind
   rpkgname: abind
-  version: "{{versions.abind}}"
-  release: "{{versions.abind_release}}"
+  sversion: "{{versions.abind}}"
+  subversion: "{{versions.abind_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}

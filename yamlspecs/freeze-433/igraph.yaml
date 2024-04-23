@@ -18,10 +18,9 @@
     - R_{{Rversion}}-vctrs
     - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-glue
-  # this part is added manually. Was not needed in previous versions
-  # Now igraph depends on glpk
+    - glpk_{{versions.glpk}}_{{compiler}}_{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}
       - glpk/{{versions.glpk}}/{{compiler}}.{{compiler_version}}
-
+  release: 2

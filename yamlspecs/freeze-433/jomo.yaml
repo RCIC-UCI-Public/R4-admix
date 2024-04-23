@@ -4,11 +4,14 @@
 - package: R module jomo
   name: jomo
   rpkgname: jomo
-  version: "{{versions.jomo}}"
-  release: "{{versions.jomo_release}}"
+  sversion: "{{versions.jomo}}"
+  subversion: "{{versions.jomo_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-lme4

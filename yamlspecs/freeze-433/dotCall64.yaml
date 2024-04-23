@@ -4,10 +4,13 @@
 - package: R module dotCall64
   name: dotCall64
   rpkgname: dotCall64
-  version: "{{versions.dotCall64}}"
-  release: "{{versions.dotCall64_release}}"
+  sversion: "{{versions.dotCall64}}"
+  subversion: "{{versions.dotCall64_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}

@@ -4,16 +4,22 @@
 - package: R module raster
   name: raster
   rpkgname: raster
-  version: "{{versions.raster}}"
-  release: "{{versions.raster_release}}"
+  sversion: "{{versions.raster}}"
+  subversion: "{{versions.raster_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-sp
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-terra
+    - proj_{{versions.proj}}
+    - gdal_{{versions.gdal}}
+    - geos_{{versions.geos}}
   build:
     modules:
       - R/{{Rversion}}

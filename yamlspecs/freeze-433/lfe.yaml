@@ -4,11 +4,14 @@
 - package: R module lfe
   name: lfe
   rpkgname: lfe
-  version: "{{versions.lfe}}"
-  release: "{{versions.lfe_release}}"
+  sversion: "{{versions.lfe}}"
+  subversion: "{{versions.lfe_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: https://cran.r-project.org/src/contrib
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
   requires:
     - R_{{Rversion}}
     - R_{{Rversion}}-Formula

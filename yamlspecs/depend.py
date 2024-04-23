@@ -25,11 +25,14 @@ YAMLTEMPLATE_RELEASE="""
 - package: R module MODULE
   name: MODULE
   rpkgname: %s
-  version: "{{versions.MODULE}}"
-  release: "{{versions.MODULE_release}}"
+  sversion: "{{versions.MODULE}}"
+  subversion: "{{versions.MODULE_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
   baseurl: %s
-  src_tarball: "{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
-  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
 """
 BUILD_OVERRIDE="""
   build:
@@ -111,12 +114,11 @@ for pkg in resolved:
         if r is None:
            template = YAMLTEMPLATE
         else:
-           (version,release) = version.split('-')
-           yamlversions.write('%s_release: "%s"\n' % (pkg.pkgname,release))
+           (version,subversion) = version.split('-')
+           yamlversions.write('%s_subversion: "%s"\n' % (pkg.pkgname,subversion))
            template = YAMLTEMPLATE_RELEASE
 
         yamlversions.write('%s: "%s"\n' % (pkg.pkgname,version))
-
    
         appendFileName = "%s.yaml.append" % pkg.pkgname
         try:
