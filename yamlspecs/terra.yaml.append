@@ -1,3 +1,5 @@
+    - gdal_{{versions.gdal}}
+    - geos_{{versions.geos}}
   build:
     modules:
       - R/{{Rversion}}

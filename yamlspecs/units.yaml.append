@@ -1,3 +1,4 @@
+    - udunits_{{versions.udunits}}_{{compiler}}_{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}

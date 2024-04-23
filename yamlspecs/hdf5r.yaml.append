@@ -1,3 +1,4 @@
+    - hdf5_{{versions.hdf5}}_{{compiler}}_{{compiler_version}}
   addfile: hdf5r.patch
   build:
      modules:
@@ -11,3 +12,4 @@
        autoreconf;
        mkdir -p $(ROOT)/{{libpath}};
        R CMD INSTALL -l $(ROOT)/{{libpath}} .
+  release: 2
