@@ -9,7 +9,7 @@
   tarsources: "{{versions.tarsources}}"
   compiler: "{{versions.compiler.name}}"
   compiler_version: "{{versions.compiler.version}}"
-  vendor_source: https://mirrors.nics.utk.edu/cran/src/base/R-{{versions.Rmajor}}/R-{{version}}.{{extension}}
+  vendor_source: https://cran.r-project.org/src/base/R-{{versions.Rmajor}}/R-{{version}}.{{extension}}
   description: |
     R {{version}} is 'GNU S', a freely available language and environment for
     statistical computing and graphics which provides a wide variety
