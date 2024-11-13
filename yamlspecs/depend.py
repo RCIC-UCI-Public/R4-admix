@@ -71,6 +71,7 @@ syspkgs = [ "KernSmooth", "MASS", "Matrix", "base", "boot", "class", "cluster", 
 "mgcv", "nlme", "nnet", "parallel", "rpart", "spatial", "splines", "stats", "stats4", "survival", \
 "tcltk", "tools", "translations", "utils" ] 
 
+
 # Create Graph nodes for every module
 with open("builddeps.yaml") as f:
     r_modules = yaml.load(f)
@@ -114,7 +115,7 @@ for pkg in resolved:
         if r is None:
            template = YAMLTEMPLATE
         else:
-           (version,subversion) = version.split('-')
+           (version,subversion) = version.split('-',1)
            yamlversions.write('%s_subversion: "%s"\n' % (pkg.pkgname,subversion))
            template = YAMLTEMPLATE_RELEASE
 
