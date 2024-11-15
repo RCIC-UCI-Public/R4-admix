@@ -1,0 +1,33 @@
+
+!include common.yaml
+---
+- package: R module ltm
+  name: ltm
+  rpkgname: ltm
+  sversion: "{{versions.ltm}}"
+  subversion: "{{versions.ltm_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-msm
+    - R_{{Rversion}}-polycor
+    - R_{{Rversion}}-mvtnorm
+    - R_{{Rversion}}-expm
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-admisc
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-utf8

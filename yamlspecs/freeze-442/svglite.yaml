@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module svglite
+  name: svglite
+  rpkgname: svglite
+  version: "{{versions.svglite}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-systemfonts
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-rlang

@@ -1,0 +1,44 @@
+
+!include common.yaml
+---
+- package: R module reprex
+  name: reprex
+  rpkgname: reprex
+  version: "{{versions.reprex}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-clipr
+    - R_{{Rversion}}-fs
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-knitr
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-rmarkdown
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-evaluate
+    - R_{{Rversion}}-highr
+    - R_{{Rversion}}-xfun
+    - R_{{Rversion}}-yaml
+    - R_{{Rversion}}-bslib
+    - R_{{Rversion}}-fontawesome
+    - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-jquerylib
+    - R_{{Rversion}}-jsonlite
+    - R_{{Rversion}}-tinytex
+    - R_{{Rversion}}-base64enc
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-mime
+    - R_{{Rversion}}-sass
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-ps
+    - R_{{Rversion}}-rappdirs

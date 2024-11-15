@@ -1,0 +1,11 @@
+    - libgit2_{{versions.libgit2}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - libgit2/{{versions.libgit2}}
+  install:
+    cmdargs: --configure-vars='INCLUDE_DIR=$$libgit2__PREFIX/include LIB_DIR=$$libgit2__PREFIX/lib64'
+
+# NOTE: this file is valid as of R 4.4.2
+# previous versions of git2r were built
+# using their own internal libgit2 source.

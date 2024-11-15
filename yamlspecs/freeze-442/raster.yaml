@@ -1,0 +1,28 @@
+
+!include common.yaml
+---
+- package: R module raster
+  name: raster
+  rpkgname: raster
+  sversion: "{{versions.raster}}"
+  subversion: "{{versions.raster_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-sp
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-terra
+    - proj_{{versions.proj}}
+    - gdal_{{versions.gdal}}
+    - geos_{{versions.geos}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - proj/{{versions.proj}}
+      - gdal/{{versions.gdal}}
+      - geos/{{versions.geos}}

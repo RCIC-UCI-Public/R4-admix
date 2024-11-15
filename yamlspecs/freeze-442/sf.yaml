@@ -1,0 +1,31 @@
+
+!include common.yaml
+---
+- package: R module sf
+  name: sf
+  rpkgname: sf
+  sversion: "{{versions.sf}}"
+  subversion: "{{versions.sf_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-classInt
+    - R_{{Rversion}}-DBI
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-s2
+    - R_{{Rversion}}-units
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-e1071
+    - R_{{Rversion}}-wk
+    - R_{{Rversion}}-proxy
+    - gdal_{{versions.gdal}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - gdal/{{versions.gdal}}
+      - udunits/{{versions.udunits}}/{{compiler}}.{{compiler_version}} 

@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module robustbase
+  name: robustbase
+  rpkgname: robustbase
+  sversion: "{{versions.robustbase}}"
+  subversion: "{{versions.robustbase_subversion}}"
+  subversion2: "{{versions.robustbase_subversion2}}"
+  version: "{{sversion}}.{{subversion2}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-DEoptimR

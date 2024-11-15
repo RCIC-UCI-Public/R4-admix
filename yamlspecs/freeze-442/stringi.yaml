@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module stringi
+  name: stringi
+  rpkgname: stringi
+  version: "{{versions.stringi}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

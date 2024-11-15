@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module RcppArmadillo
+  name: RcppArmadillo
+  rpkgname: RcppArmadillo
+  sversion: "{{versions.RcppArmadillo}}"
+  subversion: "{{versions.RcppArmadillo_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp

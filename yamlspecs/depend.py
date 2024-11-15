@@ -8,6 +8,7 @@ import yaml
 R_VERSION = "{{Rversion}}"
 R_MODULE = "R/%s" % R_VERSION
 
+# for packages that have version as a single  number
 YAMLTEMPLATE="""
 !include common.yaml
 ---
@@ -19,7 +20,9 @@ YAMLTEMPLATE="""
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
 """
-YAMLTEMPLATE_RELEASE="""
+
+# for packages that have version as numbers separated by dash
+YAMLTEMPLATE_RELEASE1="""
 !include common.yaml
 ---
 - package: R module MODULE
@@ -34,6 +37,25 @@ YAMLTEMPLATE_RELEASE="""
   description: >
     {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
 """
+
+# for packages that have version as numbers separated by a few dashes
+YAMLTEMPLATE_RELEASE2="""
+!include common.yaml
+---
+- package: R module MODULE
+  name: MODULE
+  rpkgname: %s
+  sversion: "{{versions.MODULE}}"
+  subversion: "{{versions.MODULE_subversion}}"
+  subversion2: "{{versions.MODULE_subversion2}}"
+  version: "{{sversion}}.{{subversion2}}"
+  baseurl: %s
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+"""
+
 BUILD_OVERRIDE="""
   build:
     configure: echo no configure required
@@ -116,8 +138,14 @@ for pkg in resolved:
            template = YAMLTEMPLATE
         else:
            (version,subversion) = version.split('-',1)
-           yamlversions.write('%s_subversion: "%s"\n' % (pkg.pkgname,subversion))
-           template = YAMLTEMPLATE_RELEASE
+           subversion2 = subversion.replace("-",".") # replace any "-" with "."
+           if subversion2 == subversion: # no replacements
+               yamlversions.write('%s_subversion: "%s"\n' % (pkg.pkgname,subversion))
+               template = YAMLTEMPLATE_RELEASE1 
+           else:                         # there were replacements 
+               yamlversions.write('%s_subversion: "%s"\n' % (pkg.pkgname,subversion))
+               yamlversions.write('%s_subversion2: "%s"\n' % (pkg.pkgname,subversion2))
+               template = YAMLTEMPLATE_RELEASE2 
 
         yamlversions.write('%s: "%s"\n' % (pkg.pkgname,version))
    

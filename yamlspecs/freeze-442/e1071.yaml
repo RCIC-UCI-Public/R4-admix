@@ -1,0 +1,17 @@
+
+!include common.yaml
+---
+- package: R module e1071
+  name: e1071
+  rpkgname: e1071
+  sversion: "{{versions.e1071}}"
+  subversion: "{{versions.e1071_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-proxy

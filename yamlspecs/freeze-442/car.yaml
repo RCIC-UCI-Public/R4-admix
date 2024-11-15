@@ -1,0 +1,67 @@
+
+!include common.yaml
+---
+- package: R module car
+  name: car
+  rpkgname: car
+  sversion: "{{versions.car}}"
+  subversion: "{{versions.car_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-carData
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-Formula
+    - R_{{Rversion}}-pbkrtest
+    - R_{{Rversion}}-quantreg
+    - R_{{Rversion}}-lme4
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-minqa
+    - R_{{Rversion}}-nloptr
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-broom
+    - R_{{Rversion}}-dplyr
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-doBy
+    - R_{{Rversion}}-SparseM
+    - R_{{Rversion}}-MatrixModels
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-munsell
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-purrr
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-tidyr
+    - R_{{Rversion}}-cowplot
+    - R_{{Rversion}}-Deriv
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-modelr
+    - R_{{Rversion}}-microbenchmark
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-tidyselect
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-colorspace
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-cpp11

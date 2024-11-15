@@ -1,0 +1,32 @@
+
+!include common.yaml
+---
+- package: R module loo
+  name: loo
+  rpkgname: loo
+  version: "{{versions.loo}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-checkmate
+    - R_{{Rversion}}-matrixStats
+    - R_{{Rversion}}-posterior
+    - R_{{Rversion}}-backports
+    - R_{{Rversion}}-abind
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-tibble
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-tensorA
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-distributional
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-utf8
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-pkgconfig

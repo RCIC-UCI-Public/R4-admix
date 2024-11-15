@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module plm
+  name: plm
+  rpkgname: plm
+  sversion: "{{versions.plm}}"
+  subversion: "{{versions.plm_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-bdsmatrix
+    - R_{{Rversion}}-collapse
+    - R_{{Rversion}}-zoo
+    - R_{{Rversion}}-sandwich
+    - R_{{Rversion}}-lmtest
+    - R_{{Rversion}}-maxLik
+    - R_{{Rversion}}-Rdpack
+    - R_{{Rversion}}-Formula
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-miscTools
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-rbibutils
+    - R_{{Rversion}}-digest

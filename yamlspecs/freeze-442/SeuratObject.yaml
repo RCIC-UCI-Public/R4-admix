@@ -1,0 +1,29 @@
+
+!include common.yaml
+---
+- package: R module SeuratObject
+  name: SeuratObject
+  rpkgname: SeuratObject
+  version: "{{versions.SeuratObject}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-sp
+    - R_{{Rversion}}-future
+    - R_{{Rversion}}-future_apply
+    - R_{{Rversion}}-progressr
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-spam
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-RcppEigen
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-globals
+    - R_{{Rversion}}-listenv
+    - R_{{Rversion}}-parallelly
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-dotCall64

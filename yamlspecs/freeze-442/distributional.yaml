@@ -1,0 +1,22 @@
+
+!include common.yaml
+---
+- package: R module distributional
+  name: distributional
+  rpkgname: distributional
+  version: "{{versions.distributional}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-pillar
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-fansi
+    - R_{{Rversion}}-utf8

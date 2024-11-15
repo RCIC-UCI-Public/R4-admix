@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module lubridate
+  name: lubridate
+  rpkgname: lubridate
+  version: "{{versions.lubridate}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-generics
+    - R_{{Rversion}}-timechange
+    - R_{{Rversion}}-cpp11
