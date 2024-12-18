@@ -13,4 +13,3 @@
   build:
     modules:
       - R/{{Rversion}}
-      - foundation/{{versions.foundation}}
