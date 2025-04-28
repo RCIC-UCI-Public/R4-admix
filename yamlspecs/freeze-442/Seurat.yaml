@@ -25,7 +25,7 @@
     - R_{{Rversion}}-igraph
     - R_{{Rversion}}-irlba
     - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-leiden
+    - R_{{Rversion}}-leidenbase
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-lmtest
     - R_{{Rversion}}-matrixStats
