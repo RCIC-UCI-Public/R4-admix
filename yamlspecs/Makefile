@@ -6,6 +6,7 @@
 ALL_TARGETS = bootstrap
 include $(YAML2RPM_HOME)/sys/Makefile
 
+
 .DEFAULT_GOAL = default
 .PHONY: force
 
@@ -22,7 +23,7 @@ debug:
 #echo "KEEPYAMLS" $(KEEPYAMLS)
 #echo "TMPYAMLS" $(TMPYAMLS)
 
-# when building targets for different R version need to give on a commadn line
+# when building targets for different R version need to give on a command line
 # set name, for example SET='404'
 ifeq ($(SET),)
     VERSIONS := versions.yaml
@@ -49,9 +50,12 @@ endif
 manifest module-requires module-provides modules-info::
 	make -s -e -f $(THISMAKE) SET=$$set cleanset
 
-buildall-preset:
-	make -s -e -f $(THISMAKE) SET=$$set cleanset
-	make -s -e -f $(THISMAKE) SET=$$set thaw
+# when using the buildall target for automated build
+# override the default stageset to thaw the set.
+stageset: 
+ifneq ($(SET),)
+	make -s -e -f $(THISMAKE) thaw
+endif
 	
 # copy yamls from freeze-$(SET)/
 copyset:

@@ -6028,9 +6028,9 @@ irlba :
     - Matrix
     - lattice
   archive: False 
-leiden : 
+leidenbase : 
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "0.4.3.1"
+  version : "0.1.35"
   requires : 
     - reticulate
     - Matrix

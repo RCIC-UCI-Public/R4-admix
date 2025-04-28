@@ -23,10 +23,12 @@
       - OpenBLAS/{{versions.OpenBLAS}}
       - java/{{versions.java}}
       - "{{compiler}}/{{compiler_version}}"
+    tzcode: !eval "'--with-internal-tzcode' if {{versions.Rmajor}} == 4 and {{versions.Rminor}} >= 3 else ''"
     configure: ./configure
     configure_args: >
       --enable-R-shlib
       --with-blas
+      {{build.tzcode}}
       --prefix={{root}}
   install:
      makeinstall: >

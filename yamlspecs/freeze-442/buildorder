@@ -363,7 +363,7 @@ irlba
 RcppTOML
 here
 reticulate
-leiden
+leidenbase
 patchwork
 plotly
 RANN
