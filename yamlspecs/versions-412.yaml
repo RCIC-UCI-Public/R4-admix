@@ -3,6 +3,7 @@
 ---
 R: "4.1.2"
 Rmajor: "4"
+Rminor: "1"
 rstudio: "2022.02.1.461"
 rstudio_dist: "2022.02.1-461"
 rstudio_os: "rhel8"

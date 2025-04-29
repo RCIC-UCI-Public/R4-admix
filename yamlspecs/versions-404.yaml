@@ -2,6 +2,7 @@
 ---
 R: "4.0.4"
 Rmajor: "4"
+Rminor: "0"
 rstudio: "1.4.1106"
 rstudio_dist: "1.4.1106"
 rstudio_os: "centos7"
