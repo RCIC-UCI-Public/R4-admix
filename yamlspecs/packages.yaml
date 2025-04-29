@@ -30,7 +30,7 @@ system:
   - perl-Spreadsheet-WriteExcel
   - cairo-devel
   - pango-devel
-  - libgit2-devel
+  - !eval "'libgit2-devel' if {{site.os_release}} == 8 else ''"
 basebuild:
   - R
   - R-module

@@ -25,7 +25,7 @@
     - R_{{Rversion}}-igraph
     - R_{{Rversion}}-irlba
     - R_{{Rversion}}-jsonlite
-    - R_{{Rversion}}-leiden
+    - R_{{Rversion}}-leidenbase
     - R_{{Rversion}}-lifecycle
     - R_{{Rversion}}-lmtest
     - R_{{Rversion}}-matrixStats
@@ -77,6 +77,7 @@
     - R_{{Rversion}}-cpp11
     - R_{{Rversion}}-zoo
     - R_{{Rversion}}-htmltools
+    - R_{{Rversion}}-farver
     - R_{{Rversion}}-viridisLite
     - R_{{Rversion}}-base64enc
     - R_{{Rversion}}-htmlwidgets
@@ -89,7 +90,6 @@
     - R_{{Rversion}}-here
     - R_{{Rversion}}-rappdirs
     - R_{{Rversion}}-gplots
-    - R_{{Rversion}}-farver
     - R_{{Rversion}}-labeling
     - R_{{Rversion}}-munsell
     - R_{{Rversion}}-reshape2
@@ -107,8 +107,8 @@
     - R_{{Rversion}}-commonmark
     - R_{{Rversion}}-bslib
     - R_{{Rversion}}-cachem
-    - R_{{Rversion}}-ellipsis
     - R_{{Rversion}}-spatstat_data
+    - R_{{Rversion}}-spatstat_univar
     - R_{{Rversion}}-spatstat_random
     - R_{{Rversion}}-spatstat_utils
     - R_{{Rversion}}-spatstat_sparse

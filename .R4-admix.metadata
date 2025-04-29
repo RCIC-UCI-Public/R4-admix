@@ -24,3 +24,11 @@ d4dff0f3095582c9f9ec45ffd8076c79c1c652f7  sources/sources-20240306.tar.gz
 7f8d7483f27da40142477b88451cc1bbd1e5897e  sources/isoband_0.2.7.tar.gz
 15657bfb530979275469e30481bcee3d53088047  sources/leidenbase_0.1.35.tar.gz
 812b01510e9cc92aba92cd848e1ab4aaf98b0de7  sources/Seurat_5.3.0.tar.gz
+bd9ac22ae08c60d9ce3ba560a807c79758020797  sources/SeuratObject_5.0.2.tar.gz
+66392161f96997f748808a93c4fe73b501ec033c  sources/spatstat.data_3.1-2.tar.gz
+6882567f5bcd9e15c931a3bc148da4146b58f06d  sources/spatstat.explore_3.3-3.tar.gz
+a3e1f5d3c289b19a6848a83240aae8ffd6c42f56  sources/spatstat.geom_3.3-3.tar.gz
+84ccd831210695d7585d95f6834a00acb78219f7  sources/spatstat.random_3.3-2.tar.gz
+0e53977d08a486e0e4e32295fc79ace3422c8c81  sources/spatstat.sparse_3.1-0.tar.gz
+5cf56ee026bc1854eab509261d95107ae0f99151  sources/spatstat.univar_3.1-1.tar.gz
+9f98f985154af0ee0aa3630209613a72ee407535  sources/spatstat.utils_3.1-1.tar.gz

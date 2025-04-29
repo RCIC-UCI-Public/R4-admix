@@ -368,7 +368,7 @@ irlba
 RcppTOML
 here
 reticulate
-leiden
+leidenbase
 patchwork
 plotly
 RANN
@@ -381,6 +381,7 @@ scattermore
 sctransform
 spatstat_utils
 spatstat_data
+spatstat_univar
 deldir
 polyclip
 spatstat_geom
