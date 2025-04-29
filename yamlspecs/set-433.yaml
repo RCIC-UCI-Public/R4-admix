@@ -379,7 +379,7 @@ bootstrap1:
   - RcppTOML
   - here
   - reticulate
-  - leiden
+  - leidenbase
   - patchwork
   - plotly
   - RANN
@@ -392,6 +392,7 @@ bootstrap1:
   - sctransform
   - spatstat_utils
   - spatstat_data
+  - spatstat_univar
   - deldir
   - polyclip
   - spatstat_geom
