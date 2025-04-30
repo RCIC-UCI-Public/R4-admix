@@ -374,7 +374,7 @@ bootstrap1:
   - RcppTOML
   - here
   - reticulate
-  - leiden
+  - leidenbase
   - patchwork
   - plotly
   - RANN
