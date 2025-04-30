@@ -1,7 +1,7 @@
-    - gdal_{{versions.gdal}}
-    - geos_{{versions.geos}}
+    - gdal_{{versions.gdal}}_{{compiler}}_{{compiler_version}}
+    - geos_{{versions.geos}}_{{compiler}}_{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}
-      - gdal/{{versions.gdal}}
-      - geos/{{versions.geos}}
+      - gdal/{{versions.gdal}}/{{compiler}}.{{compiler_version}}
+      - geos/{{versions.geos}}/{{compiler}}.{{compiler_version}}

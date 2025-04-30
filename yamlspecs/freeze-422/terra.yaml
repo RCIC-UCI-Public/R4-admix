@@ -15,5 +15,5 @@
   build:
     modules:
       - R/{{Rversion}}
-      - gdal/{{versions.gdal}}
-      - geos/{{versions.geos}}
+      - gdal/{{versions.gdal}}/{{compiler}}.{{compiler_version}}
+      - geos/{{versions.geos}}/{{compiler}}.{{compiler_version}}
