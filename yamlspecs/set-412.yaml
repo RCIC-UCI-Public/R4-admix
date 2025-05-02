@@ -358,7 +358,6 @@ bootstrap1:
   - RcppTOML
   - here
   - reticulate
-  - leiden
   - patchwork
   - plotly
   - RANN
@@ -384,7 +383,6 @@ bootstrap1:
   - sitmo
   - dqrng
   - uwot
-  - Seurat
   - sm
   - stargazer
   - dtplyr
