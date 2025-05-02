@@ -17,9 +17,9 @@
     - R_{{Rversion}}-sp
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-terra
-    - proj_{{versions.proj}}_{{compiler}}-{{compiler_version}}
-    - gdal_{{versions.gdal}}_{{compiler}}-{{compiler_version}}
-    - geos_{{versions.geos}}_{{compiler}}-{{compiler_version}}
+    - proj_{{versions.proj}}_{{compiler}}_{{compiler_version}}
+    - gdal_{{versions.gdal}}_{{compiler}}_{{compiler_version}}
+    - geos_{{versions.geos}}_{{compiler}}_{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}
