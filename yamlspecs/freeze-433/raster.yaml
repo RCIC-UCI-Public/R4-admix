@@ -17,12 +17,12 @@
     - R_{{Rversion}}-sp
     - R_{{Rversion}}-Rcpp
     - R_{{Rversion}}-terra
-    - proj_{{versions.proj}}
-    - gdal_{{versions.gdal}}
-    - geos_{{versions.geos}}
+    - proj_{{versions.proj}}_{{compiler}}-{{compiler_version}}
+    - gdal_{{versions.gdal}}_{{compiler}}-{{compiler_version}}
+    - geos_{{versions.geos}}_{{compiler}}-{{compiler_version}}
   build:
     modules:
       - R/{{Rversion}}
-      - proj/{{versions.proj}}
-      - gdal/{{versions.gdal}}
-      - geos/{{versions.geos}}
+      - proj/{{versions.proj}}/{{compiler}}.{{compiler_version}}
+      - gdal/{{versions.gdal}}/{{compiler}}.{{compiler_version}}
+      - geos/{{versions.geos}}/{{compiler}}.{{compiler_version}}

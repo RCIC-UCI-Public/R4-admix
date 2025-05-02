@@ -23,5 +23,5 @@
   build:
     modules:
       - R/{{Rversion}}
-      - gdal/{{versions.gdal}}
+      - gdal/{{versions.gdal}}/{{compiler}}.{{compiler_version}}
       - udunits/{{versions.udunits}}/{{compiler}}.{{compiler_version}} 
