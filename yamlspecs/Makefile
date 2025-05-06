@@ -65,13 +65,13 @@ ifneq ($(SET),)
 endif
 
 # for build using yamls in freeze-$(SET)/
-thaw:
-	/bin/cp $(FREEZE_DIR)/*.yaml .
-	/bin/cp $(FREEZE_DIR)/buildorder .
-	(cd ../sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
+thaw: stagedir
+	/bin/cp $(FREEZE_DIR)/*.yaml $(STAGEDIR)
+	/bin/cp $(FREEZE_DIR)/buildorder $(STAGEDIR)
+	(cd $(ADMIXROOT)/sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
 	if [ "$(ADDON)" != "" ] && [ "$(ADDON)" != "None" ]; then \
 	    for set in $(ADDON); do \
-	        (cd ../sources; tar xvf sources-addon-$$set.tar.gz); \
+	        (cd $(ADMIXROOT)/sources; tar xvf sources-addon-$$set.tar.gz); \
 	    done; \
 	fi
 
