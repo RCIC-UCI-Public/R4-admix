@@ -2282,6 +2282,7 @@ Seurat :
     - cachem
     - ellipsis
     - spatstat.data
+    - spatstat.univar
     - spatstat.random
     - nlme
     - spatstat.utils
@@ -6492,10 +6493,10 @@ irlba :
     - Matrix
     - lattice
   archive: False 
-leiden : 
+leidenbase :
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "0.4.3.1"
-  requires : 
+  version : "0.1.35"
+  requires :
     - reticulate
     - Matrix
     - igraph
@@ -6516,7 +6517,7 @@ leiden :
     - withr
     - rprojroot
     - glue
-  archive: False 
+  archive: False
 patchwork : 
   baseurl : "https://cran.r-project.org/src/contrib"
   version : "1.2.0"
@@ -6767,11 +6768,12 @@ sctransform :
     - pkgconfig
     - colorspace
   archive: False 
-spatstat.explore : 
+spatstat.explore :
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "3.2-6"
-  requires : 
+  version : "3.3-3"
+  requires :
     - spatstat.data
+    - spatstat.univar
     - spatstat.geom
     - spatstat.random
     - nlme
@@ -6784,18 +6786,19 @@ spatstat.explore :
     - deldir
     - polyclip
     - tensor
-  archive: False 
-spatstat.geom : 
+  archive: False
+spatstat.geom :
   baseurl : "https://cran.r-project.org/src/contrib"
-  version : "3.2-9"
-  requires : 
+  version : "3.3-3"
+  requires :
     - spatstat.data
+    - spatstat.univar
     - spatstat.utils
     - deldir
     - polyclip
     - Matrix
     - lattice
-  archive: False 
+  archive: False
 uwot : 
   baseurl : "https://cran.r-project.org/src/contrib"
   version : "0.1.16"
@@ -6836,11 +6839,18 @@ spatstat.data :
     - Matrix
     - lattice
   archive: False 
+spatstat.univar :
+  baseurl : "https://cran.r-project.org/src/contrib"
+  version : "3.1-1"
+  requires :
+    - spatstat.utils
+  archive: False
 spatstat.random : 
   baseurl : "https://cran.r-project.org/src/contrib"
   version : "3.2-3"
   requires : 
     - spatstat.data
+    - spatstat.univar
     - spatstat.geom
     - spatstat.utils
     - Matrix
