@@ -377,7 +377,7 @@ bootstrap1:
   - RcppTOML
   - here
   - reticulate
-  - leiden
+# - leiden
   - patchwork
   - plotly
   - RANN
@@ -401,7 +401,7 @@ bootstrap1:
   - sitmo
   - dqrng
   - uwot
-  - Seurat
+# - Seurat
   - sm
   - stargazer
   - conflicted
