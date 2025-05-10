@@ -1,5 +1,6 @@
 !include versions.yaml
 ---
+java: 11
 R: "4.0.4"
 Rmajor: "4"
 Rminor: "0"
@@ -16,9 +17,9 @@ addonsources:
   - "sf"
   - "os"
 OpenBLAS: "0.3.6"
-proj: "6.3.2"
-gdal: "3.1.0"
-geos: "3.8.1"
+proj: "9.0.0"
+gdal: "3.4.1"
+geos: "3.10.2"
 ### from outversions.yaml
 git2r: "0.28.0"
 Rcpp: "1.0.6"
