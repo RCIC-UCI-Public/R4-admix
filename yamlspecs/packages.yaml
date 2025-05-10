@@ -48,7 +48,7 @@ manifest:
   - "{{bootstrap}}"
   - "{{build}}"
 
-parallel: 3
+parallel: 5
 sets:
   - "404"
   - "412"
