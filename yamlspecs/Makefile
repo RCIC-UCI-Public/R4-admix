@@ -46,6 +46,7 @@ endif
 
 # for build using yamls in freeze-$(SET)/
 thaw: thawyamls thawsources
+ifneq ($(SET),)
 thawyamls:  stagedir
 	/bin/cp $(FREEZE_DIR)/*.yaml $(STAGEDIR)
 	/bin/cp $(FREEZE_DIR)/buildorder $(STAGEDIR)
@@ -56,6 +57,7 @@ thawsources:
 	        (cd $(ADMIXROOT)/sources; tar xvf sources-addon-$$set.tar.gz); \
 	    done; \
 	fi
+endif
 
 prep: builddeps.yaml
 	./downloadpkg.py $(SET)
