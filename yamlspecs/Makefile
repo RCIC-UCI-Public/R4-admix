@@ -36,27 +36,7 @@ BASE_SRCVER = $(shell $(GENERATE) --query=tarsources R.yaml -V $(VERSIONS))
 ADDON = $(shell $(BASEGENERATE) -Q --query=addonsources versions-$(SET).yaml)
 FREEZE_DIR=freeze-$(SET)
 
-rebuild:
-ifndef BASEONLY
-	if [ "$(SET)" == "" ] && [ "$(ALLSETS)" != "" ]; then \
-	    for set in $(ALLSETS); do \
-		make -e SET=$$set -f $(THISMAKE) clean; \
-		make -e -f $(THISMAKE) SET=$$set thaw; \
-		make -e -f $(THISMAKE) SET=$$set bootstrap; \
-	    done; \
-	fi
-endif
-
-manifest module-requires module-provides modules-info::
-	make -s -e -f $(THISMAKE) SET=$$set cleanset
-
-# when using the buildall target for automated build
-# override the default stageset to thaw the set.
-stageset: 
-ifneq ($(SET),)
-	make -s -e -f $(THISMAKE) thaw
-endif
-	
+#
 # copy yamls from freeze-$(SET)/
 copyset:
 ifneq ($(SET),)
@@ -65,9 +45,11 @@ ifneq ($(SET),)
 endif
 
 # for build using yamls in freeze-$(SET)/
-thaw: stagedir
+thaw: thawyamls thawsources
+thawyamls:  stagedir
 	/bin/cp $(FREEZE_DIR)/*.yaml $(STAGEDIR)
 	/bin/cp $(FREEZE_DIR)/buildorder $(STAGEDIR)
+thawsources:
 	(cd $(ADMIXROOT)/sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
 	if [ "$(ADDON)" != "" ] && [ "$(ADDON)" != "None" ]; then \
 	    for set in $(ADDON); do \
