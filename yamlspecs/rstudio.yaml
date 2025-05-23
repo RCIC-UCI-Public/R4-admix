@@ -1,7 +1,7 @@
 !include rcic-package.yaml
 !include rpm.yaml
 ---
-- package: R Studio 
+- package: R Studio
   name: rstudio
   versions: !include versions.yaml
   release: "3"
@@ -13,7 +13,7 @@
   no_src_dir: True
   src_dir: rstudio-{{version}}
   description: |
-    R Studio Desktop{{version}}.
+    R Studio Desktop {{version}}.
     Binary distribution from: {{vendor_source}}.
   install:
      makeinstall: >

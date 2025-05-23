@@ -1,7 +1,7 @@
 !include common.yaml
 ---
-- package: R module seurat-data 
-  name: seurat-data 
+- package: R module seurat-data
+  name: seurat-data
   rpkgname: seurat-data
   version: "{{versions.seurat_data}}"
   src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
