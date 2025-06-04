@@ -31,6 +31,10 @@ system:
   - cairo-devel
   - pango-devel
   - !eval "'libgit2-devel' if {{site.os_release}} == 8 else ''"
+  - freetype-devel
+  - fribidi-devel
+  - harfbuzz-devel
+
 basebuild:
   - R
   - R-module
