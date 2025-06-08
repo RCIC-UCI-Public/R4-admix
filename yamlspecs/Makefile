@@ -17,6 +17,7 @@ KEEPYAMLS = $(patsubst %,%.yaml,$(KEEPYAMLS0))
 KEEPYAMLS += $(wildcard set-*.yaml versions*.yaml common.yaml packages.yaml)
 TMPYAMLS0 = $(wildcard *.yaml)
 TMPYAMLS = $(filter-out $(KEEPYAMLS),$(TMPYAMLS0))
+THAWLOCK = $(ADMIXROOT)/thaw.lock
 
 debug:
 	echo "TMPYAMLS" $(TMPYAMLS)
@@ -51,10 +52,10 @@ thawyamls:  stagedir
 	/bin/cp $(FREEZE_DIR)/*.yaml $(STAGEDIR)
 	/bin/cp $(FREEZE_DIR)/buildorder $(STAGEDIR)
 thawsources:
-	(cd $(ADMIXROOT)/sources; tar xvf sources-$(BASE_SRCVER).tar.gz)
-	if [ "$(ADDON)" != "" ] && [ "$(ADDON)" != "None" ]; then \
+	(cd $(ADMIXROOT)/sources; flock $(THAWLOCK) tar xvf sources-$(BASE_SRCVER).tar.gz)
+	 if [ "$(ADDON)" != "" ] && [ "$(ADDON)" != "None" ]; then \
 	    for set in $(ADDON); do \
-	        (cd $(ADMIXROOT)/sources; tar xvf sources-addon-$$set.tar.gz); \
+	        (cd $(ADMIXROOT)/sources; flock $(THAWLOCK) tar xvf sources-addon-$$set.tar.gz); \
 	    done; \
 	fi
 endif
