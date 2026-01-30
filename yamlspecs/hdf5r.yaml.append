@@ -1,5 +1,5 @@
     - hdf5_{{versions.hdf5}}_{{compiler}}_{{compiler_version}}
-  addfile: hdf5r.patch
+  addfile: hdf5r-{{version}}.patch
   build:
      modules:
       - R/{{Rversion}}
@@ -9,6 +9,7 @@
        tar xzvf {{src_tarball}};
        cd hdf5r; 
        patch -p1 < ../{{addfile}};
+       if [[ "{{compiler_version}}" > "15" ]]; then export export CFLAGS="-Wno-error=implicit-function-declaration"; fi;
        autoreconf;
        mkdir -p $(ROOT)/{{libpath}};
        R CMD INSTALL -l $(ROOT)/{{libpath}} .

@@ -1,0 +1,44 @@
+--- hdf5r/src//1_12_0/Wrapper_auto_H5FDfamily.c	2024-01-14 06:08:03.000000000 -0800
++++ hdf5r/src//1_12_0/Wrapper_auto_H5FDfamily.c.new	2026-01-29 14:15:58.161522170 -0800
+@@ -20,7 +20,7 @@
+ /* H5_DLL hid_t H5FD_family_init(void); */
+ SEXP R_H5FD_family_init(void){
+   int vars_protected=0;
+-  hid_t return_val = H5FD_family_init();
++  hid_t return_val = 0;
+   SEXP R_return_val= R_NilValue;
+   R_return_val = PROTECT(ScalarInteger64_or_int(return_val));
+   vars_protected++;
+--- hdf5r/src/1_12_0/Wrapper_auto_H5FDlog.c	2024-01-14 06:08:03.000000000 -0800
++++ hdf5r/src/1_12_0/Wrapper_auto_H5FDlog.c.new	2026-01-29 14:24:13.810975351 -0800
+@@ -20,7 +20,7 @@
+ /* H5_DLL hid_t H5FD_log_init(void); */
+ SEXP R_H5FD_log_init(void){
+   int vars_protected=0;
+-  hid_t return_val = H5FD_log_init();
++  hid_t return_val = 0;
+   SEXP R_return_val= R_NilValue;
+   R_return_val = PROTECT(ScalarInteger64_or_int(return_val));
+   vars_protected++;
+--- hdf5r/src/1_12_0/Wrapper_auto_H5FDsec2.c	2024-01-14 06:08:03.000000000 -0800
++++ hdf5r/src/1_12_0/Wrapper_auto_H5FDsec2.c.new	2026-01-29 14:24:18.889979995 -0800
+@@ -20,7 +20,7 @@
+ /* H5_DLL hid_t H5FD_sec2_init(void); */
+ SEXP R_H5FD_sec2_init(void){
+   int vars_protected=0;
+-  hid_t return_val = H5FD_sec2_init();
++  hid_t return_val = 0;
+   SEXP R_return_val= R_NilValue;
+   R_return_val = PROTECT(ScalarInteger64_or_int(return_val));
+   vars_protected++;
+--- hdf5r/src/1_12_0/Wrapper_auto_H5FDstdio.c	2024-01-14 06:08:03.000000000 -0800
++++ hdf5r/src/1_12_0/Wrapper_auto_H5FDstdio.c.new	2026-01-29 14:24:31.266991311 -0800
+@@ -20,7 +20,7 @@
+ /* H5_DLL hid_t H5FD_stdio_init(void); */
+ SEXP R_H5FD_stdio_init(void){
+   int vars_protected=0;
+-  hid_t return_val = H5FD_stdio_init();
++  hid_t return_val = 0;
+   SEXP R_return_val= R_NilValue;
+   R_return_val = PROTECT(ScalarInteger64_or_int(return_val));
+   vars_protected++;
