@@ -1,0 +1,14 @@
+
+!include common.yaml
+---
+- package: R module reformulas
+  name: reformulas
+  rpkgname: reformulas
+  version: "{{versions.reformulas}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rdpack
+    - R_{{Rversion}}-rbibutils

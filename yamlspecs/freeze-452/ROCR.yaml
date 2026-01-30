@@ -1,0 +1,20 @@
+
+!include common.yaml
+---
+- package: R module ROCR
+  name: ROCR
+  rpkgname: ROCR
+  sversion: "{{versions.ROCR}}"
+  subversion: "{{versions.ROCR_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-gplots
+    - R_{{Rversion}}-gtools
+    - R_{{Rversion}}-caTools
+    - R_{{Rversion}}-bitops

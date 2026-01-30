@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module R_cache
+  name: R_cache
+  rpkgname: R.cache
+  version: "{{versions.R_cache}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-R_methodsS3
+    - R_{{Rversion}}-R_oo
+    - R_{{Rversion}}-R_utils
+    - R_{{Rversion}}-digest

@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module otel
+  name: otel
+  rpkgname: otel
+  version: "{{versions.otel}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

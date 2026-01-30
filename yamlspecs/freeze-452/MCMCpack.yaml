@@ -1,0 +1,21 @@
+
+!include common.yaml
+---
+- package: R module MCMCpack
+  name: MCMCpack
+  rpkgname: MCMCpack
+  sversion: "{{versions.MCMCpack}}"
+  subversion: "{{versions.MCMCpack_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-coda
+    - R_{{Rversion}}-mcmc
+    - R_{{Rversion}}-quantreg
+    - R_{{Rversion}}-SparseM
+    - R_{{Rversion}}-MatrixModels

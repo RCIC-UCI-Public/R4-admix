@@ -1,0 +1,25 @@
+
+!include common.yaml
+---
+- package: R module selectr
+  name: selectr
+  rpkgname: selectr
+  sversion: "{{versions.selectr}}"
+  subversion: "{{versions.selectr_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-stringr
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-stringi
+    - R_{{Rversion}}-vctrs

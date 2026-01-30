@@ -1,0 +1,25 @@
+
+!include common.yaml
+---
+- package: R module httr2
+  name: httr2
+  rpkgname: httr2
+  version: "{{versions.httr2}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-magrittr
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rappdirs
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-sys

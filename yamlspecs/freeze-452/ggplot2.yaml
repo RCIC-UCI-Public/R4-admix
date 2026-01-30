@@ -1,0 +1,28 @@
+
+!include common.yaml
+---
+- package: R module ggplot2
+  name: ggplot2
+  rpkgname: ggplot2
+  version: "{{versions.ggplot2}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-S7
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite

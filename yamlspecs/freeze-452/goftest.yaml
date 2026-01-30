@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module goftest
+  name: goftest
+  rpkgname: goftest
+  sversion: "{{versions.goftest}}"
+  subversion: "{{versions.goftest_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}

@@ -1,0 +1,15 @@
+
+!include common.yaml
+---
+- package: R module isoband
+  name: isoband
+  rpkgname: isoband
+  version: "{{versions.isoband}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-cpp11

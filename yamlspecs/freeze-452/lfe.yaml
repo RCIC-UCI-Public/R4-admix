@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module lfe
+  name: lfe
+  rpkgname: lfe
+  version: "{{versions.lfe}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Formula
+    - R_{{Rversion}}-xtable
+    - R_{{Rversion}}-sandwich
+    - R_{{Rversion}}-zoo

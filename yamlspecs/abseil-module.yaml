@@ -1,0 +1,14 @@
+!include abseil.yaml
+!include rcic-module.yaml
+---
+- package: abseil module
+  shortname: abseil
+  category: TOOLS
+  release: 1
+  module:
+    lib: lib64
+    prepend_path:
+      - LD_LIBRARY_PATH {{root}}/{{module.lib}}
+      - PKG_CONFIG_PATH {{root}}/{{module.lib}}/pkgconfig
+      - *Flagspath
+    prereq:

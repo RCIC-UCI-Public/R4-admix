@@ -1,0 +1,23 @@
+
+!include common.yaml
+---
+- package: R module git2r
+  name: git2r
+  rpkgname: git2r
+  version: "{{versions.git2r}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - libgit2_{{versions.libgit2}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - libgit2/{{versions.libgit2}}
+  install:
+    cmdargs: --configure-vars='INCLUDE_DIR=$$libgit2__PREFIX/include LIB_DIR=$$libgit2__PREFIX/lib64'
+
+# NOTE: this file is valid as of R 4.4.2
+# previous versions of git2r were built
+# using their own internal libgit2 source.

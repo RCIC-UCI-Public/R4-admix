@@ -1,0 +1,19 @@
+
+!include common.yaml
+---
+- package: R module TFisher
+  name: TFisher
+  rpkgname: TFisher
+  version: "{{versions.TFisher}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-sn
+    - R_{{Rversion}}-mvtnorm
+    - R_{{Rversion}}-mnormt
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-quantreg
+    - R_{{Rversion}}-SparseM
+    - R_{{Rversion}}-MatrixModels

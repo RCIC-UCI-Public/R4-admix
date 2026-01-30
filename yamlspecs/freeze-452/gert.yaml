@@ -1,0 +1,20 @@
+
+!include common.yaml
+---
+- package: R module gert
+  name: gert
+  rpkgname: gert
+  version: "{{versions.gert}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-askpass
+    - R_{{Rversion}}-credentials
+    - R_{{Rversion}}-openssl
+    - R_{{Rversion}}-rstudioapi
+    - R_{{Rversion}}-sys
+    - R_{{Rversion}}-zip
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-jsonlite

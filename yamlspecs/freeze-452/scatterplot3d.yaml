@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module scatterplot3d
+  name: scatterplot3d
+  rpkgname: scatterplot3d
+  sversion: "{{versions.scatterplot3d}}"
+  subversion: "{{versions.scatterplot3d_subversion}}"
+  version: "{{sversion}}.{{subversion}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{sversion}}-{{subversion}}.{{extension}}"
+  description: >
+    {{rpkgname}} version {{sversion}}-{{subversion}} for R version {{Rversion}}.
+  requires:
+    - R_{{Rversion}}

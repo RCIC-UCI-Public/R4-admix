@@ -1,0 +1,28 @@
+!include rcic-package.yaml
+!include rpm.yaml
+---
+- package: abseil-cpp
+  name: abseil-cpp
+  release: 1
+  versions: !include versions.yaml
+  version: "{{versions.abseil_cpp}}"
+  compiler: "{{versions.compiler.name}}"
+  compiler_version: "{{versions.compiler.version}}"
+  vendor_source: https://github.com/abseil/{{name}}/archive/refs/tags/{{version}}.{{extension}}
+  description: |
+    Abseil is an open-source collection of C++ code (compliant to C++17)
+    designed to augment the C++ standard library.
+  build:
+    configure_args:
+    configure: >
+      mkdir builddir;
+      cd builddir;
+      cmake -DCMAKE_INSTALL_PREFIX={{root}} -DCMAKE_BUILD_TYPE=RELEASE -DCMAKE_CXX_STANDARD=17 -DCMAKE_POSITION_INDEPENDENT_CODE=ON ..
+    base_modules:
+      - "{{compiler}}/{{compiler_version}}"
+    modules:
+      - cmake/{{versions.cmake}}
+      - "{{build.base_modules}}"
+    pkgmake: unset MAKEFLAGS; make -j 8
+  install:
+    makeinstall: (cd builddir; cmake -DCMAKE_INSTALL_PREFIX=$(ROOT)/{{root}} -P cmake_install.cmake)

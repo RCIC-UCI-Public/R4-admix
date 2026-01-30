@@ -1,0 +1,14 @@
+
+!include common.yaml
+---
+- package: R module R_utils
+  name: R_utils
+  rpkgname: R.utils
+  version: "{{versions.R_utils}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-R_oo
+    - R_{{Rversion}}-R_methodsS3

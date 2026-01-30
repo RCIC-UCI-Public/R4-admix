@@ -1,0 +1,27 @@
+
+!include common.yaml
+---
+- package: R module RSQLite
+  name: RSQLite
+  rpkgname: RSQLite
+  version: "{{versions.RSQLite}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-bit64
+    - R_{{Rversion}}-blob
+    - R_{{Rversion}}-DBI
+    - R_{{Rversion}}-memoise
+    - R_{{Rversion}}-pkgconfig
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-plogr
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-bit
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-cachem
+    - R_{{Rversion}}-fastmap
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-lifecycle

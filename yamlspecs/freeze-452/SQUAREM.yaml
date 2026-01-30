@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module SQUAREM
+  name: SQUAREM
+  rpkgname: SQUAREM
+  version: "{{versions.SQUAREM}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

@@ -1,0 +1,26 @@
+
+!include common.yaml
+---
+- package: R module rcmdcheck
+  name: rcmdcheck
+  rpkgname: rcmdcheck
+  version: "{{versions.rcmdcheck}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-pkgbuild
+    - R_{{Rversion}}-prettyunits
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-rprojroot
+    - R_{{Rversion}}-sessioninfo
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-xopen
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-ps

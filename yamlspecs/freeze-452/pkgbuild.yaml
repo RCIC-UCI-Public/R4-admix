@@ -1,0 +1,18 @@
+
+!include common.yaml
+---
+- package: R module pkgbuild
+  name: pkgbuild
+  rpkgname: pkgbuild
+  version: "{{versions.pkgbuild}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-callr
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-desc
+    - R_{{Rversion}}-processx
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-ps

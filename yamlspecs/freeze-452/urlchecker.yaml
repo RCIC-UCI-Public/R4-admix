@@ -1,0 +1,16 @@
+
+!include common.yaml
+---
+- package: R module urlchecker
+  name: urlchecker
+  rpkgname: urlchecker
+  version: "{{versions.urlchecker}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-curl
+    - R_{{Rversion}}-xml2
+    - R_{{Rversion}}-rlang

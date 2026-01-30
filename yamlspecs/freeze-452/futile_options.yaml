@@ -1,0 +1,12 @@
+
+!include common.yaml
+---
+- package: R module futile_options
+  name: futile_options
+  rpkgname: futile.options
+  version: "{{versions.futile_options}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}

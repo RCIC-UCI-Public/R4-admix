@@ -1,0 +1,43 @@
+
+!include common.yaml
+---
+- package: R module prodlim
+  name: prodlim
+  rpkgname: prodlim
+  version: "{{versions.prodlim}}"
+  baseurl: https://cran.r-project.org/src/contrib
+  src_tarball: "{{rpkgname}}_{{version}}.{{extension}}"
+  vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
+  requires:
+    - R_{{Rversion}}
+    - R_{{Rversion}}-Rcpp
+    - R_{{Rversion}}-rlang
+    - R_{{Rversion}}-data_table
+    - R_{{Rversion}}-ggplot2
+    - R_{{Rversion}}-diagram
+    - R_{{Rversion}}-lava
+    - R_{{Rversion}}-shape
+    - R_{{Rversion}}-cli
+    - R_{{Rversion}}-gtable
+    - R_{{Rversion}}-isoband
+    - R_{{Rversion}}-lifecycle
+    - R_{{Rversion}}-S7
+    - R_{{Rversion}}-scales
+    - R_{{Rversion}}-vctrs
+    - R_{{Rversion}}-withr
+    - R_{{Rversion}}-future_apply
+    - R_{{Rversion}}-numDeriv
+    - R_{{Rversion}}-progressr
+    - R_{{Rversion}}-SQUAREM
+    - R_{{Rversion}}-future
+    - R_{{Rversion}}-globals
+    - R_{{Rversion}}-glue
+    - R_{{Rversion}}-cpp11
+    - R_{{Rversion}}-digest
+    - R_{{Rversion}}-farver
+    - R_{{Rversion}}-labeling
+    - R_{{Rversion}}-R6
+    - R_{{Rversion}}-RColorBrewer
+    - R_{{Rversion}}-viridisLite
+    - R_{{Rversion}}-listenv
+    - R_{{Rversion}}-parallelly
