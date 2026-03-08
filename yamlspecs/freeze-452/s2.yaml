@@ -15,4 +15,4 @@
   build:
     modules:
       - R/{{Rversion}}
-      - abseil-cpp/{{versions.abseil_cpp}}
+      - abseil-cpp/{{versions.abseil_cpp}}/{{compiler}}.{{compiler_version}}
