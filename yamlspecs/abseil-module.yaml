@@ -1,14 +1,16 @@
-!include abseil.yaml
+!include abseil-cpp.yaml
 !include rcic-module.yaml
 ---
-- package: abseil module
-  shortname: abseil
+- package: abseil cpp module
+  shortname: abseil_cpp
   category: TOOLS
   release: 1
   module:
+    <<: *ModuleCompiler
     lib: lib64
     prepend_path:
       - LD_LIBRARY_PATH {{root}}/{{module.lib}}
       - PKG_CONFIG_PATH {{root}}/{{module.lib}}/pkgconfig
       - *Flagspath
     prereq:
+      - "{{compiler}}/{{compiler_version}}"

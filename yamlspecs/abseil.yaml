@@ -3,6 +3,8 @@
 ---
 - package: abseil-cpp
   name: abseil-cpp
+  root: "{{parent}}/{{version}}/{{compiler}}.{{compiler_version}}"
+  baserpm: "{{name}}_{{version}}_{{compiler}}_{{compiler_version}}"
   release: 1
   versions: !include versions.yaml
   version: "{{versions.abseil_cpp}}"
