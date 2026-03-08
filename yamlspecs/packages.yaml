@@ -53,7 +53,7 @@ manifest:
   - "{{build}}"
 
 parallel:
-  sets: 5
+  sets: 6
 
 sets:
   - "404"
