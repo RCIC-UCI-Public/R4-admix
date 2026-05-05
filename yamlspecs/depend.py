@@ -96,7 +96,7 @@ syspkgs = [ "KernSmooth", "MASS", "Matrix", "base", "boot", "class", "cluster", 
 
 # Create Graph nodes for every module
 with open("builddeps.yaml") as f:
-    r_modules = yaml.load(f)
+    r_modules = yaml.safe_load(f)
 
 nodes = [ Node(name,r_modules) for name in r_modules.keys()]
 
