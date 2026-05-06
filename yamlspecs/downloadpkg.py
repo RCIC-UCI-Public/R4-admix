@@ -20,7 +20,7 @@ def name_mangle(name):
 
 ##  Read the builddeps file
 f = open(BUILDDEPS,"r")
-allPkgs = yaml.load(f)
+allPkgs = yaml.safe_load(f)
 f.close()
 
 # This might include system packages 
