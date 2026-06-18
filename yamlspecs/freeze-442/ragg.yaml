@@ -17,3 +17,7 @@
     - R_{{Rversion}}-cli
     - R_{{Rversion}}-glue
     - R_{{Rversion}}-rlang
+  build:
+    modules:
+      - R/{{Rversion}}
+      - !OScmp ">=,10,libtiff/{{versions.libtiff}},"
