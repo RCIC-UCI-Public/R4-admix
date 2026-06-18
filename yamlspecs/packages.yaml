@@ -1,9 +1,11 @@
 ---
+# need EPEL for gsl-devel on Rocky 10
+enablerepo: "epel"
 system:
   - bzip2-devel
   - curl-devel
   - freetype-devel
-  - java-1.8.0-openjdk-devel
+  - !OScmp "<,10,java-1.8.0-openjdk-devel,"
   - libjpeg-turbo-devel
   - libpng-devel
   - libX11-devel
@@ -15,7 +17,8 @@ system:
   - postgresql-devel
   - readline-devel
   - unixODBC-devel
-  - xorg-x11-server-devel
+  - !OScmp "<,10,xorg-x11-server-devel,xorg-x11-server-Xwayland-devel"
+  - !OScmp ">=,10,xorg-x11-xtrans-devel,"
   - xz-devel
   - icu
   - libicu-devel
@@ -31,6 +34,7 @@ system:
   - freetype-devel
   - fribidi-devel
   - harfbuzz-devel
+  - libpq-devel
 basebuild:
   - R
   - R-module
