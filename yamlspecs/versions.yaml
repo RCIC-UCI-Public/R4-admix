@@ -2,7 +2,8 @@
 ---
 admix: R4-admix
 libgit2: "1.8.4"
-
+# on Rocky 10 use own compiled apps
 icu:
   version: "67.1"
   compiler: "11.2.0"
+ibtiff: "4.4.0"
