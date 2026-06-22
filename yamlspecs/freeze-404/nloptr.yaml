@@ -10,3 +10,7 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
+  build:
+    modules:
+      - R/{{Rversion}}
+      - !OScmp ">=,10,cmake/{{versions.cmake}},"

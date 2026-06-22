@@ -10,3 +10,8 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
+    - !OScmp ">=,10,icu_{{versions.icu.version}}_{{compiler}}_{{versions.icu.compiler}},"
+  build:
+    modules:
+      - R/{{Rversion}}
+      - !OScmp ">=,10,icu/{{versions.icu.version}}/{{compiler}}.{{versions.icu.compiler}},"

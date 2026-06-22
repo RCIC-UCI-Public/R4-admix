@@ -1,0 +1,11 @@
+--- R-4.0.4/configure	2021-02-07 15:15:53.000000000 -0800
++++ R-4.0.4/configure.new	2026-06-20 14:37:10.796009269 -0700
+@@ -46180,7 +46180,7 @@
+ {
+ #ifdef LIBCURL_VERSION_MAJOR
+ #if LIBCURL_VERSION_MAJOR > 7
+-  exit(1);
++  exit(0);
+ #elif LIBCURL_VERSION_MAJOR == 7 && LIBCURL_VERSION_MINOR >= 28
+   exit(0);
+ #else

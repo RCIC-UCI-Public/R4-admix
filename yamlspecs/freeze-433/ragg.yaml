@@ -13,3 +13,7 @@
     - R_{{Rversion}}-systemfonts
     - R_{{Rversion}}-textshaping
     - R_{{Rversion}}-cpp11
+  build:
+    modules:
+      - R/{{Rversion}}
+      - !OScmp ">=,10,libtiff/{{versions.libtiff}},"

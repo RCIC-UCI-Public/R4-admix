@@ -552,5 +552,3 @@ robustbase_subversion2: "4.1"
 robustbase: "0.99"
 qqconf: "1.3.2"
 metap: "1.11"
-# For rocky 10
-libtiff: "4.4.0"

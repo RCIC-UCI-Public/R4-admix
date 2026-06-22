@@ -18,6 +18,7 @@
     https://www.r-project.org for further information
   builddir: build
   build:
+    patchfile: !OScmp ">=,10,{{name}}-{{version}}.patch,"
     modules:
       - OpenBLAS/{{versions.OpenBLAS}}
       - java/{{versions.java}}

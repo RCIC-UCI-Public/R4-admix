@@ -10,3 +10,5 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}.{{extension}}"
   requires:
     - R_{{Rversion}}
+  install:
+    environ: !OScmp ">=,10,export CFLAGS=-fpermissive CXXFLAGS=-fpermissive;,"
