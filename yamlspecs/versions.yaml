@@ -2,3 +2,7 @@
 ---
 admix: R4-admix
 libgit2: "1.8.4"
+
+icu:
+  version: "67.1"
+  compiler: "11.2.0"
