@@ -11,3 +11,5 @@
   vendor_source: "{{baseurl}}/{{rpkgname}}_{{version}}-{{release}}.{{extension}}"
   requires:
     - R_{{Rversion}}
+  install:
+    environ: !OScmp ">=,10,export CPPFLAGS=-DhtmlDefaultSAXHandler=xmlDefaultSAXHandler;,"
