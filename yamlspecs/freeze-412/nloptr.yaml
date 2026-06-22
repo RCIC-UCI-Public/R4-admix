@@ -44,3 +44,5 @@
   build:
     modules:
       - R/{{Rversion}}
+      - !OScmp ">=,10,cmake/{{versions.cmake}},"
+
